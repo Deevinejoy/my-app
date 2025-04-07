@@ -1,33 +1,74 @@
-"use client"
-import blogs from "@/app/db/k";
+"use client" 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from 'react';
 
+import { useParams, usePathname, useRouter } from 'next/navigation';
+import {  useSearchParams } from 'next/navigation';
+import Comment from '@/app/components/Comment'
+import CommentForm from '@/app/components/CommentForm'
+import DisqusComments from '@/app/components/CommentForm';
 
-export default function blog ({params}: {params: {id: string}}) {
-    const blog = blogs.find(blog => Number(params.id) === blog.id)
- 
-    if (!blog) {
-        return <div>Blog not found</div>;
-    }
+export default function BlogPost() {
+    const [post, setPost] = useState<any>(null); // State to store the post
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
 
-    const [comments, setComments] = useState(blog.comments || []);
-
-    const [name, setName] = useState("");
-    const [content, setContent] = useState("");
-    const [email, setEmail] = useState("");
-    const addComment = (e: React.FormEvent) => {
-        e.preventDefault(); // Prevent page reload
-
-        if (name.trim() && content.trim()) {
-            const newComment = { name, content,  timee: new Date().toLocaleString()}; // New comment object
-            setComments([...comments, newComment]);
-            blog.comments.push(newComment);
-            setName(""); // Clear input
-            setContent(""); // Clear input
+    
+    const params = useParams();
+    const ID = params?.id;
+    console.log('id:', ID)
+  
+    useEffect(() => {
+        if (!ID) return;
+        console.log("Query ID:", ID)
+        console.log('please')
+      
+        async function fetchPost() {
+          try {
+            const res = await fetch(`/api/blogs?id=5`); 
+            // This now points to your corrected API route
+            console.log('Response:', res);
+            if (!res.ok) {
+              throw new Error('Failed to fetch post');
+            }
+            const data = await res.json();
+            console.log('Fetched post:', data);
+            setPost(data); // Save the fetched post to state
+          } catch (err: any) {
+            setError(err.message);
+          } finally {
+            setLoading(false);
+          }
         }
-    };
+      
+        fetchPost();
+      }, [ID]);
+    if (loading) return <div>Loading post...</div>;
+if (!post) return <div>No post found.</div>;
+
+    if (error) return <div>Error: {error}</div>;
+    
+
+
+
+    // const [comments, setComments] = useState(blog.comments || []);
+
+    // const [name, setName] = useState("");
+    // const [content, setContent] = useState("");
+    // const [email, setEmail] = useState("");
+    // const addComment = (e: React.FormEvent) => {
+    //     e.preventDefault(); // Prevent page reload
+
+    //     if (name.trim() && content.trim()) {
+    //         const newComment = { name, content,  timee: new Date().toLocaleString()}; // New comment object
+    //         setComments([...comments, newComment]);
+    //         blog.comments.push(newComment);
+    //         setName(""); // Clear input
+    //         setContent(""); // Clear input
+    //     }
+    // };
+    
 
     return (
       <div>
@@ -36,36 +77,42 @@ export default function blog ({params}: {params: {id: string}}) {
                 className="w-full h-auto rounded-md"
                 src='/next.svg'
                 alt='weed'
-                width={10}
+                width={100}
                 height={50}
                 />
 
             </div>
             <div className="p-50">
-                <div key={blog.id} className="bg-white mb-5">
+                <div className="bg-white mb-5">
                     <Image
                         className="w-full h-auto rounded-md"
-                        src={blog.img}
-                        alt={blog.title}
+                        src='/cart.svg'
+                        alt={post?.title || 'Cart icon'}
                         width={100}
                         height={38}
                     />
-                    <h2 className="text-[32px] font-bold p-3 text-center">{blog.title}</h2>
-                    <p className="text-[18px]">{blog.content}</p> 
-                    {blog.sections.map(
-                        sec =>
-                        <div key={blog.id}>
-                            <h2 className="text-[24px] font-bold  p-3">{sec.heading}</h2>
-                            <p className="text-[18px]">{sec.content}</p> 
-                        </div>
-                            
-                    )}
+                    <h2 className="text-[32px] font-bold p-3 text-center">{post.title}</h2>
+                    <h2 className="text-[32px] font-bold mb-2 text-center" dangerouslySetInnerHTML={{ __html: post.title }} />
+                   <p className="text-[18px]">{post.content}</p>  *
+                    <div className="mt-4 text-[18px]" dangerouslySetInnerHTML={{ __html: post.content }} /> 
                     <Link href='/products' >
                      <p className="p-2 mt-5 bg-[#85A965] w-[200px] text-white rounded-md text-center"> Shop with us now</p>
                     </Link>
                  
                 </div>
-                <div className="mt-20">
+                <Comment postId={post.id}/>
+                {/* <CommentForm postId={5}/>
+                {post?.ID && post?.slug && post?.title && (
+  <DisqusComments
+    postId={post.ID}
+    postSlug={post.slug}
+    postTitle={post.title}
+  />
+)} */}
+
+
+
+                {/* <div className="mt-20">
                     <p className="mb-2"> comments</p>
                    
                         {blog.comments.map(
@@ -120,7 +167,7 @@ export default function blog ({params}: {params: {id: string}}) {
                     <button type="submit" className="bg-[#85A965] text-white px-4 py-2 rounded-lg">
                         Add Comment
                     </button>
-                </form>
+                </form> */}
 
             </div> 
            
