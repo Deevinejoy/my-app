@@ -26,7 +26,7 @@ export default function BlogPost() {
       
         async function fetchPost() {
           try {
-            const res = await fetch(`/api/blogs?id=5`); 
+            const res = await fetch(`/api/blogs/${ID}`); 
             // This now points to your corrected API route
             console.log('Response:', res);
             if (!res.ok) {

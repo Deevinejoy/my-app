@@ -23,8 +23,8 @@ export default function Product({ product }: { product: Product }) {
                             className="w-full h-auto rounded-md"
                             src={product.img}
                             alt='product'
-                            width={100}
-                            height={38}
+                            width={600}
+            height={600}
                         />
                         <h2 className="text-[32px] mb-2 text-center">{product.name}</h2>
                      </Link>
