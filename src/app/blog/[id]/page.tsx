@@ -7,7 +7,7 @@ import { useParams } from "next/navigation";
 import DisqusComments from "@/app/components/CommentForm";
 
 interface BlogPost {
-  ID: number;
+  ID: string;
   title: string;
   content: string;
   slug: string;
@@ -90,7 +90,7 @@ export default function BlogPost() {
 
       {post?.ID && post?.slug && post?.title && (
         <DisqusComments
-          postId={post.ID}
+          postId={Number(post.ID)}
           postSlug={post.slug}
           postTitle={post.title}
         />
