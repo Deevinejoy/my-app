@@ -1,68 +1,82 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+interface BlogPost {
+  ID: number;
+  title: string;
+  content: string;
+  slug: string;
+  featured_image: string;
 
+}
 
 export default function Blog() {
-    const [blogs, setBlogs] = useState<any[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string | null>(null);
+  const [blogs, setBlogs] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-      async function fetchBlogs() {
-        try {
-          const res = await fetch('/api/blogs'); // This calls the API route you created
-          if (!res.ok) {
-            throw new Error('Failed to fetch blogs');
-          }
-          const data = await res.json();
-          setBlogs(data); // Set the fetched posts
-        } catch (err: any) {
-          setError(err.message); // Set error state
-        } finally {
-          setLoading(false); // Stop loading
+  useEffect(() => {
+    async function fetchBlogs() {
+      try {
+        const res = await fetch("/api/blogs");
+        if (!res.ok) {
+          throw new Error("Failed to fetch blogs");
         }
+        const data: BlogPost[] = await res.json();
+        setBlogs(data);
+      } catch (err) {
+        setError((err as Error).message); // Narrow `err` to `Error`
+      } finally {
+        setLoading(false);
       }
-  
-      fetchBlogs();
-    }, []);
-  
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+    }
 
+    fetchBlogs();
+  }, []);
 
-  // Function to get an excerpt from the content
+  if (loading) return
+   <div className="h-[80vh] flex items-center justify-center text-xl">
+  Loading post...
+</div>;
+  if (error) return <div>Error: {error}</div>;
+
   const getExcerpt = (content: string, wordCount: number = 25) => {
-    if (!content || typeof content !== 'string') return ''; // Check if content is a valid string
-    const textContent = content.replace(/<[^>]+>/g, ' ').trim(); // Remove HTML tags
-    const words = textContent.split(/\s+/); // Split the content into words
-    return words.slice(0, wordCount).join(' ') + '...'; // Join the first 30 words
+    if (!content || typeof content !== "string") return "";
+    const textContent = content.replace(/<[^>]+>/g, " ").trim();
+    const words = textContent.split(/\s+/);
+    return words.slice(0, wordCount).join(" ") + "...";
   };
-  
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-      {blogs.map(blog => (
-        <div key={blog.ID} className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
+      {blogs.map((blog) => (
+        <div
+          key={blog.ID}
+          className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+        >
           <Link href={`/blog/${blog.ID}`}>
-            {/* Check if thumbnail exists */}
             <Image
               className="w-full h-auto rounded-md"
-              src={blog.featured_image} // Provide fallback thumbnail if not available
+              src={blog.featured_image}
               alt={blog.title}
               width={600}
               height={600}
             />
-            <h2 className="text-[32px] font-bold mb-2 text-center" dangerouslySetInnerHTML={{ __html: blog.title }} />
-            {/* Display the excerpt */}
-            <p className="text-[18px]" dangerouslySetInnerHTML={{ __html: getExcerpt(blog.content) }} />
+            <h2
+              className="text-[32px] font-bold mb-2 text-center"
+              dangerouslySetInnerHTML={{ __html: blog.title }}
+            />
+            <p
+              className="text-[18px]"
+              dangerouslySetInnerHTML={{
+                __html: getExcerpt(blog.content),
+              }}
+            />
             <span className="text-amber-300">Read more</span>
-        
           </Link>
-     
         </div>
       ))}
     </div>

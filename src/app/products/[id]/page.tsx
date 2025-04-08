@@ -6,6 +6,7 @@ import products from "@/app/db/products";
 
 
 
+
 export default function Product({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const { cart, dispatch } = useCart();
@@ -51,9 +52,12 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
         <div className="w-full md:w-1/2 flex flex-col justify-between">
           <div>
             <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-            {Object.keys(product.details).map((key) => (
-          <li className="text-lg text-gray-700 mb-4" key={key}>{product.details[key]}</li>
-        ))}
+            {Object.entries(product.details).map(([key, value]) => (
+  <li className="text-lg text-gray-700 mb-4" key={key}>
+    {value}
+  </li>
+))}
+
             
             <p className="text-2xl font-semibold text-green-600">${product.price}</p>
           </div>

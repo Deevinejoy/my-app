@@ -3,14 +3,9 @@ import Product from "../components/Product";
 import products from "@/app/db/products";
  
 
-
-
-
 export default function Shop() {
-   
   
  return(
-    
       <div >
       
             <Image
@@ -20,10 +15,7 @@ export default function Shop() {
             width={600}
             height={600}
         />
-    
-         
-          
-          <div className="p-20">
+           <div className="p-20">
            <h1 className="text-center text-5xl font-extrabold">Shop</h1>
            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
            {products.map((product) => (
@@ -31,7 +23,6 @@ export default function Shop() {
         ))}
 
            </div>
-        
           
            </div>
          </div>

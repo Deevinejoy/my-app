@@ -6,10 +6,10 @@ const products = [
       price: 24,
       quantity: 1,
       details: {
-        THC: "23%",
-        CBD: "0.1%",
-        strainType: "Hybrid",
-        flavorProfile: "Sweet, Earthy",
+        1: "THC 23%",
+        2: "CBD 0.1%",
+        3: "Hybrid",
+        4: "Sweet, Earthy",
       },
       des: `<p>Black Widow is a hybrid strain that is known for its high THC content and relaxing effects.</p>
   <p>It has a sweet and earthy flavor profile, making it a popular choice among cannabis enthusiasts.</p>

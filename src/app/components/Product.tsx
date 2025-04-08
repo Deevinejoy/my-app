@@ -5,10 +5,15 @@ import { useCart } from "@/app/context/cartContext";
 
 
 interface Product {
-    id: string;
+    id: number;
     name: string;
     img: string;
     price: number;
+    quantity: number;
+    details: {
+        [key: number]: string | undefined; 
+    };
+    des: string;
 }
 
 export default function Product({ product }: { product: Product }) {

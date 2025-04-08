@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function CartPage() {
   const { cart, dispatch } = useCart();
   const totalPrice = cart.reduce(
-    (acc: number, item: { price: any; quantity: any; }) => acc + Number(item.price) * Number(item.quantity),
+    (acc: number, item: { price: number; quantity: number; }) => acc + Number(item.price) * Number(item.quantity),
     0
   );
 
@@ -21,7 +21,10 @@ export default function CartPage() {
       </div>
 
       {cart.length === 0 ? (
-        <p className="text-center text-xl text-gray-500">Your cart is empty.</p>
+         <div className="h-[80vh] flex items-center justify-center text-xl">
+       Your cart is empty.
+       </div>
+
       ) : (
         <div className="space-y-4">
           {cart.map((item) => (
