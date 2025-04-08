@@ -102,7 +102,7 @@ export default function LandingPage() {
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
               <div className="h-64 relative">
                 <Image
-                  src="/nepalesehash.webp"
+                  src="/mushrooms-blue-meanie.jpg"
                   alt="Edibles product"
                   fill
                   style={{ objectFit: "cover" }}
@@ -123,7 +123,7 @@ export default function LandingPage() {
             <div className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
               <div className="h-64 relative">
                 <Image
-                  src="/cbd-oil.webp"
+                  src="/PUREBALNCE_1K_BLUERASPBERRY.png"
                   alt="Concentrate product"
                   fill
                   style={{ objectFit: "cover" }}
