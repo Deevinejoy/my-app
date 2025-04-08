@@ -4,6 +4,13 @@ import Image from "next/image";
 import { useCart } from "@/app/context/cartContext";
 
 
+interface Product {
+    id: string;
+    name: string;
+    img: string;
+    price: number;
+}
+
 export default function Product({ product }: { product: Product }) {
     const { dispatch } = useCart();
 

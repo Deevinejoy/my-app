@@ -15,7 +15,7 @@ export default function Shop() {
       
             <Image
             className="w-full h-auto rounded-md"
-            src='/next.svg'
+            src='/weed3.jpg'
             alt='weed'
             width={600}
             height={600}

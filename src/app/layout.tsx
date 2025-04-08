@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <CartProvider>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${readex_pro.variable}antialiased`}
       >
         <Header/>
       

@@ -3,14 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import DisqusComments from "./CommentForm";
+
 
 
 export default function Blog() {
     const [blogs, setBlogs] = useState<any[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
-  
+
     useEffect(() => {
       async function fetchBlogs() {
         try {
@@ -41,6 +41,7 @@ export default function Blog() {
     const words = textContent.split(/\s+/); // Split the content into words
     return words.slice(0, wordCount).join(' ') + '...'; // Join the first 30 words
   };
+  
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
@@ -52,8 +53,8 @@ export default function Blog() {
               className="w-full h-auto rounded-md"
               src={blog.featured_image} // Provide fallback thumbnail if not available
               alt={blog.title}
-              width={100}
-              height={100}
+              width={600}
+              height={600}
             />
             <h2 className="text-[32px] font-bold mb-2 text-center" dangerouslySetInnerHTML={{ __html: blog.title }} />
             {/* Display the excerpt */}

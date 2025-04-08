@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request, { params }: Params) {
-  const ID = params.id;
+export async function GET(req: Request, { params }: { params: { id: string } }) {
+  const ID: string = params.id;
 
   try {
     const res = await fetch(`https://public-api.wordpress.com/rest/v1.1/sites/discreetnarcotics.wordpress.com/posts/${ID}/`);

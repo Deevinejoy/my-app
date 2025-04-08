@@ -9,10 +9,10 @@ export default function blogpage() {
        <div >
         <Image
         className="w-full h-auto rounded-md"
-        src='/next.svg'
+        src='/weed.jpg'
         alt='weed'
-        width={10}
-        height={50}
+        width={600}
+        height={600}
     />
 
         </div>

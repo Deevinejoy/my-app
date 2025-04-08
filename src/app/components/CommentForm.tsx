@@ -84,7 +84,7 @@ interface DisqusProps {
 }
 
 export default function DisqusComments({ postId, postTitle, postSlug }: DisqusProps) {
-  const shortname = 'your-disqus-shortname'; // replace with your Disqus shortname
+  const shortname = 'discreetnarcotics'; // replace with your Disqus shortname
 
   const disqusConfig = {
     url: `http://localhost:3000/blog/${postSlug}`,
