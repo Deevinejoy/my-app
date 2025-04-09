@@ -1,18 +1,28 @@
-"use client";
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCart } from "@/app/context/cartContext"; 
+import { useCart } from "@/app/context/cartContext";
+import { useState } from "react";
+import { Menu, X } from "lucide-react"; // Optional: Use lucide icons for menu toggling
 
 export default function Header() {
   const pathname = usePathname();
-  const { cart } = useCart(); 
-  // Calculate total item count
-  const totalItems = cart.length
+  const { cart } = useCart();
+  const totalItems = cart.length;
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/products", label: "Shop" },
+    { href: "/blog", label: "Blog" },
+    { href: "/contact", label: "Contact Us" },
+    { href: "/privacy", label: "Privacy Policy" },
+  ];
 
   return (
-    <div className="bg-[#85A965] flex justify-between p-3 relative">
-      <div>
+    <header className="bg-[#85A965] p-3 relative">
+      <div className="flex justify-between items-center">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -21,43 +31,70 @@ export default function Header() {
           height={38}
           priority
         />
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-x-6">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href}>
+              <p
+                className={`${
+                  pathname === href ? "text-white" : "text-black"
+                } text-base lg:text-xl hover:text-white`}
+              >
+                {label}
+              </p>
+            </Link>
+          ))}
+        </nav>
+
+        {/* Cart */}
+        <div className="flex flex-">
+        <div className="relative">
+          <Link href="/cart">
+            <Image
+              className="dark:invert"
+              src="/cart.svg"
+              alt="Cart"
+              width={40}
+              height={50}
+              priority
+            />
+            {totalItems > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden ml-4"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
 
-      <div className="flex justify-between gap-x-[20px]">
-        <Link href="/">
-          <p className={`${pathname === '/' ? 'text-white' : 'text-black'} lg:text-xl hover:text-white`}>Home</p>
-        </Link>
-        <Link href="/products">
-          <p className={`${pathname === '/products' ? 'text-white' : 'text-black'} lg:text-xl hover:text-white`}>Shop</p>
-        </Link>
-        <Link href="/blog">
-          <p className={`${pathname === '/blog' ? 'text-white' : 'text-black'} lg:text-xl hover:text-white`}>Blog</p>
-        </Link>
-        <Link href="/contact">
-          <p className={`${pathname === '/contact' ? 'text-white' : 'text-black'} lg:text-xl hover:text-white`}>Contact Us</p>
-        </Link>
-        <Link href="/privacy">
-          <p className={`${pathname === '/privacy' ? 'text-white' : 'text-black'} lg:text-xl hover:text-white`}>Privacy Policy</p>
-        </Link>
-      </div>
+        </div>
+      
 
-      <div className="relative">
-        <Link href="/cart">
-          <Image
-            className="dark:invert"
-            src="/cart.svg"
-            alt="Cart"
-            width={40}
-            height={50}
-            priority
-          />
-          {totalItems > 0 && (
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-              {totalItems}
-            </span>
-          )}
-        </Link>
-      </div>
-    </div>
+      {/* Mobile Navigation */}
+      {menuOpen && (
+        <nav className="flex flex-col md:hidden mt-3 gap-y-3">
+          {navLinks.map(({ href, label }) => (
+            <Link key={href} href={href} onClick={() => setMenuOpen(false)}>
+              <p
+                className={`${
+                  pathname === href ? "text-white" : "text-black"
+                } text-base hover:text-white`}
+              >
+                {label}
+              </p>
+            </Link>
+          ))}
+        </nav>
+      )}
+    </header>
   );
 }

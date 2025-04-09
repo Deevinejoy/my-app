@@ -10,13 +10,13 @@ interface BlogPost {
   content: string;
   slug: string;
   featured_image: string;
-
 }
 
 export default function Blog() {
   const [blogs, setBlogs] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>(""); // State for search query
 
   useEffect(() => {
     async function fetchBlogs() {
@@ -37,10 +37,12 @@ export default function Blog() {
     fetchBlogs();
   }, []);
 
-  if (loading) return
-   <div className="h-[80vh] flex items-center justify-center text-xl">
-  Loading post...
-</div>;
+  if (loading)
+    return (
+      <div className="h-[80vh] flex items-center justify-center text-xl">
+        Loading post...
+      </div>
+    );
   if (error) return <div>Error: {error}</div>;
 
   const getExcerpt = (content: string, wordCount: number = 25) => {
@@ -50,35 +52,55 @@ export default function Blog() {
     return words.slice(0, wordCount).join(" ") + "...";
   };
 
+  // Filter blogs based on the search query
+  const filteredBlogs = blogs.filter((blog) =>
+    blog.title.toLowerCase().includes(searchQuery.toLowerCase())  ||
+ blog.content.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-      {blogs.map((blog) => (
-        <div
-          key={blog.ID}
-          className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
-        >
-          <Link href={`/blog/${blog.ID}`}>
-            <Image
-              className="w-full h-auto rounded-md"
-              src={blog.featured_image}
-              alt={blog.title}
-              width={600}
-              height={600}
-            />
-            <h2
-              className="text-[32px] font-bold mb-2 text-center"
-              dangerouslySetInnerHTML={{ __html: blog.title }}
-            />
-            <p
-              className="text-[18px]"
-              dangerouslySetInnerHTML={{
-                __html: getExcerpt(blog.content),
-              }}
-            />
-            <span className="text-amber-300">Read more</span>
-          </Link>
-        </div>
-      ))}
+    <div className="p-4">
+      {/* Search Bar */}
+      <div className="mb-6">
+        <input
+          type="text"
+          placeholder="Search blogs..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="w-full p-2 border border-gray-300 rounded-md"
+        />
+      </div>
+
+      {/* Blog Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredBlogs.map((blog) => (
+          <div
+            key={blog.ID}
+            className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+          >
+            <Link href={`/blog/${blog.ID}`}>
+              <Image
+                className="w-full h-auto rounded-md"
+                src={blog.featured_image}
+                alt={blog.title}
+                width={600}
+                height={600}
+              />
+              <h2
+                className="text-[32px] font-bold mb-2 text-center"
+                dangerouslySetInnerHTML={{ __html: blog.title }}
+              />
+              <p
+                className="text-[18px]"
+                dangerouslySetInnerHTML={{
+                  __html: getExcerpt(blog.content),
+                }}
+              />
+              <span className="text-amber-300">Read more</span>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

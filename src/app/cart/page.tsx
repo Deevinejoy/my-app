@@ -10,6 +10,18 @@ export default function CartPage() {
     (acc: number, item: { price: number; quantity: number; }) => acc + Number(item.price) * Number(item.quantity),
     0
   );
+  const generateWhatsAppMessage = () => {
+    let message = "Hello, I would like to order the following products:\n\n";
+  cart.forEach((item) => {
+      message += `- ${item.name} (x${item.quantity}): $${item.price * item.quantity}\n`;
+    });
+    message += `\nTotal Price: $${totalPrice.toFixed(2)}`;
+    return message;
+  };
+
+  const whatsappNumber = "+13522124176"; // Replace with your WhatsApp number
+  const whatsappMessage = encodeURIComponent(generateWhatsAppMessage());
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <div className="container mx-auto px-4 sm:px-10 md:px-20 lg:px-30 py-10">
@@ -71,9 +83,13 @@ export default function CartPage() {
               <p className="text-lg font-medium text-gray-700">Total:</p>
               <p className="text-lg font-medium text-gray-700">${totalPrice.toFixed(2)}</p>
             </div>
-            <button className="w-full py-2 bg-[#85A965] text-white rounded-md hover:bg-black mt-4">
+            <a  
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2 bg-[#85A965] text-white rounded-md hover:bg-black mt-4">
               Proceed to Checkout
-            </button>
+            </a>
           </div>
         </div>
       )}

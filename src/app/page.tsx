@@ -53,7 +53,7 @@ export default function LandingPage() {
         </div>
         
         <div className="z-10 text-center px-4 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">Discreet Narcotics</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Buds Delivery</h1>
           <p className="text-xl md:text-2xl mb-8">Premium quality products delivered discreetly to your doorstep</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/products">
