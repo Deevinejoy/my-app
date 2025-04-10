@@ -401,7 +401,34 @@ const products = [
           <li>Discreet: The subtle aroma and vapor make it easy to enjoy without drawing unwanted attention.</li>
         </ul>
       `,
-    }
+    },
+    {
+      id: 21,
+      name: "Zigzag hash",
+      img:"/ZigZagHash.webp",
+      price: 72,
+      quantity: 1,
+      details: {
+        1: 'Light brown with dark undertones',
+        2: 'Crumbly, easy to work with texture',
+        3: 'Spicy notes',
+        4: '$10-$14/gram'
+      },
+      des: `
+      <h3>Facts about Zigzag hash<h3>
+        <p>Hashish is produced practically everywhere in and around Afghanistan. The best kinds of cannabis Hash in Afghanistan originate from the Northern provinces between Hindu Kush and the Russian border (Balkh, Mazar-i-Sharif).
+The plants which are used for Hash production are very small and bushy Indicas. In Afghanistan Hashish is pressed by hand after the addition of a small quantity of tea or water. The Hashish is worked on until it becomes highly elastic and has a strong aromatic smell.
+This Moroccan style hash produces a cerebral and active high.
+</p>
+        <h3>Appearance and Texture<h3>
+       <p>This hash exhibits a rich brown color, indicative of its purity and traditional processing methods. Its soft and malleable texture allows for easy handling and preparation, making it suitable for various consumption methods.</p>
+       <h3>Aroma and Flavor<h3>
+        <p>Zig Zag Hash is celebrated for its strong, delightful aroma that becomes more pronounced when gently heated. Users have noted that it crumbles to a perfect consistency for pipe use, releasing a flavor that matches its enticing scent.</p>
+        <h3>Effects and Potency<h3>
+     <p>This hash delivers a cerebral and invigorating high, providing uplifting yet relaxing effects. It’s known for inducing euphoria, contentment, and relaxation, making it suitable for both recreational and medicinal use. Some users have found it effective in alleviating conditions such as depression and ADHD.</p>
+      `,
+    },
+   
     
 ]
 export default products;

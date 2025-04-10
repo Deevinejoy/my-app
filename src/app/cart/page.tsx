@@ -15,6 +15,7 @@ export default function CartPage() {
   cart.forEach((item) => {
       message += `- ${item.name} (x${item.quantity}): $${item.price * item.quantity}\n`;
     });
+    
     message += `\nTotal Price: $${totalPrice.toFixed(2)}`;
     return message;
   };
@@ -43,9 +44,10 @@ export default function CartPage() {
             <div key={item.id} className="flex items-center justify-between bg-[#F4F4F4] rounded-lg shadow-md p-4 space-x-4">
               <Image src={item.img} alt={item.name} width={120} height={120} className="rounded-md" />
               <div className="flex-1">
-                <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
+              <h2 className="text-base sm:text-sm lg:text-lg font-semibold text-gray-800">{item.name}</h2>
                 <p className="text-sm text-gray-600">${item.price}</p>
               </div>
+              <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center justify-between gap-y-4  gap-x-10 sm:gap-y-2 ">
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => dispatch({ type: "REDUCE_QUANTITY", payload: item.id })}
@@ -61,9 +63,12 @@ export default function CartPage() {
                   +
                 </button>
               </div>
-              <div className="text-lg font-semibold text-gray-800">
+              <div className="text-base sm:text-sm lg:text-lg font-semibold text-gray-800">
                 Subtotal: ${(Number(item.price) * Number(item.quantity)).toFixed(2)}
               </div>
+
+              </div>
+           
               <div
                 onClick={() => dispatch({ type: "REMOVE_FROM_CART", payload: item.id })}
                 className="cursor-pointer"
@@ -87,7 +92,7 @@ export default function CartPage() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-2 bg-[#85A965] text-white rounded-md hover:bg-black mt-4">
+              className="w-full py-2 px-4 bg-[#85A965] text-white rounded-md hover:bg-black mt-4">
               Proceed to Checkout
             </a>
           </div>

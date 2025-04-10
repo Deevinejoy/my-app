@@ -27,7 +27,7 @@ export default function Product({ product }: { product: Product }) {
     return (
 
      
-        <div className="">
+        <div className="h-full">
          
                 <div key={product.id} className=" bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition h-full flex flex-col">
                    <Link href={`/products/${product.id}`}>
