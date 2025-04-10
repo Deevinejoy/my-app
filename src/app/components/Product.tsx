@@ -29,15 +29,17 @@ export default function Product({ product }: { product: Product }) {
      
         <div className="">
          
-                <div key={product.id} className=" bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition">
+                <div key={product.id} className=" bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition h-full flex flex-col">
                    <Link href={`/products/${product.id}`}>
+                   <div className="aspect-square relative overflow-hidden rounded-md mb-3">
                         <Image
-                            className="w-full h-auto rounded-md"
+                            className="object-cover"
                             src={product.img}
-                            alt='product'
-                            width={600}
-                            height={600}
+                            alt={product.name}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
+                    </div>
                         <h2 className="text-[32px] mb-2 text-center">{product.name}</h2>
                      </Link>
                         <div className="flex flex-row gap-x-5 justify-center">
@@ -53,9 +55,6 @@ export default function Product({ product }: { product: Product }) {
                                 <p className="text-white cursor-pointer">Add to cart</p>
                             </div>
                         </div>
-                       
-                       
-                
                 </div>
         
         </div>

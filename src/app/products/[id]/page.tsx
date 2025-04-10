@@ -3,6 +3,7 @@ import Image from "next/image";
 import { use } from "react";
 import { useCart } from "@/app/context/cartContext";
 import products from "@/app/db/products";
+import Head from "next/head";
 
 
 
@@ -37,7 +38,45 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
+    <>
+       <Head>
+        <title>{product.name} | FindMeGreens</title>
+        <meta name="description" content={product.des.slice(0, 150)} />
+        <meta property="og:title" content={product.name} />
+        <meta property="og:description" content={product.des} />
+        <meta property="og:image" content={product.img} />
+        <meta property="og:type" content="product" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={product.name} />
+        <meta name="twitter:description" content={product.des} />
+        <meta name="twitter:image" content={product.img} />
+        <link rel="canonical" href={`https://yourdomain.com/product/${product.id}`} />
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                name: product.name,
+                image: [product.img],
+                description: product.des,
+               
+                brand: {
+                "@type": "Brand",
+                name: "FindMeGreens"
+                },
+                offers: {
+                "@type": "Offer",
+                url: `https://yourdomain.com/product/${product.id}`,
+                priceCurrency: "USD",
+                price: product.price,
+                availability: "https://schema.org/InStock"
+                }
+            }),
+            }}
+        />
+      </Head>
+      <div className="p-6 max-w-7xl mx-auto">
       <div className="flex flex-col md:flex-row gap-10 bg-white p-6 rounded-xl shadow-lg">
         <div className="w-full md:w-1/2">
           <Image
@@ -101,5 +140,8 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
         </p>
       </div>
     </div>
+    
+    </>
+    
   );
 }

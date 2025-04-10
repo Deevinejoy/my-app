@@ -3,45 +3,63 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function Header() {
+export default function Footer() {
+  const pathname = usePathname();
 
-    const pathname = usePathname();
+  const navItems = [
+    { label: "Home", href: "/" },
+    { label: "Shop", href: "/products" },
+    { label: "Blog", href: "/blog" },
+    { label: "Shipping Policy", href: "/privacy" },
+  ];
 
-
-    return (
-        <div className="bg-[#85A965] flex flex-row justify-between p-3">
-            <div>
-                <Image
-                    className="dark:invert"
-                    src="/next.svg"
-                    alt="Next.js logo"
-                    width={180}
-                    height={38}
-                    priority
-                />
-            </div>
-            <div className="flex flex-col justify-between gap-x-[20px]">
-                <Link href='/'>
-                    <p className={`${pathname === '/' ? 'text-white' : 'text-black'} lg:text-lg hover:text-white`}>Home</p>
-                </Link>
-                <Link href='/products'>
-                    <p className={`${pathname === '/products' ? 'text-white' : 'text-black'} lg:text-lg hover:text-white`}>Shop</p>
-                </Link>
-                <Link href='/blog'>
-                    <p className={`${pathname === '/blog' ? 'text-white' : 'text-black'} lg:text-lg hover:text-white`}>Blog</p>
-                </Link>
-                <Link href='/privacy'>
-                    <p className={`${pathname === '/privacy' ? 'text-white' : 'text-black'} lg:text-lg hover:text-white`}>Shipping Policy</p>
-                </Link>
-            </div>
-            <div>
-                <h2 className="text-xl">Contact Us</h2>
-                <li>Phone Number:  +1 (352) 212 4176</li>
-                <li>Email: findmegreens@gmail.com</li>
-                <li>Telegram: +1 (352) 212 4176</li>
-                <li>Signal: findmegrren.01</li>
-
-            </div>
+  return (
+    <footer className="bg-[#85A965] text-white py-10 px-6 md:px-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        {/* Logo */}
+        <div className="flex justify-center md:justify-start">
+          <Image
+            src="/logo.svg"
+            alt="buds delivery logo"
+            width={180}
+            height={38}
+            className="dark:invert"
+            priority
+          />
         </div>
-    );
+
+        {/* Navigation Links */}
+        <div className="flex flex-col gap-3 text-center md:text-left">
+          <h2 className="text-xl font-semibold mb-2">Quick Links</h2>
+          {navItems.map(({ label, href }) => (
+            <Link key={href} href={href}>
+              <p
+                className={`hover:underline ${
+                  pathname === href ? "text-white font-bold" : "text-white/80"
+                }`}
+              >
+                {label}
+              </p>
+            </Link>
+          ))}
+        </div>
+
+        {/* Contact Info */}
+        <div className="text-center md:text-left">
+          <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
+          <ul className="space-y-1 text-white/90 text-lg">
+            <li>📞 +1 (352) 212 4176</li>
+            <li>📧 findmegreens@gmail.com</li>
+            <li>💬 Telegram: +1 (352) 212 4176</li>
+            <li>🔐 Signal: findmegrren.01</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="mt-10 text-center text-sm text-white/70">
+        © {new Date().getFullYear()} FindMeGreens. All rights reserved.
+      </div>
+    </footer>
+  );
 }

@@ -13,13 +13,22 @@ interface BlogPost {
   featured_image: string;
   date: string;
   excerpt: string;
-
 }
 
 export default function LandingPage() {
-  const [latestPosts, setLatestPosts] =  useState<BlogPost[]>([]);
+  const [latestPosts, setLatestPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
+  
+  // Slideshow state
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const heroImages = [
+    "/Love-Potion.jpeg",
+    "/ogkush.jpg",  // Replace with your actual image paths
+    "/Orangehaze.jpg",
+    "/gorilla_glue.jpg"
+  ];
 
+  // Fetch blog posts
   useEffect(() => {
     async function fetchLatestPosts() {
       try {
@@ -37,19 +46,86 @@ export default function LandingPage() {
     fetchLatestPosts();
   }, []);
 
+  // Slideshow effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
+  // Manual slide navigation
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % heroImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + heroImages.length) % heroImages.length);
+  };
+
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section with Slideshow */}
       <section className="relative h-screen flex items-center justify-center text-white">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/weed2.jpeg" 
-            alt="Cannabis background"
-            fill
-            style={{ objectFit: "cover" }}
-            priority
-          />
+        {/* Slideshow container */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          {heroImages.map((image, index) => (
+            <div 
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                src={image}
+                alt={`Slide ${index + 1}`}
+                fill
+                style={{ objectFit: "cover" }}
+                priority={index === 0}
+              />
+            </div>
+          ))}
           <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        
+        {/* Slideshow navigation arrows */}
+        <button 
+          onClick={prevSlide}
+          className="absolute left-4 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+          aria-label="Previous slide"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        
+        <button 
+          onClick={nextSlide}
+          className="absolute right-4 z-10 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all"
+          aria-label="Next slide"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+        
+        {/* Slide indicators */}
+        <div className="absolute bottom-8 z-10 flex justify-center w-full gap-2">
+          {heroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`h-2 w-8 rounded-full transition-all ${
+                index === currentSlide ? "bg-white" : "bg-white bg-opacity-50"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
         
         <div className="z-10 text-center px-4 max-w-4xl">
@@ -250,7 +326,7 @@ export default function LandingPage() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 px-4 bg-[#85A965] text-white">
+      <section className="py-20 px-4 bg-black text-white">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Place Your Order?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">Experience premium quality products and discreet delivery - your satisfaction is guaranteed.</p>

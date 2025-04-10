@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from './components/Footer';
 import { CartProvider } from '@/app/context/cartContext'
+import { DefaultSeo } from 'next-seo';
+import SEO from '../../next-seo.config';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <DefaultSeo {...SEO} />
       <CartProvider>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${readex_pro.variable}antialiased`}

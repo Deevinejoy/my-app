@@ -5,11 +5,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import DisqusComments from "@/app/components/CommentForm";
+import Head from "next/head";
+
 
 interface BlogPost {
   ID: string;
   title: string;
   content: string;
+  date: string;
   slug: string;
   featured_image: string;
  
@@ -56,9 +59,43 @@ export default function BlogPost() {
     return (
       <div className="text-center text-xl text-red-500">Error: {error}</div>
     );
+    const getExcerpt = (content: string, wordCount: number = 25) => {
+      if (!content || typeof content !== "string") return "";
+      const textContent = content.replace(/<[^>]+>/g, " ").trim();
+      const words = textContent.split(/\s+/);
+      return words.slice(0, wordCount).join(" ") + "...";
+    };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <>
+         <Head>
+        <title>{post.title} | My Blog</title>
+        <script
+              type="application/ld+json"
+                dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: post.title,
+                description: getExcerpt(post.content, 25),
+                image: post.featured_image,
+                datePublished: post.date,
+                author: {
+                  "@type": "Person",
+                  name: "Your Name",
+                },
+              }),
+            }}
+          />
+        <meta name="description" content={getExcerpt(post.content, 25)} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:description" content={getExcerpt(post.content, 25)} />
+        <meta property="og:image" content={post.featured_image} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+
+       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <div className="mb-6">
         <Image
           className="w-full h-auto rounded-md"
@@ -95,6 +132,8 @@ export default function BlogPost() {
           postTitle={post.title}
         />
       )}
-    </div>
+       </div>
+    </>
+    
   );
 }

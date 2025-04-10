@@ -25,10 +25,10 @@ export default function Header() {
       <div className="flex justify-between items-center">
         <Image
           className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/logo.svg"
+          alt="buds delivery logo"
+          width={90}
+          height={35}
           priority
         />
 

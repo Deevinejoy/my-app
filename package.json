@@ -6,14 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "disqus-react": "^1.1.6",
     "dotenv": "^16.4.7",
+    "framer-motion": "^12.6.3",
     "lucide-react": "^0.487.0",
     "mongoose": "^8.13.1",
     "next": "15.2.3",
+    "next-seo": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
