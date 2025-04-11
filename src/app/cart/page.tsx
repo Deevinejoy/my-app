@@ -27,9 +27,9 @@ export default function CartPage() {
   return (
     <div className="container mx-auto px-4 sm:px-10 md:px-20 lg:px-30 py-10">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-semibold text-gray-800">Shopping Cart</h1>
+        <h1 className="lg:text-3xl md:text-3xl sm:text-[40px] font-semibold text-gray-800">Shopping Cart</h1>
         <Link href="/products" className="flex items-center bg-black py-2 px-4 rounded-md hover:bg-[#4b6b31] text-white">
-          <p>Continue Shopping</p>
+          <p className="lg:text-xl md:text-lg sm:text-lg" >Continue Shopping</p>
         </Link>
       </div>
 
@@ -42,26 +42,26 @@ export default function CartPage() {
         <div className="space-y-4">
           {cart.map((item) => (
             <div key={item.id} className="flex items-center justify-between bg-[#F4F4F4] rounded-lg shadow-md p-4 space-x-4">
-              <Image src={item.img} alt={item.name} width={120} height={120} className="rounded-md" />
+              <Image src={item.img} alt={item.name} width={120} height={120} className="rounded-md " />
               <div className="flex-1">
               <h2 className="text-base sm:text-sm lg:text-lg font-semibold text-gray-800">{item.name}</h2>
                 <p className="text-sm text-gray-600">${item.price}</p>
               </div>
-              <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center justify-between gap-y-4  gap-x-10 sm:gap-y-2 ">
+              <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row items-center justify-between gap-y-2  gap-x-10 sm:gap-y-2 ">
               <div className="flex items-center gap-2">
-                <button
-                  onClick={() => dispatch({ type: "REDUCE_QUANTITY", payload: item.id })}
-                  className="px-4 py-1 bg-gray-200 rounded-md hover:bg-[#85A965] transition-colors"
-                >
-                  − 
-                </button>
-                <span className="text-xl font-medium">{item.quantity}</span>
-                <button onClick={() => dispatch({ type: "ADD_QUANTITY", payload: item.id })}
-                 
-                  className="px-4 py-1 bg-gray-200 rounded-md hover:bg-[#85A965] transition-colors"
-                >
-                  +
-                </button>
+                    <button
+                    onClick={() => dispatch({ type: "REDUCE_QUANTITY", payload: item.id })}
+                    className="lg:px-4 lg:py-2 sm:px-3 sm:py-2 md:px-3 md:py-2 bg-gray-200 rounded-md hover:bg-[#85A965] transition-colors text-lg sm:text-sm"
+                  >
+                    −
+                  </button>
+                  <span className="text-sm font-semibold text-gray-800">{item.quantity}</span>
+                  <button
+                    onClick={() => dispatch({ type: "ADD_QUANTITY", payload: item.id })}
+                    className="lg:px-4 lg:py-2 sm:px-2 sm:py-1 bg-gray-200 rounded-md hover:bg-[#85A965] transition-colors text-lg sm:text-sm"
+                  >
+                    +
+                  </button>
               </div>
               <div className="text-base sm:text-sm lg:text-lg font-semibold text-gray-800">
                 Subtotal: ${(Number(item.price) * Number(item.quantity)).toFixed(2)}
