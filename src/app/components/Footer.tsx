@@ -49,7 +49,7 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
           <ul className="space-y-1 text-white/90 text-lg">
-            <li>📞 +1 (352) 212 4176</li>
+          <li>🟢 WhatsApp +1 (352) 212 4176</li>
             <li>📧 findmegreens@gmail.com</li>
             <li>💬 Telegram: +1 (352) 212 4176</li>
             <li>🔐 Signal: findmegrren.01</li>
@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="mt-10 text-center text-sm text-white/70">
-        © {new Date().getFullYear()} FindMeGreens. All rights reserved.
+        © {new Date().getFullYear()} Buds delivery. All rights reserved.
       </div>
     </footer>
   );

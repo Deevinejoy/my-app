@@ -1009,7 +1009,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 44,
       name: "THC Vape Cartridge (Blue Dream)",
-      img: "/bluedream.jpeg",
+      img: "/blue.jpeg",
       price: 45,
       quantity: 1,
       details: {

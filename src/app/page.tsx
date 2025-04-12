@@ -22,12 +22,15 @@ export default function LandingPage() {
   // Slideshow state
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
-    "/Orangehaze.jpg",
-    "/ogkush.jpg",
+    "/gorilla_glue.jpg",
+    '/penisEnvy.png', 
+    "/gummy.jpg",
+    "/vape2.jpeg",
+    "/catridge.jpeg",
     '/coc.jpg',
     "/molly.jpg",
-    '/penisEnvy.png',  
-    "/gorilla_glue.jpg",
+     
+   
   ];
 
   // Fetch blog posts

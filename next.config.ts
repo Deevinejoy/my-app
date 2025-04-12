@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     formats: ['image/webp'],
-    domains: ['budsdelivery.org'],
+    domains: ['discreetnarcotics.wordpress.com'],
   },
   eslint:{
     ignoreDuringBuilds: true,
