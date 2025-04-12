@@ -1,17 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
-    formats: ['image/webp'],
-    domains: ['discreetnarcotics.wordpress.com'],
+    formats: ['image/avif', 'image/webp'], // Supported formats
+    domains: ['discreetnarcotics.wordpress.com'], // External image domains
   },
-  eslint:{
+  eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
-    ignoreBuildErrors: true
-  }
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
