@@ -105,7 +105,7 @@ const products = [
       {
         id: 7,
         name: "Wedding Cake",
-        img: "/weddingCake.jpg",
+        img: "/WeddingCake.jpg",
         price: 37,
         quantity: 1,
         details: {
@@ -136,7 +136,7 @@ const products = [
       {
         id: 8,
         name: "Gorilla Zkittlez",
-        img: "/Gorilla-skittle.jpg",
+        img: "/Gorilla-Skittle.jpg",
         price: 37,
         quantity: 1,
         details: {
@@ -252,7 +252,7 @@ const products = [
     {
         id: 14,
         name: "Blackberry zkittlez",
-        img: "/bbz.jpg",
+        img: "/BBZ.jpg",
         price: 44,
         quantity: 1,
         details: {
@@ -289,7 +289,7 @@ const products = [
     {
       id: 16,
       name: "Nepalese hash",
-      img:"/nepalesehash.webp",
+      img:"/Nepalesehash.webp",
       price: 37,
       quantity: 1,
       details: {
