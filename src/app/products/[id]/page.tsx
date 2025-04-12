@@ -67,7 +67,7 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
         <meta name="twitter:image" content={product.img} />
         <link
           rel="canonical"
-          href={`https://yourdomain.com/products/${product.id}`}
+          href={`https://budsdelivery.org/products/${product.id}`}
         />
       </Head>
       <motion.div

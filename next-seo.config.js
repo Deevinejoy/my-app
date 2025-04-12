@@ -1,11 +1,11 @@
 // next-seo.config.js
 const config = {
-    title: "My Blog",
-    description: "Insights, updates and news on all things green.",
+    title: "Best weed travel list, tips | Narcotics Delivery",
+    description: "Insights, updates and news on all things narcotics, cannabis and the shop to order these products discreetly",
     openGraph: {
       type: "website",
       locale: "en_US",
-      url: "https://your-domain.com/",
+      url: "https://budsdelivery.com/",
       site_name: "My Blog",
     },
   };

@@ -132,7 +132,7 @@ export default function Blog() {
           filteredBlogs.map((blog) => (
             <div
               key={blog.ID}
-              className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition"
+              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow h-full"
             >
               <Link href={`/blog/${blog.ID}`}>
                 {blog.featured_image ? (

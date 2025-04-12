@@ -82,7 +82,7 @@ export default function BlogPost() {
                 datePublished: post.date,
                 author: {
                   "@type": "Person",
-                  name: "Your Name",
+                  name: "Divine",
                 },
               }),
             }}
@@ -93,6 +93,7 @@ export default function BlogPost() {
         <meta property="og:image" content={post.featured_image} />
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
+        
       </Head>
 
        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

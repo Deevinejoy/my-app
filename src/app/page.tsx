@@ -24,8 +24,9 @@ export default function LandingPage() {
   const heroImages = [
     "/Orangehaze.jpg",
     "/ogkush.jpg",
-    "/Orangehaze.jpg",
-  
+    '/coc.jpg',
+    "/molly.jpg",
+    '/penisEnvy.png',  
     "/gorilla_glue.jpg",
   ];
 
@@ -51,7 +52,7 @@ export default function LandingPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % heroImages.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 2000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [heroImages.length]);
@@ -194,7 +195,7 @@ export default function LandingPage() {
             >
               <div className="h-64 relative">
                 <Image
-                  src="/mushrooms-blue-meanie.jpg"
+                  src="/gummy.jpg"
                   alt="Edibles product"
                   fill
                   style={{ objectFit: "cover" }}

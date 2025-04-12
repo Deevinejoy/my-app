@@ -11,7 +11,7 @@ export default function Footer() {
     { label: "Shop", href: "/products" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
-    { label: "Shipping Policy", href: "/privacy" },
+    { label: "Privacy Policy", href: "/privacy" },
   ];
 
   return (

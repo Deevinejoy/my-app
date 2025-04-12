@@ -6,41 +6,43 @@ import products from '@/app/db/products';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+const categories = ['All', 'CBD', 'Vape', 'Cocaine', 'Edibles', 'THC'];
+
 export default function Shop() {
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [category, setCategory] = useState<string>('All');
   const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage] = useState(6); // Number of products per page
+  const [productsPerPage] = useState(6);
 
-  // Filter products based on search query
-  const filteredProducts = products.filter(
-    (product) =>
+  const filteredProducts = products.filter((product) => {
+    const queryMatch =
       product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.des.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+      product.des.toLowerCase().includes(searchQuery.toLowerCase());
 
-  // Get current products for pagination
+    const categoryMatch =
+      category === 'All' ||
+      product.name.toLowerCase().includes(category.toLowerCase()) ||
+      product.des.toLowerCase().includes(category.toLowerCase());
+
+    return queryMatch && categoryMatch;
+  });
+
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
   const currentProducts = filteredProducts.slice(indexOfFirstProduct, indexOfLastProduct);
-
-  // Calculate total pages
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
-  // Reset to first page when search query changes
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery]);
+  }, [searchQuery, category]);
 
-  // Page change handler
   const paginate = (pageNumber: number) => {
     if (pageNumber > 0 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
-      // Scroll to top of products section
       window.scrollTo({ top: 400, behavior: 'smooth' });
     }
   };
 
-  // Generate page numbers
   const pageNumbers = [];
   const maxPageNumbersShown = 5;
 
@@ -55,7 +57,6 @@ export default function Shop() {
     pageNumbers.push(i);
   }
 
-  // Animation Variants
   const fadeIn = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -72,35 +73,16 @@ export default function Shop() {
   };
 
   return (
-    <motion.div
-      className="min-h-screen"
-      initial="hidden"
-      animate="visible"
-      variants={staggerContainer}
-    >
-      {/* Hero Section */}
-      <motion.div
-        className="relative w-full h-64 md:h-80"
-        variants={fadeIn}
-      >
-        <Image
-          className="object-cover"
-          src="/weed3.jpg"
-          alt="Shop banner"
-          fill
-          priority
-        />
+    <motion.div className="min-h-screen" initial="hidden" animate="visible" variants={staggerContainer}>
+      <motion.div className="relative w-full h-64 md:h-80" variants={fadeIn}>
+        <Image className="object-cover" src="/weed3.jpg" alt="Shop banner" fill priority />
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
           <h1 className="text-center text-5xl font-extrabold text-white">Shop</h1>
         </div>
       </motion.div>
 
-      {/* Search Bar */}
-      <motion.div
-        className="p-6 md:p-12 lg:p-20"
-        variants={fadeIn}
-      >
-        <div className="max-w-3xl mx-auto mb-8">
+      <motion.div className="p-6 md:p-12 lg:p-20" variants={fadeIn}>
+        <div className="max-w-3xl mx-auto mb-8 space-y-4">
           <motion.input
             type="text"
             placeholder="Search products..."
@@ -109,15 +91,28 @@ export default function Shop() {
             className="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-[#85A965] focus:border-transparent"
             variants={fadeIn}
           />
+
+          <div className="flex flex-wrap gap-2">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setCategory(cat)}
+                className={`px-4 py-2 rounded-full border text-sm font-medium transition-colors ${
+                  category === cat
+                    ? 'bg-[#85A965] text-white border-transparent'
+                    : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-100'
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
         </div>
 
         {filteredProducts.length === 0 ? (
-          <motion.div
-            className="text-center py-12"
-            variants={fadeIn}
-          >
+          <motion.div className="text-center py-12" variants={fadeIn}>
             <p className="text-xl text-gray-600">
-              No products found matching &quot;{searchQuery}&quot;
+              No products found matching "{searchQuery}"
             </p>
             <button
               onClick={() => setSearchQuery('')}
@@ -128,45 +123,26 @@ export default function Shop() {
           </motion.div>
         ) : (
           <>
-            {/* Product Grid */}
-            <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-              variants={staggerContainer}
-            >
+            <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" variants={staggerContainer}>
               {currentProducts.map((product) => (
-                <motion.div
-                  key={product.id}
-                  variants={fadeIn}
-                >
+                <motion.div key={product.id} variants={fadeIn}>
                   <Product product={product} />
                 </motion.div>
               ))}
             </motion.div>
 
-            {/* Pagination Controls */}
             {filteredProducts.length > productsPerPage && (
-              <motion.div
-                className="flex justify-center mt-12"
-                variants={fadeIn}
-              >
+              <motion.div className="flex justify-center mt-12" variants={fadeIn}>
                 <nav className="flex items-center space-x-1">
                   <button
                     onClick={() => paginate(currentPage - 1)}
                     disabled={currentPage === 1}
                     className={`px-3 py-2 rounded-md ${
-                      currentPage === 1
-                        ? 'text-gray-400 cursor-not-allowed'
-                        : 'text-gray-600 hover:bg-gray-100'
+                      currentPage === 1 ? 'text-gray-400 cursor-not-allowed' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
                     <span className="sr-only">Previous</span>
-                    <svg
-                      className="h-5 w-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
+                    <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path
                         fillRule="evenodd"
                         d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -180,9 +156,7 @@ export default function Shop() {
                       key={number}
                       onClick={() => paginate(number)}
                       className={`px-4 py-2 rounded-md ${
-                        currentPage === number
-                          ? 'bg-[#85A965] text-white'
-                          : 'text-gray-700 hover:bg-gray-100'
+                        currentPage === number ? 'bg-[#85A965] text-white' : 'text-gray-700 hover:bg-gray-100'
                       }`}
                     >
                       {number}
@@ -193,19 +167,11 @@ export default function Shop() {
                     onClick={() => paginate(currentPage + 1)}
                     disabled={currentPage === totalPages}
                     className={`px-3 py-2 rounded-md ${
-                      currentPage === totalPages
-                        ? 'text-gray-400 cursor-not-allowed'
-                        : 'text-gray-600 hover:bg-gray-100'
+                      currentPage === totalPages ? 'text-gray-400 cursor-not-allowed' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
                     <span className="sr-only">Next</span>
-                    <svg
-                      className="h-5 w-5"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
+                    <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path
                         fillRule="evenodd"
                         d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -217,10 +183,7 @@ export default function Shop() {
               </motion.div>
             )}
 
-            <motion.div
-              className="text-center text-gray-500 mt-6"
-              variants={fadeIn}
-            >
+            <motion.div className="text-center text-gray-500 mt-6" variants={fadeIn}>
               Showing {indexOfFirstProduct + 1}-{Math.min(indexOfLastProduct, filteredProducts.length)} of {filteredProducts.length} products
             </motion.div>
           </>

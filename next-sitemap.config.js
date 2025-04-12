@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://your-domain.com',
+    siteUrl: 'https://budsdelivery.com',
     generateRobotsTxt: true,
   }
   

@@ -44,7 +44,7 @@ export default function BlogPage() {
 
       {/* Blog Section */}
       <motion.div
-        className="p-20"
+        className="p-10 md:p-12 lg:p-20 bg-white rounded-lg shadow-lg mt-10"
         variants={fadeIn}
       >
         <motion.h1
