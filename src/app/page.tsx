@@ -23,7 +23,7 @@ export default function LandingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
     "/gorilla_glue.jpg",
-    '/PenisEnvy.png', 
+    '/shroom.jpeg', 
     "/gummy.jpg",
     "/vape2.jpeg",
     "/catridge.jpeg",
