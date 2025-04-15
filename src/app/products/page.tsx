@@ -6,7 +6,7 @@ import products from '@/app/db/products';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const categories = ['All', 'CBD', 'Vape', 'Cocaine', 'Edibles', 'THC'];
+const categories = ['All', 'drug', 'Vape', 'opiods', 'weed', 'Edibles',  ];
 
 export default function Shop() {
   const [searchQuery, setSearchQuery] = useState<string>('');

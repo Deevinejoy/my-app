@@ -52,7 +52,7 @@ export default function Footer() {
           <li>🟢 WhatsApp +1 (352) 212 4176</li>
             <li>📧 findmegreens@gmail.com</li>
             <li>💬 Telegram: +1 (352) 212 4176</li>
-            <li>🔐 Signal: findmegrren.01</li>
+            <li>🔐 Signal: findmegreen.01</li>
           </ul>
         </div>
       </div>

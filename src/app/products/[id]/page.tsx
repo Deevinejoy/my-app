@@ -5,6 +5,7 @@ import { useCart } from "@/app/context/cartContext";
 import products from "@/app/db/products";
 import Head from "next/head";
 import { motion } from "framer-motion";
+import { div } from "framer-motion/client";
 
 export default function Product({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
@@ -104,13 +105,18 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
             <div>
               <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
               {Object.entries(product.details).map(([key, value]) => (
-                <li className="text-lg text-gray-700 mb-4" key={key}>
+                <div>
+                     <li className="text-lg text-gray-700 mb-4" key={key}>
                   {value}
                 </li>
+               <li className="text-lg text-gray-700 mb-4">Contact our customer care for wholesale prize</li>
+
+                </div>
+             
               ))}
 
               <p className="text-2xl font-semibold text-green-600">
-                ${product.price}
+                ${product.price} {product.id < 20? <span>/g</span> : <></>}
               </p>
             </div>
 

@@ -3,13 +3,13 @@ const products = [
       id: 1,
       name: "Black Widow",
       img: "/black-widow.webp",
-      price: 24,
+      price: 15,
       quantity: 1,
       details: {
         1: "THC 23%",
         2: "CBD 0.1%",
-        3: "Hybrid",
-        4: "Sweet, Earthy",
+        3: "Hybrid,Sweet, Earthy",
+        4 : "For wholesale price, contact our customer care"
       },
       des: `<p>Black Widow is a hybrid strain that is known for its high THC content and relaxing effects.</p>
   <p>It has a sweet and earthy flavor profile, making it a popular choice among cannabis enthusiasts.</p>
@@ -19,13 +19,14 @@ const products = [
       id: 2,
       name: "purple Haze",
       img: "/PurpleHaze_3A.png",
-      price: 22,
+      price: 20,
       quantity: 1,
       details: {
         1: "Tri-coloured buds consisting with dark green, orange and purple hues",
         2: "Sticky trichomes coat each bud inside and out",
         3: "Cross of Purple Thai X Haze strains",
         4: "Strain Graded at AAA",
+           5 : "For wholesale price, contact our customer care"
       },
       des: `<p>Purple Haze is a sativa-dominant strain that is known for its uplifting and euphoric effects.</p>
   <p>It has a sweet and fruity flavor profile, making it a popular choice among cannabis enthusiasts.</p>
@@ -42,6 +43,7 @@ const products = [
         2: "Cross of Hindu Kush x Chemdawg strains",
         3: "Dense, medium to large sized nugs",
         4: "Strain Graded at AAA",
+           5 : "For wholesale price, contact our customer care"
       },
       des: `<p>OG Kush is a hybrid strain that is known for its high THC content and relaxing effects.</p>
   <p>It has a sweet and earthy flavor profile, making it a popular choice among cannabis enthusiasts.</p>
@@ -51,62 +53,25 @@ const products = [
       id: 4,
       name: "White guava ",
       img: "/popeyes-white-guava.webp",
-      price: 22,
+      price: 20,
       quantity: 1,
       details: {
         1: "Tri-coloured buds consisting with dark green, orange and purple hues",
         2: "Sticky trichomes coat each bud inside and out",
         3: "Cross of Purple Thai X Haze strains",
         4: "Strain Graded at AAA",
-        5: "28g",
+           5: "For wholesale price, contact our customer care"
       },
       des: `<p>White Guava is a potent, 100% pure indica strain celebrated for its mysterious lineage—believed to stem from either a Kush phenotype or a cross between Guava Diesel and White Hashplant.</p>
   <p>This uncertainty only adds to its mystique and appeal. Known for its bold, creeping high, White Guava gradually blankets the body in a calming, euphoric buzz, making it ideal for unwinding after a stressful day.</p>
   <p>Its deeply relaxing effects are perfect for easing tension, promoting sleep, or managing chronic pain. Loved by both medical and recreational users, White Guava is a go-to for those seeking full-body tranquility and peace of mind.</p>`,
-    },
-    {
-      id: 5,
-      name: "50mg THC Hemp Seed Oil Capsules",
-      img: "/50Mhempseedoil.webp",
-      price: 21,
-      quantity: 1,
-      details: {
-        1: "Each capsule contains 50 mg of THC",
-        2: "Each bottle contains 3 capsules",
-      },
-      des: `<p>Introducing our premium THC pills, not to be mistaken for the popular but inferior THC powder capsules.</p>
-  <p>Each of these THC pills contains 50 mg of THC in Hemp Seed Oil. Sold in packages of 3, our THC pills offer a natural and convenient way to enjoy the benefits of THC.</p>
-  <p>Our THC oil capsules are formulated from the whole Cannabis plant and are rich in terpenes. These capsules contain the highest quality THC and hemp seed oil.</p>
-  <p>Hemp seed oil has a 3 to 1 ratio of omega 6 to omega 3, providing the optimum requirements for long term health. All of our THC oil is lab tested to ensure the highest quality and safety.</p>`,
-    },  
-    {
-        id: 6,
-        name: "Pure Balance Tinctures – 1000mg CBD",
-        img: "/PUREBALNCE_1K_BLUERASPBERRY.png",
-        price: 56,
-        quantity: 1,
-        details: {
-          1: 'Designed to nourish and restore',
-          2: 'Experience the power of plant-based therapy with Pure Balance',
-          3: 'The dropper applicator ensures accurate dosing and absorption',
-        },
-        des: `Quick Facts
-      1000mg CBD / 30ml
-      33mg CBD / 1ml
-      Ingredients
-      Pure Balance Tinctures are made from high-quality, broad-spectrum, cannabinoid-rich hemp-derived extract, combined with all-natural C8 and C10 oils sourced from 100% coconuts to provide powerful medium-chain fatty acids. Added natural food-grade flavoring to enhance the taste.
-      Recommended Usage
-      For best results, place a half to a full dropper under the tongue, let it absorb for 30 seconds, then swallow. Take once or twice daily, with the option to adjust the serving as desired. Remember to shake well before each use. If you have any concerns or are taking medication, it is critical to consult a healthcare professional before use.
-      Supplement Facts
-      Serving size: 1/2 Dropper
-      Instructions
-      Designed for oral consumption. Place under the tongue for the most efficient absorption. Add to food or drink for regular absorption.`
-      },
+    }, 
+  
       {
         id: 7,
         name: "Wedding Cake",
         img: "/WeddingCake.jpg",
-        price: 37,
+        price: 20,
         quantity: 1,
         details: {
           1: 'Beautiful bright green buds, with undertones of purple and orange',
@@ -137,7 +102,7 @@ const products = [
         id: 8,
         name: "Gorilla Zkittlez",
         img: "/Gorilla-Skittle.jpg",
-        price: 37,
+        price: 18,
         quantity: 1,
         details: {
           1: 'Beautiful bright green buds, with undertones of purple and orange',
@@ -160,7 +125,7 @@ const products = [
         id: 9,
         name: "Super Lemon Haze",
         img: "/super_lemon_haze.jpg",
-        price: 29,
+        price: 20,
         quantity: 1,
         details: {
           1: 'Vibrant buds with dark green, orange, and purple hues',
@@ -181,7 +146,7 @@ const products = [
         id: 10,
         name: "Lemon Sour Diesel",
         img: "/lemonsourdieselAA.jpg",
-        price: 25,
+        price: 20,
         quantity: 1,
         details: {
           1: 'Bright green nugs in a blanket of snowy trichomes',
@@ -195,7 +160,7 @@ const products = [
         id: 11,
         name: "Love potion",
         img: "/Love-Potion.jpeg",
-        price: 37,
+        price: 22,
         quantity: 1,
         details: {
             1: 'Large, dark green buds with purple undertoness',
@@ -216,7 +181,7 @@ const products = [
         id: 12,
         name: "Sour diesel",
         img: "/sour-diesel.jpg",
-        price: 75,
+        price: 18,
         quantity: 1,
         details: {
             1: 'Deep forest green nugs with lots of thin orange hairs',
@@ -233,7 +198,7 @@ const products = [
         id: 13,
         name: "Gorilla glue",
         img: "/gorilla_glue.jpg",
-        price: 44,
+        price: 20,
         quantity: 1,
         details: {
             1: 'Colourful green nugs with orange hues',
@@ -253,7 +218,7 @@ const products = [
         id: 14,
         name: "Blackberry zkittlez",
         img: "/BBZ.jpg",
-        price: 44,
+        price: 18,
         quantity: 1,
         details: {
             1: 'Shimmering nugs with bright purple and orange hues',
@@ -290,7 +255,7 @@ const products = [
       id: 16,
       name: "Nepalese hash",
       img:"/Nepalesehash.webp",
-      price: 37,
+      price: 25,
       quantity: 1,
       details: {
         1: 'Nepalese hash',
@@ -323,6 +288,29 @@ const products = [
       des: `
         <p>Purple Haze is a sativa-dominant strain that is known for its uplifting and euphoric effects. It has a sweet and fruity flavor profile, making it a popular choice among cannabis enthusiasts. With chunky green nugs and a hint of purple, it contains 60% sativa/ 40% indica.</p>
       `,
+    },
+    {
+      id: 309,
+      name: "Pure Balance Tinctures – 1000mg CBD",
+      img: "/PUREBALNCE_1K_BLUERASPBERRY.png",
+      price: 56,
+      quantity: 1,
+      details: {
+        1: 'Designed to nourish and restore',
+        2: 'Experience the power of plant-based therapy with Pure Balance',
+        3: 'The dropper applicator ensures accurate dosing and absorption',
+      },
+      des: `Quick Facts
+    1000mg CBD / 30ml
+    33mg CBD / 1ml
+    Ingredients
+    Pure Balance Tinctures are made from high-quality, broad-spectrum, cannabinoid-rich hemp-derived extract, combined with all-natural C8 and C10 oils sourced from 100% coconuts to provide powerful medium-chain fatty acids. Added natural food-grade flavoring to enhance the taste.
+    Recommended Usage
+    For best results, place a half to a full dropper under the tongue, let it absorb for 30 seconds, then swallow. Take once or twice daily, with the option to adjust the serving as desired. Remember to shake well before each use. If you have any concerns or are taking medication, it is critical to consult a healthcare professional before use.
+    Supplement Facts
+    Serving size: 1/2 Dropper
+    Instructions
+    Designed for oral consumption. Place under the tongue for the most efficient absorption. Add to food or drink for regular absorption.`
     },
     {
       id: 18,
@@ -1113,8 +1101,2152 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
         <p>This disposable device is ideal for both first-time vapers and experienced users looking for convenience without sacrificing quality. The device comes fully charged and ready to use out of the box.</p>
       `,
     }
-   
-   
+    ,
+      {
+        id: 101,
+        name: "Oxycodone (OxyContin)",
+        img: "/oxycodone.jpeg",
+        price: 125,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Available in various strengths (5mg-80mg)',
+          3: 'Extended-release formulation',
+          4: 'Taken every 12 hours for pain management'
+        },
+        des: `
+    About Oxycodone (OxyContin)
     
-]
+    Oxycodone is a potent opioid analgesic medication prescribed for the management of moderate to severe pain. OxyContin is the brand name for the extended-release formulation of oxycodone, designed to provide long-lasting pain relief.
+    
+    Each tablet utilizes a time-release mechanism to deliver consistent pain relief over a 12-hour period, making it suitable for patients requiring around-the-clock pain management. The medication comes in various strengths to accommodate different levels of pain intensity and patient tolerance.
+    
+    Clinical Applications:
+    
+    • Management of chronic, severe pain
+    • Post-surgical pain relief
+    • Cancer-related pain
+    • Severe injury-related pain
+    
+    Pharmacological Properties:
+    
+    • Binds to mu-opioid receptors in the central nervous system
+    • Half-life of approximately 3-5 hours
+    • Available in strengths ranging from 5mg to 80mg
+    • Metabolized primarily in the liver
+    
+    This medication requires a valid prescription and should only be used under the supervision of a qualified healthcare provider. Proper storage, handling, and disposal protocols must be followed due to its high potential for misuse.
+        `,
+      },
+      {
+        id: 102,
+        name: "Oxymorphone (Opana)",
+        img: "/oxymorphone.jpeg",
+        price: 140,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Available in immediate and extended-release (5mg-40mg)',
+          3: '5-10 times more potent than oral morphine',
+          4: 'High bioavailability when administered parenterally'
+        },
+        des: `
+    About Oxymorphone (Opana)
+    
+    Oxymorphone is a potent semi-synthetic opioid analgesic derived from morphine. It's marketed under the brand name Opana and available in both immediate-release and extended-release formulations for the management of moderate to severe pain.
+    
+    This medication provides effective pain relief through its high affinity for mu-opioid receptors, producing strong analgesic effects. Oxymorphone is approximately 5-10 times more potent than oral morphine, requiring precise dosing and careful medical supervision.
+    
+    Clinical Applications:
+    
+    • Severe chronic pain management
+    • Breakthrough pain relief
+    • Post-operative pain control
+    • Pain associated with terminal illness
+    
+    Pharmacological Properties:
+    
+    • Rapid onset of action in immediate-release form (15-30 minutes)
+    • Extended-release provides 12-hour pain control
+    • Low oral bioavailability (approximately 10%)
+    • Available in strengths ranging from 5mg to 40mg
+    
+    This medication requires a valid prescription and strict adherence to the prescribed dosing regimen. It should not be crushed, chewed, or dissolved, as this can lead to rapid release and absorption of a potentially fatal dose.
+        `,
+      },
+      {
+        id: 103,
+        name: "Hydrocodone (Vicodin)",
+        img: "/hydrocodone.jpeg",
+        price: 85,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Combination product with acetaminophen',
+          3: 'Available in multiple strengths (5/325mg-10/325mg)',
+          4: 'Taken every 4-6 hours for pain relief'
+        },
+        des: `
+    About Hydrocodone (Vicodin)
+    
+    Hydrocodone is a semi-synthetic opioid analgesic commonly prescribed in combination with acetaminophen (paracetamol) under brand names such as Vicodin, Norco, and Lortab. This combination leverages the complementary pain-relieving mechanisms of both active ingredients.
+    
+    The medication is primarily indicated for the management of moderate to moderately severe pain. The inclusion of acetaminophen enhances the analgesic effect while allowing for lower doses of hydrocodone, potentially reducing some opioid-related side effects.
+    
+    Clinical Applications:
+    
+    • Acute pain management
+    • Dental pain
+    • Injury-related pain
+    • Post-surgical recovery
+    
+    Formulation Details:
+    
+    • Typical combination ratios: 5/325mg, 7.5/325mg, or 10/325mg (hydrocodone/acetaminophen)
+    • Immediate-release tablet formulation
+    • Dosing interval typically every 4-6 hours as needed for pain
+    • Maximum daily acetaminophen limit: 3000-4000mg (varies by guidelines)
+    
+    This medication requires a valid prescription and should be used for the shortest duration necessary to minimize the risk of dependence. Patients should be aware of the acetaminophen content to avoid exceeding daily limits when taking multiple medications.
+        `,
+      },
+      {
+        id: 104,
+        name: "Hydromorphone (Dilaudid)",
+        img: "/hydromorphone.jpeg",
+        price: 110,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Available in multiple formulations (oral, injectable)',
+          3: '5-7 times more potent than morphine',
+          4: 'Rapid onset of action (15-30 minutes oral)'
+        },
+        des: `
+    About Hydromorphone (Dilaudid)
+    
+    Hydromorphone is a highly potent semi-synthetic opioid analgesic derived from morphine. Marketed primarily under the brand name Dilaudid, it's prescribed for the management of moderate to severe pain, particularly when other analgesics have proven ineffective.
+    
+    With potency approximately 5-7 times that of morphine, hydromorphone provides rapid and effective pain relief. Its versatility is evidenced by multiple available formulations, including oral tablets, oral solutions, suppositories, and injectable preparations for various clinical scenarios.
+    
+    Clinical Applications:
+    
+    • Breakthrough cancer pain
+    • Severe acute pain management
+    • Palliative care settings
+    • Post-operative pain control
+    
+    Available Formulations:
+    
+    • Oral tablets: 2mg, 4mg, 8mg strengths
+    • Oral solution: 1mg/mL concentration
+    • Injectable solution: 1mg/mL, 2mg/mL, 4mg/mL, 10mg/mL
+    • Extended-release tablets (Exalgo): 8mg, 12mg, 16mg, 32mg
+    
+    Hydromorphone features a relatively short duration of action (4-6 hours) in its immediate-release forms, requiring more frequent dosing compared to extended-release formulations. Due to its high potency, precise dosing and careful titration are essential to minimize adverse effects.
+        `,
+      },
+      {
+        id: 105,
+        name: "Fentanyl (Duragesic)",
+        img: "/fentanyl.jpeg",
+        price: 200,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Available as transdermal patches, lozenges, and injectable',
+          3: '50-100 times more potent than morphine',
+          4: 'Transdermal delivery provides 72-hour pain relief'
+        },
+        des: `
+    About Fentanyl (Duragesic)
+    
+    Fentanyl is an extremely potent synthetic opioid analgesic, approximately 50-100 times more powerful than morphine. It's available in multiple formulations, with the Duragesic transdermal patch being a common delivery system for chronic pain management.
+    
+    The transdermal patch provides continuous release of fentanyl through the skin over a 72-hour period, making it suitable for patients requiring constant pain control. Other formulations include lozenges (Actiq), buccal tablets (Fentora), nasal sprays, and injectable solutions for various clinical applications.
+    
+    Clinical Applications:
+    
+    • Chronic pain management in opioid-tolerant patients
+    • Breakthrough cancer pain (rapid-acting formulations)
+    • Surgical anesthesia and perioperative analgesia
+    • Procedural sedation
+    
+    Formulation Details:
+    
+    • Transdermal patches: 12mcg/hr, 25mcg/hr, 50mcg/hr, 75mcg/hr, 100mcg/hr
+    • Oral transmucosal lozenges: 200mcg, 400mcg, 600mcg, 800mcg, 1200mcg, 1600mcg
+    • Injectable solution: 50mcg/mL concentration
+    
+    Due to its extremely high potency, fentanyl carries significant risks of respiratory depression and overdose. It requires careful patient selection, dosing, and monitoring. The medication should only be prescribed to opioid-tolerant patients except in specific medical settings like surgical anesthesia.
+        `,
+      },
+      {
+        id: 106,
+        name: "Morphine (MS Contin)",
+        img: "/morphine.jpeg",
+        price: 95,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Available in immediate and extended-release (15mg-200mg)',
+          3: 'Standard against which other opioids are measured',
+          4: 'Extended-release provides 8-12 hour pain relief'
+        },
+        des: `
+    About Morphine (MS Contin)
+    
+    Morphine is the principal alkaloid of opium and serves as the prototype opioid analgesic against which all other opioids are measured. MS Contin is the brand name for the controlled-release oral formulation of morphine sulfate, designed to provide prolonged pain relief.
+    
+    As a natural opioid, morphine has been used in medicine for over 200 years and remains a cornerstone in pain management protocols worldwide. It exerts its analgesic effects primarily through mu-opioid receptor activation in the central nervous system.
+    
+    Clinical Applications:
+    
+    • Moderate to severe chronic pain
+    • Cancer-related pain
+    • End-of-life palliative care
+    • Post-surgical pain management
+    
+    Available Formulations:
+    
+    • MS Contin (extended-release): 15mg, 30mg, 60mg, 100mg, 200mg tablets
+    • Immediate-release tablets: 15mg, 30mg
+    • Oral solution: 10mg/5mL, 20mg/5mL, 100mg/5mL concentrations
+    • Injectable solutions: multiple concentrations
+    
+    The extended-release formulation provides sustained analgesia over 8-12 hours, reducing dosing frequency and providing more consistent pain control compared to immediate-release options. Proper titration is essential to balance pain relief with side effect management.
+        `,
+      },
+      {
+        id: 107,
+        name: "Codeine",
+        img: "/codeine.jpeg",
+        price: 50,
+        quantity: 1,
+        details: {
+          1: 'Schedule II-V controlled substance (depending on formulation)',
+          2: 'Often combined with acetaminophen or other non-opioids',
+          3: 'Metabolized to morphine in the liver',
+          4: 'Available in multiple strengths (15mg-60mg)'
+        },
+        des: `
+    About Codeine
+    
+    Codeine is a naturally occurring opium alkaloid used as an analgesic, antitussive (cough suppressant), and antidiarrheal medication. It's considered a weak opioid, approximately 1/10 the potency of morphine, making it suitable for mild to moderate pain management.
+    
+    A significant portion of codeine's analgesic effect comes from its conversion to morphine in the liver via the CYP2D6 enzyme system. This metabolic pathway exhibits significant genetic variability, resulting in differences in analgesic response among patients.
+    
+    Clinical Applications:
+    
+    • Mild to moderate pain relief
+    • Cough suppression
+    • Diarrhea management
+    • Step 2 of the WHO pain ladder
+    
+    Common Formulations:
+    
+    • Codeine phosphate tablets: 15mg, 30mg, 60mg
+    • Combination products with acetaminophen/paracetamol
+    • Combination products with NSAIDs
+    • Codeine-containing cough syrups (various concentrations)
+    
+    The scheduling of codeine products varies based on concentration and combination ingredients. When used for analgesia, codeine is often combined with non-opioid analgesics like acetaminophen to enhance pain relief through complementary mechanisms.
+        `,
+      },
+      {
+        id: 108,
+        name: "Methadone",
+        img: "/methadone.jpeg",
+        price: 60,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Long half-life (24-36 hours)',
+          3: 'Used for opioid maintenance therapy and pain management',
+          4: 'Available in oral tablets, dispersible tablets, and liquid'
+        },
+        des: `
+    About Methadone
+    
+    Methadone is a synthetic opioid with unique pharmacological properties that make it valuable for both pain management and opioid use disorder treatment. Its long half-life of 24-36 hours allows for once-daily dosing in maintenance therapy protocols.
+    
+    Unlike many other opioids, methadone also acts as an NMDA receptor antagonist and inhibits the reuptake of serotonin and norepinephrine, contributing to its effectiveness in managing complex pain conditions. These multiple mechanisms of action provide analgesia through complementary pathways.
+    
+    Clinical Applications:
+    
+    • Opioid maintenance therapy for opioid use disorder
+    • Chronic pain management, particularly neuropathic pain
+    • Cancer-related pain
+    • Detoxification protocols
+    
+    Available Formulations:
+    
+    • Oral tablets: 5mg, 10mg strengths
+    • Dispersible tablets: 40mg
+    • Oral solution/liquid: 1mg/mL, 2mg/mL, 10mg/mL concentrations
+    
+    Methadone requires careful dosing and monitoring due to its long half-life and potential for QT interval prolongation. When used for pain management, it typically requires more frequent dosing (every 8-12 hours) than when used for opioid maintenance therapy.
+        `,
+      },
+      {
+        id: 109,
+        name: "Tramadol (Ultram)",
+        img: "/tramadol.jpeg",
+        price: 45,
+        quantity: 1,
+        details: {
+          1: 'Schedule IV controlled substance',
+          2: 'Dual-mechanism: weak opioid agonist and SNRI properties',
+          3: 'Available in immediate and extended-release (50mg-300mg)',
+          4: 'Lower abuse potential than traditional opioids'
+        },
+        des: `
+    About Tramadol (Ultram)
+    
+    Tramadol is a centrally-acting synthetic analgesic with a unique dual mechanism of action. It functions as both a weak mu-opioid receptor agonist and an inhibitor of serotonin and norepinephrine reuptake (SNRI). This combined effect provides pain relief through multiple pathways.
+    
+    Originally marketed as a non-controlled analgesic, tramadol was later classified as a Schedule IV controlled substance in recognition of its abuse potential, though this remains lower than conventional opioids. It's available in both immediate and extended-release formulations.
+    
+    Clinical Applications:
+    
+    • Moderate to moderately severe pain
+    • Chronic pain conditions
+    • Neuropathic pain
+    • Post-operative pain management
+    
+    Available Formulations:
+    
+    • Immediate-release tablets: 50mg
+    • Extended-release tablets (ConZip, Ultram ER): 100mg, 200mg, 300mg
+    • Combination product with acetaminophen (Ultracet): 37.5mg/325mg
+    
+    Tramadol requires metabolic activation via the CYP2D6 enzyme system to produce its most active metabolite, O-desmethyltramadol, which has significantly greater mu-opioid receptor affinity than the parent compound. This metabolic pathway exhibits genetic polymorphism, resulting in variable analgesic response among patients.
+        `,
+      },
+      {
+        id: 110,
+        name: "Buprenorphine (Subutex)",
+        img: "/buprenorphine.jpeg",
+        price: 180,
+        quantity: 1,
+        details: {
+          1: 'Schedule III controlled substance',
+          2: 'Partial opioid agonist with ceiling effect',
+          3: 'Available in sublingual tablets and transdermal patches',
+          4: 'Used for opioid maintenance therapy and pain management'
+        },
+        des: `
+    About Buprenorphine (Subutex)
+    
+    Buprenorphine is a partial mu-opioid receptor agonist with unique pharmacological properties that distinguish it from full agonist opioids. It exhibits high binding affinity but lower intrinsic activity at the mu-opioid receptor, producing a ceiling effect on respiratory depression while maintaining analgesic efficacy.
+    
+    When marketed as Subutex, buprenorphine is primarily used for opioid dependence treatment. For pain management, it's available as Butrans (transdermal patch) and Belbuca (buccal film). Its partial agonist properties contribute to a lower abuse potential compared to full agonists.
+    
+    Clinical Applications:
+    
+    • Medication-assisted treatment for opioid use disorder
+    • Moderate to severe chronic pain management
+    • Perioperative pain control
+    • Detoxification protocols
+    
+    Available Formulations:
+    
+    • Sublingual tablets (Subutex): 2mg, 8mg
+    • Transdermal patches (Butrans): 5mcg/hr, 7.5mcg/hr, 10mcg/hr, 15mcg/hr, 20mcg/hr
+    • Buccal film (Belbuca): 75mcg, 150mcg, 300mcg, 450mcg, 600mcg, 750mcg, 900mcg
+    
+    Buprenorphine's high binding affinity allows it to displace full agonist opioids from receptors, potentially precipitating withdrawal in opioid-dependent individuals. This property necessitates appropriate timing when transitioning patients from full agonists to buprenorphine.
+        `,
+      },
+      {
+        id: 111,
+        name: "Percocet (Oxycodone/APAP)",
+        img: "/percocet.jpeg",
+        price: 90,
+        quantity: 1,
+        details: {
+          1: 'Schedule II controlled substance',
+          2: 'Combination of oxycodone and acetaminophen',
+          3: 'Available in multiple strengths (2.5/325mg-10/325mg)',
+          4: 'Taken every 4-6 hours for pain relief'
+        },
+        des: `
+    About Percocet (Oxycodone/APAP)
+    
+    Percocet is a combination medication containing oxycodone hydrochloride and acetaminophen (APAP, also known as paracetamol). This formulation leverages the complementary analgesic mechanisms of an opioid (oxycodone) and a non-opioid (acetaminophen) to provide effective pain relief for moderate to moderately severe pain.
+    
+    The inclusion of acetaminophen allows for lower doses of oxycodone while maintaining effective analgesia through different pain pathways. This combination approach may reduce some opioid-related side effects while enhancing overall pain control.
+    
+    Clinical Applications:
+    
+    • Acute pain management
+    • Post-surgical pain
+    • Dental procedure pain relief
+    • Injury-related pain
+    
+    Available Formulations:
+    
+    • Tablet strengths (oxycodone/acetaminophen):
+      - 2.5mg/325mg
+      - 5mg/325mg
+      - 7.5mg/325mg
+      - 10mg/325mg
+    
+    Percocet is intended for short-term use, typically limited to 3-7 days for acute pain conditions. The acetaminophen component has a daily maximum limit (generally 3000-4000mg depending on guidelines) that must be considered when calculating total daily doses and when the patient is taking other acetaminophen-containing products.
+        `,
+      },
+      {
+        id: 112,
+        name: "Heroin (Diacetylmorphine)",
+        img: "/heroin.jpeg",
+        price: 0,
+        quantity: 0,
+        details: {
+          1: 'Schedule I controlled substance (US)',
+          2: 'No accepted medical use in the United States',
+          3: 'Rapidly metabolizes to morphine in the body',
+          4: 'Used medically in some countries as diamorphine'
+        },
+        des: `
+    About Heroin (Diacetylmorphine)
+    
+    Heroin (diacetylmorphine) is a highly potent semi-synthetic opioid produced by acetylation of morphine. It is classified as a Schedule I controlled substance in the United States, indicating it has no currently accepted medical use, a high potential for abuse, and a lack of accepted safety protocols for use under medical supervision.
+    
+    The compound was originally synthesized in 1874 and marketed by Bayer Pharmaceutical Company in the late 19th century as a supposedly less addictive alternative to morphine. However, its high potency and rapid onset of action contribute to its significant abuse liability.
+    
+    Medical Status:
+    
+    • No approved medical indications in the United States
+    • Used as "diamorphine" for pain management in some countries (UK, Switzerland)
+    • Subject of research in supervised injection facilities in some nations
+    • Historical use as an antitussive (cough suppressant)
+    
+    Pharmacological Properties:
+    
+    • Rapidly crosses the blood-brain barrier due to increased lipid solubility
+    • Metabolized to 6-monoacetylmorphine and then to morphine
+    • Typically 2-3 times more potent than morphine
+    • Short half-life of approximately 30 minutes
+    
+    This substance is included for informational purposes only. The manufacturing, distribution, and possession of heroin are heavily restricted and carry severe legal penalties in most jurisdictions worldwide.
+        `,
+      },
+      {
+        id: 201,
+        name: "DMT (Dimethyltryptamine)",
+        img: "/dmt.jpeg",
+        price: 0,
+        quantity: 0,
+        details: {
+          1: 'Schedule I controlled substance (US)',
+          2: 'Naturally occurring in various plants',
+          3: 'Known as "The Spirit Molecule"',
+          4: 'Short-acting but intense psychedelic effects (15-30 minutes)'
+        },
+        des: `
+    About DMT (Dimethyltryptamine)
+    
+    DMT (N,N-Dimethyltryptamine) is a powerful naturally occurring psychedelic compound found in various plants and produced in trace amounts in the human body. It is classified as a Schedule I controlled substance in the United States, indicating it has no currently accepted medical use and a high potential for abuse.
+    
+    The compound produces profound alterations in consciousness, perception, and thought. It is sometimes referred to as "The Spirit Molecule" due to the profound mystical and transcendental experiences reported by users. These experiences often include encounters with seemingly autonomous entities and geometric visual hallucinations.
+    
+    Natural Sources:
+    
+    • Psychotria viridis (component of ayahuasca brew)
+    • Mimosa hostilis root bark
+    • Acacia species
+    • Produced endogenously in small quantities in mammals
+    
+    Pharmacological Properties:
+    
+    • Structurally similar to serotonin and melatonin
+    • Acts primarily on serotonin receptors, particularly 5-HT2A
+    • Remarkably short duration (5-15 minutes when smoked/vaporized)
+    • Extended duration (3-6 hours) when combined with MAOIs in preparations like ayahuasca
+    
+    In traditional contexts, DMT is used in the form of ayahuasca, a brew combining DMT-containing plants with monoamine oxidase inhibitors (MAOIs), allowing for oral activity and prolonged effects. The compound is currently the subject of research into its potential therapeutic applications for conditions such as treatment-resistant depression and end-of-life anxiety.
+    
+    This substance is included for informational purposes only. The manufacturing, distribution, and possession of DMT are heavily restricted and carry legal penalties in most jurisdictions worldwide.
+        `,
+      },
+      {
+        id: 202,
+        name: "LSD (Lysergic Acid Diethylamide)",
+        img: "/lsd.jpeg",
+        price: 0,
+        quantity: 0,
+        details: {
+          1: 'Schedule I controlled substance (US)',
+          2: 'Semi-synthetic compound derived from ergot alkaloids',
+          3: 'Long-acting psychedelic effects (8-12 hours)',
+          4: 'Extremely potent with active doses in microgram range'
+        },
+        des: `
+    About LSD (Lysergic Acid Diethylamide)
+    
+    LSD is a potent semi-synthetic psychedelic compound first synthesized in 1938 by Swiss chemist Albert Hofmann at Sandoz Laboratories. It is derived from ergot alkaloids found in the ergot fungus that grows on rye and other grains. LSD is classified as a Schedule I controlled substance in the United States and is subject to strict controls internationally.
+    
+    Known for its remarkable potency, LSD produces significant alterations in perception, mood, and cognitive processes at doses measured in micrograms. The typical recreational dose ranges from 50-150 micrograms, making it one of the most potent known psychoactive substances by weight.
+    
+    Effects and Characteristics:
+    
+    • Visual and sensory perceptual changes
+    • Synesthesia (blending of sensory modalities)
+    • Altered thought patterns and sense of time
+    • Potential for mystical or transcendent experiences
+    
+    Pharmacological Properties:
+    
+    • Acts on multiple neurotransmitter systems, primarily serotonergic
+    • Particularly high affinity for 5-HT2A receptors
+    • Long duration of action (8-12 hours)
+    • Rapid tolerance development that diminishes with abstinence
+    
+    LSD has been the subject of renewed scientific interest in recent years. Current research is investigating its potential therapeutic applications for conditions including depression, anxiety, addiction, and cluster headaches. Several clinical trials are examining LSD-assisted psychotherapy under controlled settings.
+    
+    This substance is included for informational purposes only. The manufacturing, distribution, and possession of LSD are heavily restricted and carry legal penalties in most jurisdictions worldwide.
+        `,
+      },
+      {
+        id: 203,
+        name: "Heroin (Diacetylmorphine)",
+        img: "/heroin.jpeg",
+        price: 0,
+        quantity: 0,
+        details: {
+          1: 'Schedule I controlled substance (US)',
+          2: 'Semi-synthetic opioid derived from morphine',
+          3: 'Highly addictive with severe withdrawal syndrome',
+          4: 'Used medically as diamorphine in some countries'
+        },
+        des: `
+    About Heroin (Diacetylmorphine)
+    
+    Heroin is a highly potent semi-synthetic opioid produced by acetylation of morphine, which is extracted from the opium poppy (Papaver somniferum). It is classified as a Schedule I controlled substance in the United States, indicating no currently accepted medical use and a high potential for abuse.
+    
+    First synthesized in 1874 by English chemist C.R. Alder Wright, heroin was later commercialized by Bayer Pharmaceutical Company in 1898 as a supposedly less addictive alternative to morphine. However, its high potency and rapid onset of action contribute to its significant abuse liability and addiction potential.
+    
+    Administration Routes:
+    
+    • Intravenous injection
+    • Intranasal insufflation (snorting)
+    • Smoking/vaporization
+    • Subcutaneous injection ("skin popping")
+    
+    Pharmacological Properties:
+    
+    • Rapidly crosses the blood-brain barrier due to increased lipid solubility
+    • Metabolized to 6-monoacetylmorphine and then to morphine
+    • Binds primarily to mu-opioid receptors in the central nervous system
+    • Produces intense euphoria, analgesia, and respiratory depression
+    
+    In some countries such as the United Kingdom, Switzerland, Germany, and the Netherlands, pharmaceutical-grade diacetylmorphine (medical heroin) is used in supervised treatment programs for opioid dependence that has not responded to conventional treatments. It is also occasionally used for pain management in palliative care in some medical systems.
+    
+    This substance is included for informational purposes only. The manufacturing, distribution, and possession of heroin are heavily restricted and carry severe legal penalties in most jurisdictions worldwide.
+        `,
+      },
+      {
+        id: 204,
+        name: "Ketamine (Ketalar)",
+        img: "/ketamine.jpeg",
+        price: 120,
+        quantity: 1,
+        details: {
+          1: 'Schedule III controlled substance (US)',
+          2: 'Dissociative anesthetic with medical applications',
+          3: 'Increasingly used for treatment-resistant depression',
+          4: 'Available as injectable solution, nasal spray, and tablets'
+        },
+        des: `
+    About Ketamine (Ketalar)
+    
+    Ketamine is a dissociative anesthetic developed in 1962 and approved for medical use in 1970. Originally marketed under the brand name Ketalar, it remains an important medication in medical and veterinary practice due to its ability to produce anesthesia, sedation, and pain relief while generally preserving respiratory function.
+    
+    In recent years, ketamine has gained significant attention for its rapid antidepressant effects, leading to the FDA approval of esketamine (Spravato), an S-isomer of ketamine formulated as a nasal spray for treatment-resistant depression. At subanesthetic doses, ketamine produces altered states of consciousness characterized by dissociation, sensory changes, and in some cases, mystical-type experiences.
+    
+    Medical Applications:
+    
+    • Surgical anesthesia, particularly in field and emergency settings
+    • Procedural sedation for minor surgeries
+    • Treatment-resistant depression (intravenous infusions or esketamine nasal spray)
+    • Pain management, especially for neuropathic pain conditions
+    
+    Available Formulations:
+    
+    • Injectable solution: 10mg/mL, 50mg/mL, 100mg/mL concentrations
+    • Nasal spray (esketamine/Spravato): 28mg per device
+    • Compounded oral and sublingual preparations (various concentrations)
+    
+    Pharmacological Properties:
+    
+    • Primary mechanism: Non-competitive NMDA receptor antagonism
+    • Additional actions on opioid receptors, dopamine, and serotonin systems
+    • Metabolized in the liver to norketamine (active metabolite)
+    • Elimination half-life: 2-3 hours
+    
+    As a controlled substance with legitimate medical applications, ketamine is available by prescription and used in clinical settings. Off-label ketamine infusion clinics have become increasingly common for treating mood disorders, though these applications continue to be studied for long-term efficacy and safety.
+        `,
+      },
+      {
+        id: 304,
+        name: "Diazepam (Valium)",
+        img: "/valium.jpeg",
+        price: 55,
+        quantity: 1,
+        details: {
+          1: 'Schedule IV controlled substance (US)',
+          2: 'Long-acting benzodiazepine',
+          3: 'Multiple therapeutic applications',
+          4: 'Available in multiple formulations'
+        },
+        des: `
+    About Diazepam (Valium)
+    
+    Diazepam, marketed under the brand name Valium among others, is a versatile benzodiazepine medication discovered in 1959 by Leo Sternbach at Hoffmann-La Roche. It became commercially available in 1963 and rapidly gained widespread use for various medical conditions.
+    
+    As one of the most versatile benzodiazepines, diazepam is approved for a wide range of indications including anxiety disorders, alcohol withdrawal, muscle spasms, seizure disorders, and as a premedication for medical procedures. It works by enhancing the effect of the inhibitory neurotransmitter GABA in the central nervous system.
+    
+    Available Formulations:
+    
+    • Oral tablets: 2mg, 5mg, 10mg
+    • Oral solution: 5mg/5mL (1mg/mL)
+    • Injectable solution: 5mg/mL
+    • Rectal gel (Diastat): 2.5mg, 5mg, 10mg, 20mg
+    
+    Therapeutic Applications:
+    
+    • Anxiety disorders
+    • Alcohol withdrawal syndrome
+    • Muscle spasms and spasticity
+    • Seizure disorders (including status epilepticus)
+    • Preoperative sedation
+    
+    Pharmacological Profile:
+    
+    • Onset of action: 15-30 minutes oral, 1-5 minutes IV
+    • Duration: 6-8 hours (acute effects)
+    • Long half-life (20-70 hours) with active metabolites
+    • Metabolized primarily by CYP3A4 and CYP2C19 enzymes
+    
+    Due to its long half-life and active metabolites, diazepam has a lower risk of rebound and interdose withdrawal compared to shorter-acting benzodiazepines. However, it still carries risks of dependence and cognitive impairment with long-term use. As with all benzodiazepines, discontinuation should involve gradual tapering to minimize withdrawal symptoms.
+        `,
+      },
+      {
+        id: 305,
+        name: "Clonazepam (Klonopin)",
+        img: "/klonopin.jpeg",
+        price: 65,
+        quantity: 1,
+        details: {
+          1: 'Schedule IV controlled substance (US)',
+          2: 'Intermediate to long-acting benzodiazepine',
+          3: 'Originally developed as an anticonvulsant',
+          4: 'Used for anxiety disorders and epilepsy'
+        },
+        des: `
+    About Clonazepam (Klonopin)
+    
+    Clonazepam, marketed under the brand name Klonopin in the United States, is a benzodiazepine medication first synthesized in 1964 by Sternbach and Reeder at Hoffmann-La Roche. It was initially developed as an anticonvulsant for epilepsy treatment but later found applications in psychiatric conditions.
+    
+    With high potency and intermediate to long duration of action, clonazepam is used primarily for seizure disorders, panic disorder, and various anxiety conditions. Like other benzodiazepines, it works by enhancing the effect of the inhibitory neurotransmitter GABA at the GABA-A receptor.
+    
+    Available Formulations:
+    
+    • Oral tablets: 0.5mg, 1mg, 2mg
+    • Orally disintegrating tablets (wafers): 0.125mg, 0.25mg, 0.5mg, 1mg, 2mg
+    • Oral solution (compounded): Various concentrations
+    
+    Therapeutic Applications:
+    
+    • Panic disorder with or without agoraphobia
+    • Seizure disorders (especially absence and myoclonic seizures)
+    • Social anxiety disorder (off-label)
+    • Acute mania (adjunctive treatment, off-label)
+    • Restless legs syndrome (off-label)
+    
+    Pharmacological Profile:
+    
+    • Onset of action: 20-60 minutes
+    • Duration of anxiolytic effect: 6-12 hours
+    • Long half-life (30-40 hours)
+    • High potency (effective at low milligram doses)
+    
+    Clonazepam's longer duration of action makes it useful for conditions requiring sustained anxiolysis or seizure protection, with less frequent dosing than shorter-acting alternatives. However, this also means that the medication may accumulate in the body with repeated dosing, potentially leading to more complex withdrawal profiles with long-term use.
+        `,
+      },
+      {
+        id: 306,
+        name: "Lorazepam (Ativan)",
+        img: "/ativan.jpeg",
+        price: 50,
+        quantity: 1,
+        details: {
+          1: 'Schedule IV controlled substance (US)',
+          2: 'Intermediate-acting benzodiazepine',
+          3: 'No active metabolites',
+          4: 'Available in oral and injectable forms'
+        },
+        des: `
+    About Lorazepam (Ativan)
+    
+    Lorazepam, commonly marketed under the brand name Ativan, is an intermediate-acting benzodiazepine medication first introduced in 1977. It has gained widespread use in both psychiatric and acute medical settings due to its relatively predictable pharmacokinetics and versatility.
+    
+    One distinguishing feature of lorazepam is that it lacks active metabolites, which gives it a more predictable duration of action and makes it potentially safer in patients with liver disease or the elderly. It is classified as a Schedule IV controlled substance due to its potential for abuse and dependence.
+    
+    Available Formulations:
+    
+    • Oral tablets: 0.5mg, 1mg, 2mg
+    • Injectable solution: 2mg/mL, 4mg/mL
+    • Oral solution (compounded): Various concentrations
+    
+    Therapeutic Applications:
+    
+    • Anxiety disorders
+    • Status epilepticus and acute seizure management
+    • Alcohol withdrawal syndrome
+    • Preoperative sedation
+    • Chemotherapy-induced nausea and vomiting (adjunctive)
+    • Agitation and severe anxiety in hospital settings
+    
+    Pharmacological Profile:
+    
+    • Onset of action: 15-30 minutes oral, 1-5 minutes IV
+    • Duration: 6-8 hours
+    • Intermediate half-life (10-20 hours)
+    • Direct glucuronidation metabolism (less affected by liver impairment)
+    • Highly lipophilic with rapid penetration into CNS
+    
+    Lorazepam's reliable absorption and lack of active metabolites make it a preferred benzodiazepine in emergency and critical care settings. Its intermediate duration provides a balance between the rapid but short-acting effects of drugs like midazolam and the prolonged effects of longer-acting benzodiazepines like diazepam.
+        `,
+      },
+      {
+        id: 401,
+        name: "200mg Brownie",
+        img: "/brownie.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Chocolate brownie edible',
+          3: 'Classic cannabis-infused baked good',
+          4: 'Individual serving'
+        },
+        des: `
+    About 200mg Brownie
+    
+    Our cannabis-infused chocolate brownie combines rich, fudgy texture with precision-dosed cannabinoids for a classic edible experience. Each brownie contains 200mg of total cannabinoids, carefully infused to ensure consistent potency throughout.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Rich chocolate flavor with fudgy texture
+    • Made with premium cocoa and high-quality cannabis extract
+    • Individually wrapped for freshness and portability
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include chocolate, flour, sugar, eggs, butter, cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 402,
+        name: "200mg Cereal Treat",
+        img: "/cereal-treat.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Rice cereal and marshmallow treat',
+          3: 'Sweet, nostalgic snack',
+          4: 'Individual serving'
+        },
+        des: `
+    About 200mg Cereal Treat
+    
+    Our cannabis-infused cereal treat combines crunchy rice cereal and gooey marshmallow into a nostalgic, sweet snack. Each treat contains 200mg of total cannabinoids, evenly distributed throughout the confection for consistent dosing.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Classic crispy rice cereal and marshmallow combination
+    • Sweet, chewy texture with satisfying crunch
+    • Individually wrapped for freshness and portability
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include crisp rice cereal, marshmallow, butter, cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 403,
+        name: "200mg Cookie",
+        img: "/cookie.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Classic cookie format',
+          3: 'Sweet, baked edible',
+          4: 'Individual serving'
+        },
+        des: `
+    About 200mg Cookie
+    
+    Our cannabis-infused cookie delivers a classic sweet treat experience with precise cannabinoid dosing. Each cookie contains 200mg of total cannabinoids, thoroughly mixed into the dough for consistent potency in every bite.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Traditional cookie texture and flavor
+    • Made with quality ingredients
+    • Individually wrapped for freshness and portability
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include flour, sugar, butter, eggs, cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 404,
+        name: "200mg Lollipop",
+        img: "/lollipop.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Hard candy confection',
+          3: 'Long-lasting candy experience',
+          4: 'Individual serving on a stick'
+        },
+        des: `
+    About 200mg Lollipop
+    
+    Our cannabis-infused lollipop delivers cannabinoids in a slow-dissolving hard candy format. Each lollipop contains 200mg of total cannabinoids, evenly distributed throughout the candy for a consistent experience from start to finish.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Hard candy format for slower consumption
+    • Long-lasting flavor profile
+    • Convenient stick handle for easy consumption
+    
+    Consumption Guidance:
+    Sublingual absorption may occur while consuming this product, potentially leading to faster onset of effects than traditional edibles. Primary effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, consuming small portions over time is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight and heat. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include sugar, corn syrup, cannabis extract, citric acid, and natural flavors and colors. Specific flavor profiles and allergen information available upon request.
+        `,
+      },
+      {
+        id: 405,
+        name: "200mg Muddy Buddies",
+        img: "/muddy-buddies.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Chocolate and peanut butter coated cereal snack',
+          3: 'Also known as "puppy chow"',
+          4: 'Sweet and crunchy texture'
+        },
+        des: `
+    About 200mg Muddy Buddies
+    
+    Our cannabis-infused Muddy Buddies transform classic cereal squares into a delightful snack coated with chocolate, peanut butter, and powdered sugar. Each package contains 200mg of total cannabinoids, carefully infused for consistent potency throughout the mix.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Chocolate and peanut butter flavor profile
+    • Sweet, powdered coating with satisfying crunch
+    • Perfect balance of flavors and textures
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include rice or corn cereal squares, chocolate, peanut butter, powdered sugar, cannabis extract, and natural flavors. Contains peanuts. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 406,
+        name: "200mg Peanut Butter & Jelly Rice Crispy Treat",
+        img: "/pb-rice-crispy.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Rice cereal treat with PB&J flavoring',
+          3: 'Sweet and savory flavor combination',
+          4: 'Crunchy texture with chewy marshmallow'
+        },
+        des: `
+    About 200mg Peanut Butter & Jelly Rice Crispy Treat
+    
+    Our innovative PB&J Rice Crispy Treat combines the nostalgic flavors of peanut butter and jelly with the satisfying texture of a classic rice cereal treat. Each treat contains 200mg of total cannabinoids, evenly distributed throughout for consistent dosing.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Unique combination of peanut butter and fruit jelly flavors
+    • Familiar rice crispy texture with added flavor complexity
+    • Individually wrapped for freshness and portability
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include crisp rice cereal, marshmallow, peanut butter, fruit jelly or jam, cannabis extract, and natural flavors. Contains peanuts. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 407,
+        name: "200mg Pie",
+        img: "/pie.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Pastry dessert with filling',
+          3: 'Sweet baked good with flaky crust',
+          4: 'Individual serving size'
+        },
+        des: `
+    About 200mg Pie
+    
+    Our cannabis-infused mini pie features a flaky, buttery crust surrounding a sweet filling for a classic dessert experience. Each individual pie contains 200mg of total cannabinoids, carefully incorporated for consistent potency in every bite.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Flaky pastry crust with sweet filling
+    • Available in assorted flavors (varies by location)
+    • Individually packaged for freshness and portability
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended freshness, refrigeration is recommended. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include flour, butter, sugar, fruit or cream fillings, cannabis extract, and natural flavors. Specific flavor varieties and allergen information available upon request.
+        `,
+      },
+      {
+        id: 408,
+        name: "200mg Pop Corn - Caramel Corn",
+        img: "/caramel-corn.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Popcorn coated with caramel',
+          3: 'Sweet and crunchy snack',
+          4: 'Individual serving package'
+        },
+        des: `
+    About 200mg Pop Corn - Caramel Corn
+    
+    Our cannabis-infused caramel corn combines freshly popped corn with a rich, sweet caramel coating for a delightful crunchy treat. Each package contains 200mg of total cannabinoids, evenly distributed throughout the caramel coating for consistent dosing.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Sweet caramel coating on crunchy popcorn
+    • Perfect balance of sweetness and salt
+    • Convenient, resealable packaging
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and crunch. Keep out of reach of children and pets.
+    
+    Ingredients may include popcorn, sugar, butter, corn syrup, cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 409,
+        name: "200mg Pop Corn - White Cheddar",
+        img: "/white-cheddar-corn.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Popcorn with white cheddar flavoring',
+          3: 'Savory snacking option',
+          4: 'Individual serving package'
+        },
+        des: `
+    About 200mg Pop Corn - White Cheddar
+    
+    Our cannabis-infused white cheddar popcorn offers a savory alternative to sweet edibles. Each package contains 200mg of total cannabinoids, thoroughly infused into the white cheddar seasoning for consistent potency throughout.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Rich, tangy white cheddar flavor
+    • Satisfying savory snack option
+    • Convenient, resealable packaging
+    
+    Consumption Guidance:
+    Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and flavor. Keep out of reach of children and pets.
+    
+    Ingredients may include popcorn, white cheddar seasoning (containing milk derivatives), vegetable oil, cannabis extract, and natural flavors. Contains dairy. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 410,
+        name: "200mg Lemonade (Beverage) - Mixed Berry",
+        img: "/mixed-berry-lemonade.jpeg",
+        price: 20,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Lemonade infused with mixed berry flavors',
+          3: 'Liquid cannabis delivery system',
+          4: 'Sweet and tart flavor profile'
+        },
+        des: `
+    About 200mg Lemonade (Beverage) - Mixed Berry
+    
+    Our cannabis-infused Mixed Berry Lemonade combines tangy citrus and sweet berry flavors in a refreshing beverage format. Each bottle contains 200mg of total cannabinoids, water-soluble for rapid absorption and consistent potency throughout the liquid.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Refreshing blend of lemonade and mixed berry flavors
+    • Water-soluble cannabinoids for even distribution
+    • Alternative to traditional solid edibles
+    
+    Consumption Guidance:
+    Liquid edibles may have a faster onset time (15-45 minutes) compared to solid edibles due to more efficient absorption. Effects may last 4-6 hours depending on individual factors. For those new to cannabis beverages, starting with a small portion (10-15mg) is recommended. Can be consumed straight or diluted with water or other beverages to adjust potency and flavor intensity.
+    
+    Storage:
+    Refrigerate after opening. Keep in a cool place away from direct sunlight. Store in the original sealed container. Keep out of reach of children and pets.
+    
+    Ingredients may include filtered water, lemon juice, berry purees or extracts, natural sweeteners, water-soluble cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 411,
+        name: "200mg Lemonade (Beverage) - Peach",
+        img: "/peach-lemonade.jpeg",
+        price: 20,
+        quantity: 1,
+        details: {
+          1: '200mg total cannabinoid content',
+          2: 'Lemonade infused with peach flavor',
+          3: 'Liquid cannabis delivery system',
+          4: 'Sweet and tart flavor profile'
+        },
+        des: `
+    About 200mg Lemonade (Beverage) - Peach
+    
+    Our cannabis-infused Peach Lemonade pairs the bright acidity of lemon with the sweet, fruity notes of peach in a refreshing beverage. Each bottle contains 200mg of total cannabinoids, using water-soluble technology for even distribution and enhanced absorption.
+    
+    Product Highlights:
+    • 200mg total cannabinoid content
+    • Balanced peach and lemon flavor profile
+    • Water-soluble cannabinoids for consistent potency
+    • Alternative to traditional solid edibles
+    
+    Consumption Guidance:
+    Liquid edibles may have a faster onset time (15-45 minutes) compared to solid edibles due to more efficient absorption. Effects may last 4-6 hours depending on individual factors. For those new to cannabis beverages, starting with a small portion (10-15mg) is recommended. Can be consumed straight or diluted with water or other beverages to adjust potency and flavor intensity.
+    
+    Storage:
+    Refrigerate after opening. Keep in a cool place away from direct sunlight. Store in the original sealed container. Keep out of reach of children and pets.
+    
+    Ingredients may include filtered water, lemon juice, peach puree or extract, natural sweeteners, water-soluble cannabis extract, and natural flavors. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 412,
+        name: "300mg Blue Razz Rings",
+        img: "/blue-razz-rings.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Blue raspberry flavored gummy rings',
+          3: 'Chewy candy format',
+          4: 'Higher potency edible'
+        },
+        des: `
+    About 300mg Blue Razz Rings
+    
+    Our Blue Razz Rings deliver a higher-potency edible experience in a familiar gummy candy format. Each package contains gummy rings with a total of 300mg cannabinoids, featuring a sweet and tangy blue raspberry flavor profile.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Blue raspberry flavor with balanced sweetness and tartness
+    • Chewy gummy ring format
+    • Multiple pieces per package for easy dose control
+    
+    Consumption Guidance:
+    These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider dividing gummies into smaller portions. Each piece contains approximately 10-15mg, but may vary slightly.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial flavors, blue food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 413,
+        name: "300mg Peach Rings",
+        img: "/peach-rings.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Peach flavored gummy rings',
+          3: 'Chewy candy format',
+          4: 'Higher potency edible'
+        },
+        des: `
+    About 300mg Peach Rings
+    
+    Our Peach Rings combine a classic candy favorite with premium cannabis extract. Each package contains gummy rings with a total of 300mg cannabinoids, featuring a sweet, juicy peach flavor in a familiar ring shape.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Authentic peach flavor with sugar coating
+    • Chewy gummy ring format
+    • Multiple pieces per package for easy dose control
+    
+    Consumption Guidance:
+    These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider dividing gummies into smaller portions. Each piece contains approximately 10-15mg, but may vary slightly.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial peach flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 414,
+        name: "300mg Rainbow Belts",
+        img: "/rainbow-belts.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Multi-colored, multi-flavored gummy belts',
+          3: 'Chewy, colorful candy format',
+          4: 'Higher potency edible'
+        },
+        des: `
+    About 300mg Rainbow Belts
+    
+    Our Rainbow Belts offer a vibrant, multi-flavored cannabis experience. Each package contains gummy belt strips with a total of 300mg cannabinoids, featuring assorted fruit flavors in a colorful, sugar-coated format.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Multiple fruit flavors in each package
+    • Colorful, chewy gummy belt format
+    • Strips can be easily divided for precise dosing
+    
+    Consumption Guidance:
+    These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. Rainbow Belts are designed to be easily portioned - each belt can be cut or torn into smaller pieces for controlled dosing.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial fruit flavors, various food colorings, cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 415,
+        name: "300mg Sour Patch Belts",
+        img: "/sour-patch-belts.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Sour-coated gummy belt candy',
+          3: 'Tangy, sweet-and-sour flavor profile',
+          4: 'Higher potency edible'
+        },
+        des: `
+    About 300mg Sour Patch Belts
+    
+    Our Sour Patch Belts combine the popular sour-then-sweet flavor profile with cannabis infusion. Each package contains sour-coated gummy belts with a total of 300mg cannabinoids, delivering a tangy, mouth-puckering experience.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Sour powder coating with sweet gummy interior
+    • Flexible strips that can be easily portioned
+    • Perfect for those who prefer tangy over sweet
+    
+    Consumption Guidance:
+    These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider cutting belts into smaller portions. The sour coating may contain a higher concentration of cannabinoids than the interior gummy.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness, potency, and sour coating integrity. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, malic acid, tartaric acid, natural and artificial flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 416,
+        name: "300mg Sour Straws",
+        img: "/sour-straws.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Sour-coated candy straws',
+          3: 'Chewy texture with sour exterior',
+          4: 'Higher potency edible'
+        },
+        des: `
+    About 300mg Sour Straws
+    
+    Our Sour Straws deliver intense flavor in a unique candy format. Each package contains hollow straw-shaped candies with a total of 300mg cannabinoids, featuring a chewy texture and sour-coated exterior in various fruit flavors.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Sour coating with chewy candy base
+    • Hollow straw format for unique texture experience
+    • Multiple pieces for controlled dosing
+    
+    Consumption Guidance:
+    These candies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider cutting straws into smaller sections. Each straw contains approximately 20-30mg, but may vary slightly.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and sour coating integrity. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or modified starch, citric acid, malic acid, natural and artificial flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 417,
+        name: "300mg Watermelon Bites",
+        img: "/watermelon-bites.jpeg",
+        price: 30,
+        quantity: 1,
+        details: {
+          1: '300mg total cannabinoid content',
+          2: 'Watermelon flavored gummy candy',
+          3: 'Chewy fruit-shaped edibles',
+          4: 'Higher potency product'
+        },
+        des: `
+    About 300mg Watermelon Bites
+    
+    Our Watermelon Bites feature the refreshing taste of summer watermelon in a convenient gummy format. Each package contains watermelon-shaped or flavored gummies with a total of 300mg cannabinoids, offering a fruity, juicy flavor profile.
+    
+    Product Highlights:
+    • 300mg total cannabinoid content
+    • Authentic watermelon flavor
+    • Shaped or colored to resemble watermelon slices
+    • Multiple pieces per package for customizable dosing
+    
+    Consumption Guidance:
+    These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider dividing gummies into smaller portions. Each piece contains approximately 10-15mg, but may vary slightly.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial watermelon flavors, food coloring (typically red and green), cannabis extract, and other ingredients. Specific allergen information available upon request.
+        `,
+      },
+      {
+        id: 418,
+        name: "350mg Cake",
+        img: "/cake-edible.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: '350mg total cannabinoid content',
+          2: 'Cake-style baked edible',
+          3: 'Moist, sweet dessert format',
+          4: 'Highest potency tier product'
+        },
+        des: `
+    About 350mg Cake
+    
+    Our cannabis-infused cake delivers a premium dessert experience with our highest potency tier. Each individual cake contains 350mg of total cannabinoids, expertly infused throughout the batter for consistent effects in every bite.
+    
+    Product Highlights:
+    • 350mg total cannabinoid content
+    • Moist, tender cake texture
+    • Available in various flavors (varies by location)
+    • Premium dessert experience
+    
+    Consumption Guidance:
+    This product contains our highest standard cannabinoid concentration. Effects typically begin 30-90 minutes after consumption and may last 6-8+ hours depending on individual factors. Due to the high potency, this product is intended to be consumed in multiple sessions or shared. For new users, a portion containing no more than 5-10mg is recommended for initial trials.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. For best freshness, refrigeration is recommended. Freezing is acceptable for long-term storage. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include flour, sugar, eggs, butter or oil, cannabis extract, and natural flavors. Specific flavor varieties and allergen information available upon request.
+        `,
+      },
+      {
+        id: 419,
+        name: "350mg Tart",
+        img: "/tart-edible.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: '350mg total cannabinoid content',
+          2: 'Pastry shell with sweet filling',
+          3: 'Dessert-style edible with fruit flavors',
+          4: 'Highest potency tier product'
+        },
+        des: `
+    About 350mg Tart
+    
+    Our cannabis-infused tart combines a buttery pastry shell with sweet filling for a sophisticated dessert experience. Each tart contains our premium tier of 350mg total cannabinoids, carefully incorporated for consistent potency throughout.
+    
+    Product Highlights:
+    • 350mg total cannabinoid content
+    • Butter pastry shell with fruit or cream filling
+    • Available in various flavors (varies by location)
+    • Elegant dessert alternative to candy-style edibles
+    
+    Consumption Guidance:
+    This product contains our highest standard cannabinoid concentration. Effects typically begin 30-90 minutes after consumption and may last 6-8+ hours depending on individual factors. Due to the high potency, this product is intended to be consumed in multiple sessions or shared. For new users, a portion containing no more than 5-10mg is recommended for initial trials.
+    
+    Storage:
+    Keep in a cool, dry place away from direct sunlight. Refrigeration is strongly recommended for this product. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
+    
+    Ingredients may include flour, butter, sugar, eggs, fruit or cream fillings, cannabis extract, and natural flavors. Specific flavor varieties and allergen information available upon request.
+        `,
+      },
+      {
+        id: 501,
+        name: "1g Shatter",
+        img: "/shatter.jpeg",
+        price: 24,
+        quantity: 1,
+        details: {
+          1: 'Glass-like brittle concentrate',
+          2: 'High potency extract (typically 70-90% cannabinoids)',
+          3: 'Made through solvent-based extraction',
+          4: 'Transparent amber appearance'
+        },
+        des: `
+    About 1g Shatter
+    
+    Shatter is a translucent cannabis concentrate known for its glass-like consistency that can literally shatter when handled. This 1-gram unit features a clean, solvent-purged extract made through hydrocarbon extraction methods.
+    
+    Product Highlights:
+    • Premium quality cannabis extract
+    • Brittle, transparent consistency
+    • High terpene preservation
+    • Typically ranges from 70-90% total cannabinoids
+    • Named for its tendency to break into pieces when handled at room temperature
+    
+    Production Method:
+    Shatter is produced using hydrocarbon solvents (typically butane) that strip cannabinoids and terpenes from plant material. The resulting solution undergoes vacuum purging at specific temperatures to remove residual solvents while maintaining the unique glass-like structure. This careful process preserves terpene profiles while creating a stable, non-nucleated extract.
+    
+    Consumption Guidance:
+    This concentrate is designed for vaporization at precise temperatures, typically using a dab rig, electronic nail, or specialized vaporizer. Not intended for direct combustion or oral consumption. Due to its high potency, very small amounts (often called "dabs") are recommended, particularly for those new to concentrates.
+    
+    Storage:
+    Store in a cool, dark place, preferably in an airtight, non-stick silicone or glass container. Refrigeration can help maintain consistency and preserve terpene profiles. Allow to reach room temperature before handling to prevent condensation from forming on the product.
+        `,
+      },
+      {
+        id: 502,
+        name: "1g Earl (Wax)",
+        img: "/earl-wax.jpeg",
+        price: 22,
+        quantity: 1,
+        details: {
+          1: 'Softer, opaque wax concentrate',
+          2: 'High potency extract (typically 65-85% cannabinoids)',
+          3: 'Creamy, malleable texture',
+          4: 'Named for specific extraction technique or phenotype'
+        },
+        des: `
+    About 1g Earl (Wax)
+    
+    Earl is a specialized form of cannabis wax concentrate, characterized by its opaque, creamy texture and distinctive terpene profile. This 1-gram unit delivers a high-potency experience in a more manageable, less brittle format than shatter.
+    
+    Product Highlights:
+    • Soft, malleable consistency
+    • Creamy, buttery texture
+    • Easier to handle than brittle concentrates
+    • Typically ranges from 65-85% total cannabinoids
+    • Named for specific extraction technique or phenotype characteristic
+    
+    Production Method:
+    This wax concentrate is produced through hydrocarbon extraction with specific agitation and temperature controls during purging that create its distinctive consistency. The process involves carefully removing residual solvents while promoting nucleation (crystallization) that transforms the extract from a clear state to an opaque, waxier texture. This particular variety may feature specific strain characteristics or processing techniques that give it the "Earl" designation.
+    
+    Consumption Guidance:
+    This concentrate is designed for vaporization at precise temperatures, typically using a dab rig, electronic nail, or specialized vaporizer. The malleable texture makes it easier to portion and handle compared to more brittle concentrates. Due to its high potency, very small amounts are recommended, particularly for those new to concentrates.
+    
+    Storage:
+    Store in a cool, dark place in an airtight, non-stick silicone or glass container. Refrigeration can help maintain consistency and preserve terpene profiles, but is generally less critical for wax textures than clearer concentrates.
+        `,
+      },
+      {
+        id: 503,
+        name: "1g Wax",
+        img: "/wax.jpeg",
+        price: 24,
+        quantity: 1,
+        details: {
+          1: 'Standard cannabis wax concentrate',
+          2: 'High potency extract (typically 65-85% cannabinoids)',
+          3: 'Opaque, textured appearance',
+          4: 'Versatile concentrate form'
+        },
+        des: `
+    About 1g Wax
+    
+    Cannabis wax is a versatile concentrate known for its opaque appearance and malleable texture. This 1-gram unit delivers high potency in a form that's easier to handle than more brittle concentrates, making it popular among both newcomers and experienced concentrate consumers.
+    
+    Product Highlights:
+    • Soft to firm consistency depending on specific variety
+    • Opaque, creamy to crumbly texture
+    • More stable at room temperature than oils
+    • Typically ranges from 65-85% total cannabinoids
+    • Good balance of potency and ease of handling
+    
+    Production Method:
+    Wax is produced through hydrocarbon extraction (typically butane or propane) with specific temperature and pressure controls during the purging process. The material undergoes agitation or specific temperature treatments during processing that cause the cannabinoids to crystallize, creating the opaque, textured appearance. This process helps preserve a robust terpene profile while creating a user-friendly consistency.
+    
+    Consumption Guidance:
+    This concentrate is designed for vaporization at precise temperatures, typically using a dab rig, electronic nail, or specialized vaporizer. The workable texture allows for easy portioning with dab tools. Due to its high potency, very small amounts are recommended, particularly for those new to concentrates.
+    
+    Storage:
+    Store in a cool, dark place in an airtight, non-stick silicone or glass container. While refrigeration can help preserve terpenes longer, wax concentrates are generally stable at room temperature and easier to handle when not cold.
+        `,
+      },
+      {
+        id: 504,
+        name: "1g Butane Wax",
+        img: "/butane-wax.jpeg",
+        price: 15,
+        quantity: 1,
+        details: {
+          1: 'BHO (Butane Hash Oil) concentrate',
+          2: 'Entry-level price point option',
+          3: 'Specifically labeled extraction method',
+          4: 'Wax consistency'
+        },
+        des: `
+    About 1g Butane Wax
+    
+    Butane wax is our entry-level concentrate option, offering good potency at an accessible price point. This 1-gram unit is produced specifically using butane hydrocarbon extraction, resulting in a standard wax consistency that's versatile and easy to work with.
+    
+    Product Highlights:
+    • Value-oriented concentrate option
+    • Standard butane extraction (BHO)
+    • Opaque, waxy consistency
+    • Typically ranges from 60-75% total cannabinoids
+    • Good introduction to cannabis concentrates
+    
+    Production Method:
+    This product is created through the industry-standard closed-loop butane extraction process, where the solvent strips cannabinoids and terpenes from plant material. It undergoes proper purging to remove residual solvents while developing its characteristic wax consistency. This cost-effective method allows for a more accessible price point while maintaining quality standards.
+    
+    Consumption Guidance:
+    This concentrate is designed for vaporization at precise temperatures, typically using a dab rig, electronic nail, or specialized vaporizer. The manageable texture makes it suitable for beginners to concentrates. Due to its potency, very small amounts are recommended for initial use.
+    
+    Storage:
+    Store in a cool, dark place in an airtight, non-stick silicone or glass container. While refrigeration can help preserve freshness longer, this concentrate is stable at room temperature and easier to handle when not cold.
+        `,
+      },
+      {
+        id: 505,
+        name: "1g CO2 Wax",
+        img: "/co2-wax.jpeg",
+        price: 18,
+        quantity: 1,
+        details: {
+          1: 'CO2 extraction method',
+          2: 'Solventless extraction alternative',
+          3: 'Mid-tier price point option',
+          4: 'Wax consistency'
+        },
+        des: `
+    About 1g CO2 Wax
+    
+    CO2 wax offers consumers a concentrate option produced without traditional hydrocarbon solvents. This 1-gram unit is created using supercritical carbon dioxide extraction, resulting in a clean product with well-preserved terpene profiles at a mid-range price point.
+    
+    Product Highlights:
+    • Produced without hydrocarbon solvents
+    • Environmentally friendlier extraction method
+    • Clean flavor profile
+    • Typically ranges from 65-80% total cannabinoids
+    • Popular alternative for the health-conscious consumer
+    
+    Production Method:
+    This concentrate is produced using supercritical CO2 extraction, which uses pressure and carbon dioxide as the extraction medium rather than hydrocarbon solvents. The process can be precisely tuned to target specific compounds, resulting in a clean extract that requires minimal post-processing. The resulting oil is then processed into a wax consistency through controlled temperature manipulation, providing an accessible texture while maintaining the benefits of CO2 extraction.
+    
+    Consumption Guidance:
+    This concentrate is designed for vaporization at precise temperatures, typically using a dab rig, electronic nail, or specialized vaporizer. Many consumers prefer CO2 extracts for their clean flavor profile and solventless production method. Due to its potency, very small amounts are recommended, particularly for those new to concentrates.
+    
+    Storage:
+    Store in a cool, dark place in an airtight, non-stick silicone or glass container. While refrigeration can help preserve terpenes longer, room temperature storage is acceptable for short-term use. The absence of residual hydrocarbons makes this product somewhat more stable than BHO concentrates.
+        `,
+      },
+      {
+        id: 601,
+        name: "Absolute Extracts OG Kush",
+        img: "/absolute-extracts-og-kush.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: 'THC content: 70.21%',
+          2: 'Strain: OG Kush',
+          3: 'High potency extract',
+          4: 'Brand: Absolute Extracts'
+        },
+        des: `
+    About Absolute Extracts OG Kush
+    
+    This premium cannabis oil cartridge from Absolute Extracts features the classic OG Kush strain, known for its legendary status among cannabis enthusiasts. With a verified THC content of 70.21%, this cartridge delivers potent effects in a convenient, ready-to-use format.
+    
+    Product Highlights:
+    • High-potency cannabis oil (70.21% THC)
+    • Strain-specific extraction preserving the authentic OG Kush profile
+    • Full-spectrum extract containing natural cannabis terpenes
+    • Compatible with standard 510-thread batteries
+    • Consistent dosing and effects
+    
+    Strain Information:
+    OG Kush is a legendary strain known for its distinctive aroma combining notes of fuel, skunk, and spice. The effects typically include deep relaxation with euphoria, making it popular for evening use. The strain has become a cornerstone of cannabis culture and breeding programs.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). Start with a small inhalation, especially if sensitive to THC or new to high-potency products. Wait 5-10 minutes between inhalations to gauge effects. The high THC content makes this product best suited for consumers with established tolerance.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
+        `,
+      },
+      {
+        id: 602,
+        name: "Pure Cure",
+        img: "/pure-cure.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: 'THC content: 71.72%',
+          2: 'High potency extract',
+          3: 'Premium cannabis oil',
+          4: 'Brand: Pure Cure'
+        },
+        des: `
+    About Pure Cure
+    
+    Pure Cure delivers a premium cannabis extract with exceptional potency, testing at 71.72% THC. This high-quality oil cartridge provides potent effects and a clean, refined experience in a convenient form factor.
+    
+    Product Highlights:
+    • Superior potency cannabis oil (71.72% THC)
+    • Clean, refined extraction process
+    • Full-spectrum oil preserving natural cannabis compounds
+    • Compatible with standard 510-thread batteries
+    • Consistent dosing and reliable effects
+    
+    Brand Information:
+    Pure Cure focuses on creating clean, high-potency cannabis extracts with meticulous attention to quality. Their extraction process aims to preserve the full spectrum of cannabinoids and terpenes while removing unwanted plant materials and impurities, resulting in a refined product that delivers pure effects.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). Due to its high potency, start with a very small inhalation, especially if sensitive to THC or new to concentrated products. Wait 5-10 minutes between inhalations to gauge effects. This high-THC product is intended for consumers with established tolerance.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
+        `,
+      },
+      {
+        id: 603,
+        name: "Eureka Blue Dream Sativa",
+        img: "/eureka-blue-dream.jpeg",
+        price: 28,
+        quantity: 1,
+        details: {
+          1: 'THC content: 53.63%',
+          2: 'Strain: Blue Dream (Sativa)',
+          3: 'Mid-high potency extract',
+          4: 'Brand: Eureka'
+        },
+        des: `
+    About Eureka Blue Dream Sativa
+    
+    This Eureka cartridge features the beloved Blue Dream strain in a convenient vaporizer format. Testing at 53.63% THC, this sativa-dominant extract delivers the strain's characteristic effects with moderate-to-high potency in a reliable cartridge form.
+    
+    Product Highlights:
+    • Sativa-dominant Blue Dream extract (53.63% THC)
+    • Strain-specific terpene profile
+    • Balanced potency suitable for various experience levels
+    • Compatible with standard 510-thread batteries
+    • Produced by established brand Eureka
+    
+    Strain Information:
+    Blue Dream is a popular sativa-dominant hybrid known for its balanced effects that blend cerebral stimulation with gentle body relaxation. The strain typically exhibits a sweet berry aroma inherited from its Blueberry lineage, combined with the energetic qualities of Haze genetics. Blue Dream is often appreciated for daytime use due to its uplifting qualities that don't typically overwhelm users.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). The moderate-high potency makes this more accessible than very high THC products, but new users should still start with a small inhalation. Wait 5-10 minutes between draws to assess effects before continuing.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
+        `,
+      },
+      {
+        id: 604,
+        name: "Eureka Skywalker Indica",
+        img: "/eureka-skywalker.jpeg",
+        price: 25,
+        quantity: 1,
+        details: {
+          1: 'THC content: 52.60%',
+          2: 'Strain: Skywalker (Indica)',
+          3: 'Mid-high potency extract',
+          4: 'Brand: Eureka'
+        },
+        des: `
+    About Eureka Skywalker Indica
+    
+    This Eureka cartridge features the heavy-hitting Skywalker strain in a convenient vaporizer format. With 52.60% THC, this indica-dominant extract delivers relaxing effects and the strain's distinctive profile in a reliable, easy-to-use cartridge.
+    
+    Product Highlights:
+    • Indica-dominant Skywalker extract (52.60% THC)
+    • Strain-specific terpene profile
+    • Balanced potency suitable for various experience levels
+    • Compatible with standard 510-thread batteries
+    • Value-priced option from established brand Eureka
+    
+    Strain Information:
+    Skywalker is a potent indica strain known for its deeply relaxing effects. A cross between Blueberry and Mazar strains, it typically exhibits earthy, spicy, and diesel notes with subtle sweet undertones. The effects tend to be physically soothing and mentally calming, making it popular for evening use, stress relief, and relaxation.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). The moderate-high potency provides substantial effects without being overwhelming for most experienced users. Start with a small inhalation and wait 5-10 minutes between draws to assess effects. Best suited for evening or relaxation-focused sessions due to its indica properties.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
+        `,
+      },
+      {
+        id: 605,
+        name: "Tetra Gold Classic",
+        img: "/tetra-gold-classic.jpeg",
+        price: 20,
+        quantity: 1,
+        details: {
+          1: 'THC content: 46.58%',
+          2: 'Classic blend',
+          3: 'Mid-range potency extract',
+          4: 'Brand: Tetra Gold'
+        },
+        des: `
+    About Tetra Gold Classic
+    
+    Tetra Gold Classic offers a reliable cannabis experience at an accessible price point. With 46.58% THC, this mid-range potency cartridge provides balanced effects in a consistent, value-oriented product.
+    
+    Product Highlights:
+    • Moderate potency cannabis oil (46.58% THC)
+    • Balanced cannabinoid profile
+    • Entry-level price point
+    • Compatible with standard 510-thread batteries
+    • Consistent quality from batch to batch
+    
+    Brand Information:
+    Tetra Gold focuses on delivering reliable cannabis extracts at competitive price points. Their Classic line features standard blends with verified potency, making them a good option for those seeking quality without premium pricing.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). The moderate THC level makes this product more approachable for those with average tolerance. Start with a small inhalation and wait 5-10 minutes between draws to assess effects. The balanced potency makes this suitable for various consumption occasions.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
+        `,
+      },
+      {
+        id: 606,
+        name: "Zen Pen OG Kush",
+        img: "/zen-pen-og-kush.jpeg",
+        price: 18,
+        quantity: 1,
+        details: {
+          1: 'THC content: 24.36%',
+          2: 'Strain: OG Kush',
+          3: 'Lower potency, entry-level option',
+          4: 'Brand: Zen Pen'
+        },
+        des: `
+    About Zen Pen OG Kush
+    
+    Zen Pen offers an accessible entry point to cannabis vaping with this OG Kush cartridge. At 24.36% THC, this product provides milder effects suitable for beginners, microdosing, or those who prefer a gentler experience.
+    
+    Product Highlights:
+    • Lower potency cannabis oil (24.36% THC)
+    • OG Kush strain-specific formulation
+    • Budget-friendly price point
+    • Compatible with standard 510-thread batteries
+    • Good option for new users or sensitive consumers
+    
+    Strain Information:
+    OG Kush is a legendary strain known for its distinctive aroma combining notes of fuel, skunk, and spice. While the original strain is potent, this lower-concentration formulation provides a more gentle introduction to its characteristic effects, which typically include mood elevation and relaxation.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). The lower THC content makes this product suitable for cannabis newcomers, those with lower tolerance, or for situations where milder effects are desired. For experienced users, this can be a good option for microdosing or maintaining a subtle effect throughout the day.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
+        `,
+      },
+      {
+        id: 607,
+        name: "Humboldt Farms THC Cartridges 710 Kingpen King Louis OG",
+        img: "/humboldt-farms-king-louis-og.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: 'Premium brand collaboration',
+          2: 'Strain: King Louis OG',
+          3: 'High-end cannabis oil',
+          4: 'Brands: Humboldt Farms and Kingpen'
+        },
+        des: `
+    About Humboldt Farms THC Cartridges 710 Kingpen King Louis OG
+    
+    This premium cartridge represents a collaboration between Humboldt Farms and the acclaimed 710 Kingpen brand, featuring the royal King Louis OG strain. This high-end product delivers exceptional quality and potent effects in a reliable cartridge format.
+    
+    Product Highlights:
+    • Premium cannabis oil from established California producers
+    • King Louis OG strain-specific formulation
+    • Full-spectrum extraction preserving natural cannabis compounds
+    • Compatible with standard 510-thread batteries
+    • Collaboration between trusted cannabis brands
+    
+    Strain Information:
+    King Louis OG (also known as King Louis XIII) is an indica-dominant strain with royal heritage, known for its powerful relaxing effects and distinctive OG aroma profile with notes of pine, earth, and skunk. The strain is often sought for its deeply calming properties and is popular for evening use.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). As a premium product, the potency is likely substantial. Start with a small inhalation, especially if sensitive to THC or new to concentrated products. Wait 5-10 minutes between inhalations to gauge effects. Best suited for experienced consumers looking for potent effects.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of the premium oil's potency and flavor profile, avoid leaving in extremely hot environments such as cars during summer.
+        `,
+      },
+      {
+        id: 608,
+        name: "Honey Vape GG4",
+        img: "/honey-vape-gg4.jpeg",
+        price: 20,
+        quantity: 1,
+        details: {
+          1: 'Strain: GG4 (Gorilla Glue #4)',
+          2: 'Value-priced option',
+          3: 'Known for smooth oil consistency',
+          4: 'Brand: Honey Vape'
+        },
+        des: `
+    About Honey Vape GG4
+    
+    Honey Vape presents their take on the powerful GG4 (formerly known as Gorilla Glue #4) strain in their signature smooth-hitting oil formula. This cartridge delivers the strain's renowned potent effects at an accessible price point.
+    
+    Product Highlights:
+    • GG4 strain-specific cannabis oil
+    • Smooth, consistent oil formulation
+    • Value-oriented pricing
+    • Compatible with standard 510-thread batteries
+    • Produced by established brand Honey Vape
+    
+    Strain Information:
+    GG4 (Gorilla Glue #4) is a hybrid strain that gained fame for its high potency and distinctive effects that leave users feeling "glued" to the couch. The strain typically exhibits a complex aroma blending earthy coffee notes with hints of pine and chocolate. GG4 is known for producing powerful relaxation with euphoric elements, making it popular for unwinding.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). While modestly priced, GG4 extracts can be quite potent, so start with a small inhalation, especially if new to this strain. Wait 5-10 minutes between draws to assess effects. The relaxing properties make this product most suitable for leisure time or evening use.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
+        `,
+      },
+      {
+        id: 609,
+        name: "Stiiizy Granddaddy Purp",
+        img: "/stiiizy-granddaddy-purp.jpeg",
+        price: 25,
+        quantity: 1,
+        details: {
+          1: 'Strain: Granddaddy Purple',
+          2: 'Pod system (requires Stiiizy battery)',
+          3: 'Proprietary pod format',
+          4: 'Brand: Stiiizy'
+        },
+        des: `
+    About Stiiizy Granddaddy Purp
+    
+    This Stiiizy pod features the legendary Granddaddy Purple strain in the brand's proprietary pod system. Known for their sleek design and reliable performance, Stiiizy delivers the classic GDP experience in their signature easy-to-use format.
+    
+    Product Highlights:
+    • Granddaddy Purple strain-specific formulation
+    • Proprietary pod system design
+    • No-button operation with compatible Stiiizy battery
+    • Consistent vapor production
+    • Popular California brand known for quality
+    
+    Strain Information:
+    Granddaddy Purple (GDP) is a famous indica strain known for its distinctive appearance and effects. The strain typically exhibits sweet grape and berry flavors with earthy undertones. Effects are characteristically indicative, often producing deep physical relaxation and a sense of tranquility. GDP is frequently chosen for evening use and relaxation.
+    
+    Consumption Guidance:
+    This product requires a Stiiizy battery (sold separately) and is not compatible with standard 510-thread batteries. The pod system provides easy operation—simply inhale to activate. Start with a small draw and wait 5-10 minutes between inhalations to gauge effects. The indica properties make this most suitable for relaxation and evening use.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the pod in its original packaging when not in use to protect the intake holes. The proprietary pod design helps prevent leakage, but extreme heat should still be avoided to maintain oil quality.
+        `,
+      },
+      {
+        id: 610,
+        name: "Gold Drop Gold Standard",
+        img: "/gold-drop-gold-standard.jpeg",
+        price: 25,
+        quantity: 1,
+        details: {
+          1: 'Premium extract brand',
+          2: 'High-quality refined oil',
+          3: 'Standard line from premium manufacturer',
+          4: 'Brand: Gold Drop'
+        },
+        des: `
+    About Gold Drop Gold Standard
+    
+    Gold Drop's Gold Standard line represents a balance between premium quality and accessible pricing from one of the cannabis industry's respected extract producers. This cartridge delivers refined cannabis oil with consistent effects and flavor.
+    
+    Product Highlights:
+    • High-quality refined cannabis oil
+    • Balanced potency-to-price ratio
+    • Clean, consistent extraction
+    • Compatible with standard 510-thread batteries
+    • From award-winning extract producer Gold Drop
+    
+    Brand Information:
+    Gold Drop has built a reputation for creating premium cannabis extracts using refined techniques. Their Gold Standard line offers their extraction expertise at a more accessible price point than their ultra-premium offerings, while maintaining their commitment to quality and consistency.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). The refined oil likely provides substantial effects with clean flavor. Start with a small inhalation and wait 5-10 minutes between draws to assess effects. The Gold Standard line aims to provide reliable effects for regular cannabis consumers.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve the refined oil's potency and flavor profile.
+        `,
+      },
+      {
+        id: 611,
+        name: "Brass Knuckles THC Oil Cartridges",
+        img: "/brass-knuckles-cartridge.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: 'Premium high-potency brand',
+          2: 'High-end hardware and oil',
+          3: 'Known for potent effects',
+          4: 'Brand: Brass Knuckles'
+        },
+        des: `
+    About Brass Knuckles THC Oil Cartridges
+    
+    Brass Knuckles is renowned for providing potent cannabis oil cartridges with distinctive hardware design. This premium product delivers powerful effects and represents the higher end of the vape cartridge market.
+    
+    Product Highlights:
+    • Premium, high-potency cannabis oil
+    • Distinctive cartridge hardware with improved airflow
+    • Strong, long-lasting effects
+    • Compatible with standard 510-thread batteries
+    • Established brand known for potency
+    
+    Brand Information:
+    Brass Knuckles has built a reputation for creating some of the more potent vape products on the market. Their cartridges typically feature higher cannabinoid content and distinctive hardware designed to maximize vapor production and oil delivery. The brand focuses on delivering powerful effects for experienced consumers.
+    
+    Consumption Guidance:
+    This cartridge requires a compatible battery (sold separately). Due to the brand's reputation for potency, start with a very small inhalation, especially if new to high-potency products. Wait 5-10 minutes between draws to assess effects. Brass Knuckles products are best suited for experienced cannabis consumers with established tolerance.
+    
+    Storage:
+    Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
+        `,
+      }
+    ];
+    
+    const vaporizerProducts = [
+      {
+        id: 701,
+        name: "KandyPens Special K Vaporizer",
+        img: "/kandypens-special-k.jpeg",
+        price: 60,
+        quantity: 1,
+        details: {
+          1: 'Premium vaporizer pen',
+          2: 'Compatible with concentrates',
+          3: 'High-end hardware',
+          4: 'Brand: KandyPens'
+        },
+        des: `
+    About KandyPens Special K Vaporizer
+    
+    The KandyPens Special K Vaporizer represents premium concentrate consumption technology in a portable, pen-style format. This high-quality device delivers exceptional vapor production and flavor from various cannabis concentrates.
+    
+    Product Highlights:
+    • Premium concentrate vaporizer
+    • Multiple temperature settings for customized experience
+    • Quartz or ceramic heating chamber options
+    • Long-lasting battery with USB charging
+    • Sleek, discreet design for portability
+    
+    Technical Specifications:
+    The Special K typically features a powerful battery with multiple heat settings, allowing users to customize their experience based on the concentrate being used and desired effects. The heating chamber is designed for efficient vaporization of concentrates like wax, shatter, budder, and similar extracts. Premium materials throughout ensure durability and clean flavor.
+    
+    Usage Guidance:
+    This device is designed for use with cannabis concentrates only—not for dry herb or oil cartridges. Load a small amount of concentrate (rice grain size) directly into the heating chamber. Press the button to activate heating while inhaling slowly and steadily. Clean the chamber regularly for optimal performance and flavor.
+    
+    What's Included:
+    • Special K vaporizer device
+    • USB charging cable
+    • Concentrate tool
+    • Cleaning supplies
+    • Instruction manual
+    • Warranty card
+        `,
+      },
+      {
+        id: 702,
+        name: "Canna Blast Vape Pen Kit",
+        img: "/canna-blast-kit.jpeg",
+        price: 60,
+        quantity: 1,
+        details: {
+          1: 'Complete starter kit',
+          2: 'Versatile vaporizer system',
+          3: 'Multiple attachments included',
+          4: 'Brand: Canna Blast'
+        },
+        des: `
+    About Canna Blast Vape Pen Kit
+    
+    The Canna Blast Vape Pen Kit provides a comprehensive vaping solution with versatility for different cannabis consumption preferences. This complete kit includes multiple attachments and accessories to accommodate various products and consumption styles.
+    
+    Product Highlights:
+    • All-in-one starter kit for cannabis vaporization
+    • Multiple attachments for different consumption methods
+    • Powerful battery with variable voltage settings
+    • Complete accessory package
+    • Suitable for beginners and experienced users alike
+    
+    Technical Specifications:
+    The Canna Blast kit typically features a high-capacity rechargeable battery with variable voltage capabilities to accommodate different cartridges and attachments. The kit includes components for concentrates and cartridge use, with user-friendly controls designed for intuitive operation. The modular design allows for customization based on user preferences.
+    
+    Usage Guidance:
+    This versatile kit can be configured for various cannabis products. For cartridges, simply attach the compatible cartridge to the battery and inhale (some models require button activation). For concentrates, use the included concentrate attachment following the specific loading instructions. Refer to the included manual for detailed usage instructions for each component.
+    
+    What's Included:
+    • Canna Blast battery
+    • Cartridge attachment
+    • Concentrate attachment
+    • USB charging cable
+    • Storage case
+    • Loading/cleaning tools
+    • Comprehensive instruction manual
+        `,
+      },
+      {
+        id: 703,
+        name: "Innokin Endura T20S",
+        img: "/innokin-endura-t20s.jpeg",
+        price: 50,
+        quantity: 1,
+        details: {
+          1: 'Versatile vaping device',
+          2: 'Easy-to-use system',
+          3: 'Quality manufacturing',
+          4: 'Brand: Innokin'
+        },
+        des: `
+    About Innokin Endura T20S
+    
+    The Innokin Endura T20S is a reliable, user-friendly vaporizer designed for consistent performance and ease of use. While originally designed for e-liquids, this versatile device has been adopted for compatible cannabis oils due to its consistent performance and quality construction.
+    
+    Product Highlights:
+    • Straightforward operation ideal for beginners
+    • Consistent vapor production
+    • 1500mAh battery capacity
+    • Quick charging via micro-USB
+    • Durable construction from established manufacturer
+    
+    Technical Specifications:
+    The Endura T20S features a substantial 1500mAh internal battery that provides extended use between charges. The device uses a top-fill tank system for easy refilling when used with compatible oils. The mouthpiece is designed for comfortable use, and the entire unit is engineered for reliability and consistent performance.
+    
+    Usage Guidance:
+    This device works best with thinner cannabis oils and may not be compatible with all cartridges or concentrates. For refillable applications, fill only with compatible products designed for this type of device. The single-button operation makes it straightforward to use—five clicks to turn on/off, and hold the button while inhaling.
+    
+    What's Included:
+    • Endura T20S device
+    • Tank/atomizer
+    • Replacement coil
+    • Micro-USB charging cable
+    • User manual
+    • Warranty information
+        `,
+      },
+      {
+        id: 704,
+        name: "V2 Pro Series 3 Vaporizer",
+        img: "/v2-pro-series-3.jpeg",
+        price: 55,
+        quantity: 1,
+        details: {
+          1: 'Multi-purpose vaporizer',
+          2: '3-in-1 compatibility',
+          3: 'Magnetic connections',
+          4: 'Brand: V2'
+        },
+        des: `
+    About V2 Pro Series 3 Vaporizer
+    
+    The V2 Pro Series 3 is a versatile multi-purpose vaporizer featuring interchangeable cartridges for different materials. This innovative device accommodates various cannabis products with a simple magnetic cartridge system and intuitive operation.
+    
+    Product Highlights:
+    • 3-in-1 capability with interchangeable cartridges
+    • Magnetic connections for easy cartridge swapping
+    • Smart technology recognizes different cartridge types
+    • Single-button operation
+    • Compact design for portability
+    
+    Technical Specifications:
+    The V2 Pro Series 3 features a 650mAh battery with pass-through charging capability, allowing use while charging. The device automatically detects which type of cartridge is inserted and adjusts settings accordingly. The magnetic connections eliminate threading issues and make changing between materials quick and simple.
+    
+    Usage Guidance:
+    Different cartridges are used depending on your preferred material. For oils, use the liquid cartridge; for concentrates, use the concentrate cartridge; for dry herb, use the loose leaf cartridge (cartridges may be sold separately). Each cartridge type has specific loading instructions detailed in the user manual. The device is activated by pressing the button while inhaling.
+    
+    What's Included:
+    • V2 Pro Series 3 battery
+    • Magnetic charging cable
+    • At least one cartridge (specific types may vary)
+    • Cleaning tools
+    • User manual
+    • Warranty card
+        `,
+      },
+      {
+        id: 705,
+        name: "Apollo Ohm Go Vaping Kit",
+        img: "/apollo-ohm-go.jpeg",
+        price: 45,
+        quantity: 1,
+        details: {
+          1: 'Mid-range complete kit',
+          2: 'Sub-ohm capabilities',
+          3: 'Versatile system',
+          4: 'Brand: Apollo'
+        },
+        des: `
+    About Apollo Ohm Go Vaping Kit
+    
+    The Apollo Ohm Go provides a balanced combination of performance and simplicity in a complete kit format. This mid-range device delivers reliable vapor production with enough features to satisfy experienced users while remaining accessible to newcomers.
+    
+    Product Highlights:
+    • Complete kit with all necessary components
+    • Sub-ohm capability for enhanced vapor production
+    • 1900mAh battery capacity for extended use
+    • Top-fill tank design for easy refilling
+    • Quality construction from established brand Apollo
+    
+    Technical Specifications:
+    The Ohm Go features a substantial 1900mAh battery that balances power with reasonable charging times. The included tank utilizes sub-ohm technology for efficient vaporization of compatible oils. Temperature protection and short-circuit protection are built in for safety. The device offers a more substantial feel than pen-style vaporizers while maintaining portability.
+    
+    Usage Guidance:
+    This device works best with thinner cannabis oils designed for sub-ohm systems. The top-fill tank design makes refilling straightforward—simply unscrew the top cap and carefully add compatible oil to the tank, avoiding the center airflow tube. Five clicks of the button turns the device on/off, and the button is held during inhalation.
+    
+    What's Included:
+    • Apollo Ohm Go battery
+    • Sub-ohm tank
+    • USB charging cable
+    • Replacement coil
+    • User manual
+    • Warranty information
+        `,
+      },
+      {
+        id: 706,
+        name: "XEO Void",
+        img: "/xeo-void.jpeg",
+        price: 40,
+        quantity: 1,
+        details: {
+          1: 'All-in-one system',
+          2: 'Leak-resistant design',
+          3: 'Versatile performance',
+          4: 'Brand: XEO'
+        },
+        des: `
+    About XEO Void
+    
+    The XEO Void is an all-in-one vaporizer system known for its leak-resistant design and versatile performance capabilities. This integrated device provides a self-contained solution for vaporizing compatible cannabis oils with minimal maintenance concerns.
+    
+    Product Highlights:
+    • Integrated all-in-one design (no separate tank/battery)
+    • Leak-resistant top-fill system
+    • 1500mAh battery capacity
+    • Adjustable airflow for customized draws
+    • Available in multiple color options
+    
+    Technical Specifications:
+    The Void features a 1500mAh internal battery integrated with a 2ml capacity tank in a unified design that eliminates connection issues. The top-fill system is engineered to minimize leakage problems common in other devices. Adjustable airflow allows users to customize the draw resistance and vapor production to their preference.
+    
+    Usage Guidance:
+    This device works best with thinner cannabis oils. To fill, twist open the top cap and carefully add oil around the edges (not in the center airflow tube). Five clicks of the button powers the device on/off, and the button is held while inhaling. The airflow can be adjusted by rotating the control ring near the mouthpiece.
+    
+    What's Included:
+    • XEO Void all-in-one device
+    • Two coils (typically 0.6Ω and 1.0Ω)
+    • USB charging cable
+    • User manual
+    • Warranty information
+        `,
+      },
+      {
+        id: 707,
+        name: "AirVape OM Mini Vaporizer",
+        img: "/airvape-om-mini.jpeg",
+        price: 35,
+        quantity: 1,
+        details: {
+          1: 'Compact cartridge battery',
+          2: 'Magnetic adapter system',
+          3: 'Variable voltage settings',
+          4: 'Brand: AirVape'
+        },
+        des: `
+    About AirVape OM Mini Vaporizer
+    
+    The AirVape OM Mini is a compact, feature-rich battery designed specifically for use with pre-filled cannabis oil cartridges. This pocket-sized device combines functionality with discreet design for on-the-go consumption.
+    
+    Product Highlights:
+    • Ultra-compact size for maximum discretion
+    • Magnetic adapter system for quick cartridge changes
+    • Variable voltage settings (2.4V, 3.2V, 4.0V)
+    • Compatible with standard 510-thread cartridges
+    • Premium materials and construction
+    
+    Technical Specifications:
+    Despite its small size, the OM Mini packs multiple voltage settings to customize the vaporization experience based on oil thickness and flavor preference. The magnetic connection system eliminates threading issues and makes changing cartridges quick and convenient. The device automatically activates when inhalation is detected for buttonless operation.
+    
+    Usage Guidance:
+    This device is designed specifically for pre-filled oil cartridges with 510 threading. Attach the magnetic adapter to your cartridge, then connect it to the battery. Triple-click the button to cycle through voltage settings (typically indicated by different LED colors). The device activates automatically when you inhale, with no need to hold a button during use.
+    
+    What's Included:
+    • AirVape OM Mini battery
+    • Magnetic adapter
+    • USB charging cable
+    • User manual
+    • Warranty card
+        `,
+      },
+    ];
+    
+  
 export default products;
