@@ -5,6 +5,8 @@ import { createContext, useContext, useReducer, useEffect, Dispatch } from "reac
 export interface CartItem {
   id: number;
   name: string;
+  slug: string;
+  category: string;
   img: string;
   price: number;
   quantity: number;

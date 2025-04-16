@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaWhatsapp, FaTelegram, FaPhone, FaLock } from "react-icons/fa"; // Import Font Awesome icons
 
 export default function Footer() {
   const pathname = usePathname();
@@ -31,12 +32,12 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <div className="flex flex-col gap-3 text-center md:text-left">
-          <h2 className="text-xl font-semibold mb-2">Quick Links</h2>
+          <h2 className="text-xl font-semibold mb-2 text-black">Quick Links</h2>
           {navItems.map(({ label, href }) => (
             <Link key={href} href={href}>
               <p
                 className={`hover:underline ${
-                  pathname === href ? "text-white font-bold" : "text-white/80"
+                  pathname === href ? "text-white font-bold" : "text-black"
                 }`}
               >
                 {label}
@@ -47,18 +48,26 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
-          <ul className="space-y-1 text-white/90 text-lg">
-          <li>🟢 WhatsApp +1 (352) 212 4176</li>
-            <li>📧 findmegreens@gmail.com</li>
-            <li>💬 Telegram: +1 (352) 212 4176</li>
-            <li>🔐 Signal: findmegreen.01</li>
+          <h2 className="text-xl font-semibold mb-2 text-black">Contact Us</h2>
+          <ul className="space-y-1 text-black text-lg">
+            <li className="flex items-center gap-2">
+              <FaWhatsapp color="black"/> WhatsApp: +1 (352) 212 4176
+            </li>
+            <li className="flex items-center gap-2">
+              <FaPhone /> Phone: +1 (352) 212 4176
+            </li>
+            <li className="flex items-center gap-2">
+              <FaTelegram /> Telegram: +1 (352) 212 4176
+            </li>
+            <li className="flex items-center gap-2">
+              <FaLock /> Signal: findmegreen.01
+            </li>
           </ul>
         </div>
       </div>
 
       {/* Bottom bar */}
-      <div className="mt-10 text-center text-sm text-white/70">
+      <div className="mt-10 text-center text-sm text-black">
         © {new Date().getFullYear()} Buds delivery. All rights reserved.
       </div>
     </footer>

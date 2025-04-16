@@ -14,8 +14,8 @@ export default function Header() {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/products", label: "Shop" },
     { href: "/blog", label: "Blog" },
+    { href: "/products", label: "Shop" },
     { href: "/about", label: "About Us" },
     { href: "/privacy", label: "Privacy Policy" },
   ];
@@ -39,7 +39,7 @@ export default function Header() {
               <p
                 className={`${
                   pathname === href ? "text-white" : "text-black"
-                } text-base lg:text-xl hover:text-white`}
+                } text-base lg:text-xl hover:text-white font-medium`}
               >
                 {label}
               </p>

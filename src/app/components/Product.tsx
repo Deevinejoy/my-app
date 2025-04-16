@@ -6,6 +6,8 @@ import { useRouter } from "next/navigation"; // Import useRouter
 interface Product {
   id: number;
   name: string;
+  slug: string;
+  category: string;
   img: string;
   price: number;
   quantity: number;
@@ -17,7 +19,7 @@ interface Product {
 
 export default function Product({ product }: { product: Product }) {
   const { cart, dispatch } = useCart(); // Access cart and dispatch
-  const router = useRouter(); // Initialize useRouter
+ 
 
   // Check if the product is already in the cart
   const isInCart = cart.some((item) => item.id === product.id);
