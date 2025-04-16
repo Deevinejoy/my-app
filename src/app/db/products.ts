@@ -241,7 +241,7 @@ const products = [
       name: "Blackberry Zkittlez",
       slug: "blackberry-zkittlez",
       category: "weed",
-      img: "/blackberry_zkittlez.jpg",
+      img: "/BBZ.jpg",
       price: 18,
       quantity: 1,
       details: {
@@ -299,6 +299,7 @@ const products = [
       When consumed, Nepalese Temple Hash provides a smooth, long-lasting high that is deeply relaxing and introspective, perfect for unwinding or engaging in creative and contemplative activities. The full-spectrum nature preserves the plant's rich cannabinoid and terpene profiles, delivering a balanced and complex experience that enthusiasts appreciate for its authenticity.</p>
     `,
   },
+
   {
     id: 17,
     name: "Purple Haze",
@@ -315,6 +316,28 @@ const products = [
     },
     des: `
       <p>Purple Haze is a sativa-dominant strain that is known for its uplifting and euphoric effects. It has a sweet and fruity flavor profile, making it a popular choice among cannabis enthusiasts. With chunky green nugs and a hint of purple, it contains 60% sativa/ 40% indica.</p>
+    `,
+  },
+  {
+    id: 800,
+    name: "Runtz",
+    slug: "runtz",
+    category: "weed",
+    img:"https://res.cloudinary.com/dajo3lcto/image/upload/v1744841227/Runtz_single_taowrn.jpg",
+    price: 22,
+    quantity: 1,
+    details: {
+      1: 'Sweet, fruity, candy-like flavour profile',
+      2: 'Cross of Zkittlez and Gelato strains',
+      3: 'Medium size nugs, covered with sticky trichomes',
+      4: 'THC: 25-32%'
+    },
+    des: `
+ 
+
+<h3>Flavour</h3><p>Named for the iconic candy, Runtz strain brings on a super delicious fruity flavor with tropical citrus and sour berries galore. The aroma is very similar, although with a sharp spicy pineapple effect that turns slightly pungent as the sticky little nugs are broken apart and burned.</p>
+<h3>Effects</h3>
+      <p>The Runtz high comes roaring in a few minutes after your final toke, first hitting your head with a calming lift before spreading its tingly tendrils throughout the rest of your body. As the Runtz high expands, you’ll begin to feel a deeply calming effect spread through your limbs, leaving you totally sedated and couch-locked, immovable for hours and hours on end before you finally fall into a deep and peaceful sleep.</p>
     `,
   },
   {
@@ -347,7 +370,7 @@ const products = [
     name: "THC 100mg Hemp Seed Oil Capsules",
     slug: "thc-100mg-hemp-seed-oil-capsules",
     category: "concentrates",
-    img: "/thc_capsules.jpg",
+    img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744839711/100MGoilcapsule_hksed6.webp",
     price: 38,
     quantity: 1,
     details: {
@@ -429,9 +452,9 @@ const products = [
   {
     id: 21,
     name: "Zigzag hash",
-    slug: "zig-zag-hash",
+    slug: "zigzag-hash",
     category: "concentrates",
-    img: "/zig_zag_hash.jpg",
+    img: "/ZigZagHash.webp",
     price: 72,
     quantity: 1,
     details: {
@@ -508,47 +531,7 @@ Formulated from the whole cannabis plant extract. We added all natural MCT oil (
    <p>Suggested Usage: Take 1-2 droppers every 3-4 hours, drop under tongue and hold for 30 seconds for maximum relief. Consult a physician for appropriate dosing.</p>
     `,
   },
-  {
-    id: 24,
-    name: "Viridesco RSO – Sativa – Kali Mist",
-    slug: "viridesco-rso-sativa-kali-mist",
-    category: "concentrates",
-    img: "/viridesco_rso.jpg",
-    price: 65,
-    quantity: 1,
-    details: {
-      1: 'Main purpose is to improve your mood, creativity, and relax your body and mind',
-      2: 'If you have depression or anxiety, then this concentrate should calm you down immediately.',
-      3: 'Effects are mellow and soothing, rather than aggressive and impulsive',
-      4: 'Independently tested at MB labs'
-    },
-    des: `
-    <h3>About Viridesco RSO - Sativa - Kali Mist<h3>
-      <p>Viridesco RSO Sativa Kali Mist combines the renowned benefits of Rick Simpson Oil (RSO) with the energizing effects of the legendary Kali Mist strain. Known for its purity and effectiveness, this RSO oil offers users a clean, uplifting experience typical of high-quality Sativa hybrids. Whether for daily wellness routines or occasional relief, Viridesco RSO Sativa Kali Mist is an excellent choice for those seeking a potent, natural supplement.
-</p>
-      <h3>Flavor Profile<h3>
-     <p>With Viridesco RSO Sativa Kali Mist, users can expect a taste that is both earthy and subtly spicy, capturing the essence of the original Kali Mist strain. Here's what to look forward to in its flavor:
-•	Earthy Undertones: Each dose has a grounding earthiness, delivering a natural and pleasant flavor.
-•	Hints of Spice: The subtle spiciness adds complexity, enhancing the overall taste profile.
-•	Smooth Finish: Its smoothness on the palate makes it easy for users to consume and enjoy.
-This unique combination of earthy and spicy notes makes Viridesco RSO Sativa Kali Mist an enjoyable and satisfying choice.
-</p>
-     <h3>Effects<h3>
-      <p>The effects of Viridesco RSO Sativa Kali Mist are characteristically uplifting, making it a great option for daytime use. Here's what users can typically expect:
-•	Energizing High: As a Sativa hybrid, this RSO oil provides an energizing high that can increase focus and mental clarity.
-•	Creativity Boost: Many users report enhanced creativity and problem-solving abilities.
-•	Mild Relaxation: Alongside its energizing effects, it also offers a balanced sense of calm, helping to ease any residual stress or tension.
-The blend of energy and relaxation makes it ideal for those who want to stay productive and alert throughout the day.
-</p>
-      <h3>enefits<h3>
-   <p>Viridesco RSO Sativa Kali Mist is more than just an energizing oil; it also has numerous wellness benefits:
-•	Pain Relief: Known for its effectiveness in pain management, this RSO oil may help reduce chronic discomfort.
-•	Mood Support: The uplifting effects make it helpful for those struggling with mood imbalances or lethargy.
-•	Natural Anti-Inflammatory: RSO oils like this one have been valued for their anti-inflammatory properties, supporting overall wellness.
-These benefits make it a versatile option for users seeking both relief and enhancement of their daily wellness.
-</p>
-    `,
-  },
+
   {
     id: 25,
     name: "Nebula Shatter -Top shelf",
@@ -603,7 +586,7 @@ These calming properties make it suitable for alleviating stress, anxiety, and p
     name: "BLISS Edibles 375mg THC Tropical",
     slug: "bliss-edibles-tropical",
     category: "Edibles",
-    img: "/BLISS_Tropical_NEW_2a.webp",
+    img: "/BLISS_Tropical_NEW.webp",
     price: 22,
     quantity: 1,
     details: {
@@ -655,7 +638,7 @@ These calming properties make it suitable for alleviating stress, anxiety, and p
     name: "2000mg Gummy – Atomic Wheelchair",
     img:"/gummy.jpg",
     slug: "2000mg-gummy-atomic-wheelchair",
-
+    category: "edibles",  
     price: 65,
     quantity: 1,
     details: {
@@ -1002,7 +985,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   {
     id: 42,
     name: "Premium Colombian Cocaine (Pure)",
-    img: "/coc.jpg",
+    img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744803890/coc_srzyum.jpg",
     slug: "pure-cocaine",
     category: "drugs",
     price: 100,
@@ -1039,7 +1022,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   {
     id: 43,
     name: "Street-Grade Cocaine (Stepped)",
-    img: "/cocaine.jpeg",
+    img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744803782/cocaine_p7g1v9.jpg",
     slug: "impure-cocaine",
     category: "drugs",
     price: 60,
@@ -1078,7 +1061,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     name: "Oxycodone (OxyContin)",
     slug: "oxycodone-oxycontin",
     category: "Opioids",
-    img: "/oxycodone.jpeg",
+    img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744815289/WhatsApp_Image_2025-04-15_at_04.35.06_oeaeun.jpg",
     price: 125,
     quantity: 1,
     details: {
@@ -1116,7 +1099,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Oxymorphone (Opana)",
       slug: "oxymorphone-opana",
       category: "Opioids",
-      img: "/oxymorphone.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828847/WhatsApp_Image_2025-04-15_at_04.37.43_nxkpbf.jpg",
       price: 140,
       quantity: 1,
       details: {
@@ -1154,7 +1137,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Hydrocodone (Vicodin)",
       slug: "hydrocodone-vicodin",
       category: "opioids",
-      img: "/hydrocodone.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828858/WhatsApp_Image_2025-04-15_at_04.44.34_zxaeas.jpg",
       price: 85,
       quantity: 1,
       details: {
@@ -1192,7 +1175,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Hydromorphone (Dilaudid)",
       slug: "hydromorphone-dilaudid",
       category: "opioids",
-      img: "/hydromorphone.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828863/WhatsApp_Image_2025-04-15_at_04.45.27_y9dwzu.jpg",
       price: 110,
       quantity: 1,
       details: {
@@ -1230,7 +1213,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Fentanyl (Duragesic)",
       slug: "fentanyl-duragesic",
       category: "opioids",
-      img: "/fentanyl.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828866/WhatsApp_Image_2025-04-15_at_04.47.26_acqe3j.jpg",
       price: 200,
       quantity: 1,
       details: {
@@ -1305,7 +1288,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Codeine",
       slug: "codeine",
       category: "opioids",
-      img: "/codeine.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828869/WhatsApp_Image_2025-04-15_at_04.57.16_v7h5iw.jpg",
       price: 50,
       quantity: 1,
       details: {
@@ -1343,7 +1326,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Methadone",
       slug: "methadone",
       category: "opioids",
-      img: "/methadone.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828874/download_t82l4h.jpg",
       price: 60,
       quantity: 1,
       details: {
@@ -1375,86 +1358,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   Methadone requires careful dosing and monitoring due to its long half-life and potential for QT interval prolongation. When used for pain management, it typically requires more frequent dosing (every 8-12 hours) than when used for opioid maintenance therapy.
       `,
     },
-    {
-      id: 109,
-      name: "Tramadol (Ultram)",
-      slug: "tramadol-ultram",
-      category: "opioids",
-      img: "/tramadol.jpeg",
-      price: 45,
-      quantity: 1,
-      details: {
-        1: 'Schedule IV controlled substance',
-        2: 'Dual-mechanism: weak opioid agonist and SNRI properties',
-        3: 'Available in immediate and extended-release (50mg-300mg)',
-        4: 'Lower abuse potential than traditional opioids'
-      },
-      des: `
-  About Tramadol (Ultram)
-  
-  Tramadol is a centrally-acting synthetic analgesic with a unique dual mechanism of action. It functions as both a weak mu-opioid receptor agonist and an inhibitor of serotonin and norepinephrine reuptake (SNRI). This combined effect provides pain relief through multiple pathways.
-  
-  Originally marketed as a non-controlled analgesic, tramadol was later classified as a Schedule IV controlled substance in recognition of its abuse potential, though this remains lower than conventional opioids. It's available in both immediate and extended-release formulations.
-  
-  Clinical Applications:
-  
-  • Moderate to moderately severe pain
-  • Chronic pain conditions
-  • Neuropathic pain
-  • Post-operative pain management
-  
-  Available Formulations:
-  
-  • Immediate-release tablets: 50mg
-  • Extended-release tablets (ConZip, Ultram ER): 100mg, 200mg, 300mg
-  • Combination product with acetaminophen (Ultracet): 37.5mg/325mg
-  
-  Tramadol requires metabolic activation via the CYP2D6 enzyme system to produce its most active metabolite, O-desmethyltramadol, which has significantly greater mu-opioid receptor affinity than the parent compound. This metabolic pathway exhibits genetic polymorphism, resulting in variable analgesic response among patients.
-      `,
-    },
-    {
-      id: 110,
-      name: "Buprenorphine (Subutex)",
-      slug: "buprenorphine-subutex",
-      category: "opioids",
-      img: "/buprenorphine.jpeg",
-      price: 180,
-      quantity: 1,
-      details: {
-        1: 'Schedule III controlled substance',
-        2: 'Partial opioid agonist with ceiling effect',
-        3: 'Available in sublingual tablets and transdermal patches',
-        4: 'Used for opioid maintenance therapy and pain management'
-      },
-      des: `
-  About Buprenorphine (Subutex)
-  
-  Buprenorphine is a partial mu-opioid receptor agonist with unique pharmacological properties that distinguish it from full agonist opioids. It exhibits high binding affinity but lower intrinsic activity at the mu-opioid receptor, producing a ceiling effect on respiratory depression while maintaining analgesic efficacy.
-  
-  When marketed as Subutex, buprenorphine is primarily used for opioid dependence treatment. For pain management, it's available as Butrans (transdermal patch) and Belbuca (buccal film). Its partial agonist properties contribute to a lower abuse potential compared to full agonists.
-  
-  Clinical Applications:
-  
-  • Medication-assisted treatment for opioid use disorder
-  • Moderate to severe chronic pain management
-  • Perioperative pain control
-  • Detoxification protocols
-  
-  Available Formulations:
-  
-  • Sublingual tablets (Subutex): 2mg, 8mg
-  • Transdermal patches (Butrans): 5mcg/hr, 7.5mcg/hr, 10mcg/hr, 15mcg/hr, 20mcg/hr
-  • Buccal film (Belbuca): 75mcg, 150mcg, 300mcg, 450mcg, 600mcg, 750mcg, 900mcg
-  
-  Buprenorphine's high binding affinity allows it to displace full agonist opioids from receptors, potentially precipitating withdrawal in opioid-dependent individuals. This property necessitates appropriate timing when transitioning patients from full agonists to buprenorphine.
-      `,
-    },
+
     {
       id: 111,
       name: "Percocet (Oxycodone/APAP)",
       slug: "percocet-oxycodone-apap",
       category: "opioids",
-      img: "/percocet.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744829872/images_2_gfpcyb.jpg",
       price: 90,
       quantity: 1,
       details: {
@@ -1493,7 +1403,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Heroin (Diacetylmorphine)",
       slug: "heroin-diacetylmorphine",
       category: "opioids",
-      img: "/heroin.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828893/download_2_cqs1yq.jpg",
       price: 0,
       quantity: 0,
       details: {
@@ -1530,12 +1440,12 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 202,
       name: "LSD (Lysergic Acid Diethylamide)",
-      img: "/lsd.jpeg",
       slug: "lsd-lysergic-acid-diethylamide",
       category: "drugs",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744829872/images_2_gfpcyb.jpg", //use percocet img,
    
-      price: 0,
-      quantity: 0,
+      price: 120,
+      quantity: 1,
       details: {
         1: 'Schedule I controlled substance (US)',
         2: 'Semi-synthetic compound derived from ergot alkaloids',
@@ -1567,54 +1477,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   
   This substance is included for informational purposes only. The manufacturing, distribution, and possession of LSD are heavily restricted and carry legal penalties in most jurisdictions worldwide.
       `,
-    },
-    {
-      id: 203,
-      name: "Heroin (Diacetylmorphine)",
-      img: "/heroin.jpeg", 
-      slug: "heroin-diacetylmorphine",
-      category: "drugs",
-
-      price: 0,
-      quantity: 0,
-      details: {
-        1: 'Schedule I controlled substance (US)',
-        2: 'Semi-synthetic opioid derived from morphine',
-        3: 'Highly addictive with severe withdrawal syndrome',
-        4: 'Used medically as diamorphine in some countries'
-      },
-      des: `
-  About Heroin (Diacetylmorphine)
-  
-  Heroin is a highly potent semi-synthetic opioid produced by acetylation of morphine, which is extracted from the opium poppy (Papaver somniferum). It is classified as a Schedule I controlled substance in the United States, indicating no currently accepted medical use and a high potential for abuse.
-  
-  First synthesized in 1874 by English chemist C.R. Alder Wright, heroin was later commercialized by Bayer Pharmaceutical Company in 1898 as a supposedly less addictive alternative to morphine. However, its high potency and rapid onset of action contribute to its significant abuse liability and addiction potential.
-  
-  Administration Routes:
-  
-  • Intravenous injection
-  • Intranasal insufflation (snorting)
-  • Smoking/vaporization
-  • Subcutaneous injection ("skin popping")
-  
-  Pharmacological Properties:
-  
-  • Rapidly crosses the blood-brain barrier due to increased lipid solubility
-  • Metabolized to 6-monoacetylmorphine and then to morphine
-  • Binds primarily to mu-opioid receptors in the central nervous system
-  • Produces intense euphoria, analgesia, and respiratory depression
-  
-  In some countries such as the United Kingdom, Switzerland, Germany, and the Netherlands, pharmaceutical-grade diacetylmorphine (medical heroin) is used in supervised treatment programs for opioid dependence that has not responded to conventional treatments. It is also occasionally used for pain management in palliative care in some medical systems.
-  
-  This substance is included for informational purposes only. The manufacturing, distribution, and possession of heroin are heavily restricted and carry severe legal penalties in most jurisdictions worldwide.
-      `,
-    },
+    }, 
     {
       id: 204,
       name: "Ketamine (Ketalar)",
-      img: "/ketamine.jpeg",
       slug: "ketamine-ketalar",
       category: "drugs",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744829857/download_3_ldw47n.jpg",
       price: 120,
       quantity: 1,
       details: {
@@ -1658,7 +1527,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Diazepam (Valium)",
       slug: "diazepam-valium",
       category: "drugs",
-      img: "/valium.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832240/download_4_lutqh4.jpg",
       price: 55,
       quantity: 1,
       details: {
@@ -1697,7 +1566,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Clonazepam (Klonopin)",
       slug: "clonazepam-klonopin",
       category: "Pills",
-      img: "/klonopin.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832255/images_3_zbnfnr.jpg",
       price: 65,
       quantity: 1,
       details: {
@@ -1734,9 +1603,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 401,
       name: "200mg Brownie",
-      img: "/brownie.jpeg",
       slug: "200mg-brownie",
       category: "edibles",  
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832272/download_5_rz1rgj.jpg",
       price: 15,
       quantity: 1,
       details: {
@@ -1768,9 +1637,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 402,
       name: "200mg Cereal Treat",
-      img: "/cereal-treat.jpeg",
       slug: "200mg-cereal-treat",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832737/download_6_tl3erd.jpg",
       price: 15,
       quantity: 1,
       details: {
@@ -1802,18 +1671,17 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     
     {
       id: 404,
-      name: "200mg Lollipop",
-      img: "/lollipop.jpeg",  
-      slug: "200mg-lollipop",
+      name: "20mg Lollipop",
+      slug: "lollipop",
       category: "edibles",
-
+   img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832925/download_7_b731h5.jpg",  
       price: 15,
       quantity: 1,
       details: {
-        1: '200mg total cannabinoid content',
-        2: 'Hard candy confection',
-        3: 'Long-lasting candy experience',
-        4: 'Individual serving on a stick'
+        1: 'Hard candy confection',
+        2: 'Long-lasting candy experience',
+        3: 'Individual serving on a stick',
+        
       },
       des: `
   About 200mg Lollipop
@@ -1821,10 +1689,12 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   Our cannabis-infused lollipop delivers cannabinoids in a slow-dissolving hard candy format. Each lollipop contains 200mg of total cannabinoids, evenly distributed throughout the candy for a consistent experience from start to finish.
   
   Product Highlights:
-  • 200mg total cannabinoid content
+  • 20mg total cannabinoid content
   • Hard candy format for slower consumption
   • Long-lasting flavor profile
   • Convenient stick handle for easy consumption
+  • Delta 9
+
   
   Consumption Guidance:
   Sublingual absorption may occur while consuming this product, potentially leading to faster onset of effects than traditional edibles. Primary effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, consuming small portions over time is recommended.
@@ -1836,79 +1706,11 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       `,
     },
     {
-      id: 405,
-      name: "200mg Muddy Buddies",
-      img: "/muddy-buddies.jpeg",
-      slug: "200mg-muddy-buddies",
-      category: "edibles",
-      price: 15,
-      quantity: 1,
-      details: {
-        1: '200mg total cannabinoid content',
-        2: 'Chocolate and peanut butter coated cereal snack',
-        3: 'Also known as "puppy chow"',
-        4: 'Sweet and crunchy texture'
-      },
-      des: `
-  About 200mg Muddy Buddies
-  
-  Our cannabis-infused Muddy Buddies transform classic cereal squares into a delightful snack coated with chocolate, peanut butter, and powdered sugar. Each package contains 200mg of total cannabinoids, carefully infused for consistent potency throughout the mix.
-  
-  Product Highlights:
-  • 200mg total cannabinoid content
-  • Chocolate and peanut butter flavor profile
-  • Sweet, powdered coating with satisfying crunch
-  • Perfect balance of flavors and textures
-  
-  Consumption Guidance:
-  Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
-  
-  Ingredients may include rice or corn cereal squares, chocolate, peanut butter, powdered sugar, cannabis extract, and natural flavors. Contains peanuts. Specific allergen information available upon request.
-      `,
-    },
-    {
-      id: 406,
-      name: "200mg Peanut Butter & Jelly Rice Crispy Treat",
-      img: "/pb-rice-crispy.jpeg",
-      slug: "200mg-peanut-butter-jelly-rice-crispy-treat",
-      category: "edibles",
-      price: 15,
-      quantity: 1,
-      details: {
-        1: '200mg total cannabinoid content',
-        2: 'Rice cereal treat with PB&J flavoring',
-        3: 'Sweet and savory flavor combination',
-        4: 'Crunchy texture with chewy marshmallow'
-      },
-      des: `
-  About 200mg Peanut Butter & Jelly Rice Crispy Treat
-  
-  Our innovative PB&J Rice Crispy Treat combines the nostalgic flavors of peanut butter and jelly with the satisfying texture of a classic rice cereal treat. Each treat contains 200mg of total cannabinoids, evenly distributed throughout for consistent dosing.
-  
-  Product Highlights:
-  • 200mg total cannabinoid content
-  • Unique combination of peanut butter and fruit jelly flavors
-  • Familiar rice crispy texture with added flavor complexity
-  • Individually wrapped for freshness and portability
-  
-  Consumption Guidance:
-  Edibles can produce stronger and longer-lasting effects compared to inhalation methods. Effects typically begin 30-90 minutes after consumption and may last 4-8 hours depending on individual factors. For those new to edibles, starting with a small portion (5-10mg) is recommended.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
-  
-  Ingredients may include crisp rice cereal, marshmallow, peanut butter, fruit jelly or jam, cannabis extract, and natural flavors. Contains peanuts. Specific allergen information available upon request.
-      `,
-    },
-    {
       id: 407,
       name: "200mg Pie",
-      img: "/pie.jpeg",
       slug: "200mg-pie",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832963/download_8_shdn3p.jpg",
       price: 15,
       quantity: 1,
       details: {
@@ -1940,9 +1742,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 408,
       name: "200mg Pop Corn - Caramel Corn",
-      img: "/caramel-corn.jpeg",
       slug: "200mg-pop-corn-caramel-corn",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832968/download_9_lzq2gq.jpg",
       price: 15,
       quantity: 1,
       details: {
@@ -1970,15 +1772,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   
   Ingredients may include popcorn, sugar, butter, corn syrup, cannabis extract, and natural flavors. Specific allergen information available upon request.
       `,
-    },
- 
-   
+    },   
     {
       id: 412,
       name: "300mg Blue Razz Rings",
-      img: "/blue-razz-rings.jpeg",
       slug: "300mg-blue-razz-rings",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832977/download_10_fn3xt6.jpg",
       price: 30,
       quantity: 1,
       details: {
@@ -2007,53 +1807,20 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial flavors, blue food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
       `,
     },
-    {
-      id: 413,
-      name: "300mg Peach Rings",
-      img: "/peach-rings.jpeg",
-      slug: "300mg-peach-rings",
-      category: "edibles",
-      price: 30,
-      quantity: 1,
-      details: {
-        1: '300mg total cannabinoid content',
-        2: 'Peach flavored gummy rings',
-        3: 'Chewy candy format',
-        4: 'Higher potency edible'
-      },
-      des: `
-  About 300mg Peach Rings
-  
-  Our Peach Rings combine a classic candy favorite with premium cannabis extract. Each package contains gummy rings with a total of 300mg cannabinoids, featuring a sweet, juicy peach flavor in a familiar ring shape.
-  
-  Product Highlights:
-  • 300mg total cannabinoid content
-  • Authentic peach flavor with sugar coating
-  • Chewy gummy ring format
-  • Multiple pieces per package for easy dose control
-  
-  Consumption Guidance:
-  These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider dividing gummies into smaller portions. Each piece contains approximately 10-15mg, but may vary slightly.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
-  
-  Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial peach flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
-      `,
-    },
+   
     {
       id: 414,
       name: "300mg Rainbow Belts",
-      img: "/rainbow-belts.jpeg",
       slug: "300mg-rainbow-belts",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832985/image_t3ljoe.jpg",
       price: 30,
       quantity: 1,
       details: {
-        1: '300mg total cannabinoid content',
-        2: 'Multi-colored, multi-flavored gummy belts',
-        3: 'Chewy, colorful candy format',
-        4: 'Higher potency edible'
+    
+        1: 'Multi-colored, multi-flavored gummy belts',
+        2: 'Chewy, colorful candy format',
+        3: 'Higher potency edible'
       },
       des: `
   About 300mg Rainbow Belts
@@ -2078,9 +1845,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 415,
       name: "300mg Sour Patch Belts",
-      img: "/sour-patch-belts.jpeg",
       slug: "300mg-sour-patch-belts",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832997/zexJLifRp2igOmzKI2vw_Crue_IMages6402_zyzned.jpg",
       price: 30,
       quantity: 1,
       details: {
@@ -2109,80 +1876,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, malic acid, tartaric acid, natural and artificial flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
       `,
     },
-    {
-      id: 416,
-      name: "300mg Sour Straws",
-      img: "/sour-straws.jpeg",
-      slug: "300mg-sour-straws",
-      category: "edibles",  
-      price: 30,
-      quantity: 1,
-      details: {
-        1: '300mg total cannabinoid content',
-        2: 'Sour-coated candy straws',
-        3: 'Chewy texture with sour exterior',
-        4: 'Higher potency edible'
-      },
-      des: `
-  About 300mg Sour Straws
-  
-  Our Sour Straws deliver intense flavor in a unique candy format. Each package contains hollow straw-shaped candies with a total of 300mg cannabinoids, featuring a chewy texture and sour-coated exterior in various fruit flavors.
-  
-  Product Highlights:
-  • 300mg total cannabinoid content
-  • Sour coating with chewy candy base
-  • Hollow straw format for unique texture experience
-  • Multiple pieces for controlled dosing
-  
-  Consumption Guidance:
-  These candies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider cutting straws into smaller sections. Each straw contains approximately 20-30mg, but may vary slightly.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and sour coating integrity. Keep out of reach of children and pets.
-  
-  Ingredients may include glucose syrup, sugar, gelatin or modified starch, citric acid, malic acid, natural and artificial flavors, food coloring, cannabis extract, and other ingredients. Specific allergen information available upon request.
-      `,
-    },
-    {
-      id: 417,
-      name: "300mg Watermelon Bites",
-      img: "/watermelon-bites.jpeg",
-      slug: "300mg-watermelon-bites",
-      category: "edibles",  
-      price: 30,
-      quantity: 1,
-      details: {
-        1: '300mg total cannabinoid content',
-        2: 'Watermelon flavored gummy candy',
-        3: 'Chewy fruit-shaped edibles',
-        4: 'Higher potency product'
-      },
-      des: `
-  About 300mg Watermelon Bites
-  
-  Our Watermelon Bites feature the refreshing taste of summer watermelon in a convenient gummy format. Each package contains watermelon-shaped or flavored gummies with a total of 300mg cannabinoids, offering a fruity, juicy flavor profile.
-  
-  Product Highlights:
-  • 300mg total cannabinoid content
-  • Authentic watermelon flavor
-  • Shaped or colored to resemble watermelon slices
-  • Multiple pieces per package for customizable dosing
-  
-  Consumption Guidance:
-  These gummies contain a higher cannabinoid concentration than our standard products. Effects typically begin 30-90 minutes after consumption and may last 6-8 hours depending on individual factors. For precise dosing, consider dividing gummies into smaller portions. Each piece contains approximately 10-15mg, but may vary slightly.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. For extended shelf life, refrigeration is recommended but not required. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
-  
-  Ingredients may include glucose syrup, sugar, gelatin or pectin, citric acid, natural and artificial watermelon flavors, food coloring (typically red and green), cannabis extract, and other ingredients. Specific allergen information available upon request.
-      `,
-    },
+
     {
       id: 418,
-      name: "350mg Cake",
-      img: "/cake-edible.jpeg",
-      slug: "350mg-cake",
+      name: "Cake",  
+      slug: "cake",
       category: "edibles",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833194/IMG_2551_dp1xgn.webp",
       price: 35,
       quantity: 1,
       details: {
@@ -2212,119 +1912,11 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       `,
     },
     {
-      id: 419,
-      name: "350mg Tart",
-      img: "/tart-edible.jpeg",
-      slug: "350mg-tart",
-      category: "edibles",
-      price: 35,
-      quantity: 1,
-      details: {
-        1: '350mg total cannabinoid content',
-        2: 'Pastry shell with sweet filling',
-        3: 'Dessert-style edible with fruit flavors',
-        4: 'Highest potency tier product'
-      },
-      des: `
-  About 350mg Tart
-  
-  Our cannabis-infused tart combines a buttery pastry shell with sweet filling for a sophisticated dessert experience. Each tart contains our premium tier of 350mg total cannabinoids, carefully incorporated for consistent potency throughout.
-  
-  Product Highlights:
-  • 350mg total cannabinoid content
-  • Butter pastry shell with fruit or cream filling
-  • Available in various flavors (varies by location)
-  • Elegant dessert alternative to candy-style edibles
-  
-  Consumption Guidance:
-  This product contains our highest standard cannabinoid concentration. Effects typically begin 30-90 minutes after consumption and may last 6-8+ hours depending on individual factors. Due to the high potency, this product is intended to be consumed in multiple sessions or shared. For new users, a portion containing no more than 5-10mg is recommended for initial trials.
-  
-  Storage:
-  Keep in a cool, dry place away from direct sunlight. Refrigeration is strongly recommended for this product. Store in the original sealed packaging to maintain freshness and potency. Keep out of reach of children and pets.
-  
-  Ingredients may include flour, butter, sugar, eggs, fruit or cream fillings, cannabis extract, and natural flavors. Specific flavor varieties and allergen information available upon request.
-      `,
-    },
-    {
-      id: 501,
-      name: "1g Shatter",
-      slug: "shatter-concentrate",
-      category: "Concentrates",
-      img: "/shatter.jpeg",
-      price: 24,
-      quantity: 1,
-      details: {
-        1: 'Glass-like brittle concentrate',
-        2: 'High potency extract (typically 70-90% cannabinoids)',
-        3: 'Made through solvent-based extraction',
-        4: 'Transparent amber appearance'
-      },
-      des: `
-  About 1g Shatter
-  
-  Shatter is a type of cannabis concentrate known for its glass-like consistency and high potency. It's produced through a solvent-based extraction process that preserves the plant's cannabinoids and terpenes while removing plant material. The result is a transparent, amber-colored concentrate that "shatters" when broken.
-  
-  This concentrate form is prized for its purity and potency, typically containing 70-90% cannabinoids. The glass-like consistency makes it easy to handle and dose, while the transparent appearance indicates a high level of refinement.
-  
-  Characteristics:
-  
-  • Brittle, glass-like texture
-  • Transparent to translucent amber color
-  • High terpene preservation
-  • Clean, solvent-free final product
-  
-  Usage:
-  
-  • Dabbing (recommended method)
-  • Vaporization
-  • Can be added to flower for enhanced effects
-  
-  Store in a cool, dark place, preferably in an airtight, non-stick silicone or glass container. Refrigeration can help maintain consistency and preserve terpene profiles. Allow to reach room temperature before handling to prevent condensation from forming on the product.
-      `,
-    },
-    {
-      id: 502,
-      name: "1g Earl (Wax)",
-      slug: "earl-wax-concentrate",
-      category: "Concentrates",
-      img: "/earl-wax.jpeg",
-      price: 22,
-      quantity: 1,
-      details: {
-        1: 'Softer, opaque wax concentrate',
-        2: 'High potency extract (typically 65-85% cannabinoids)',
-        3: 'Creamy, malleable texture',
-        4: 'Named for specific extraction technique or phenotype'
-      },
-      des: `
-  About 1g Earl (Wax)
-  
-  Earl Wax is a premium cannabis concentrate known for its creamy, malleable texture and high potency. This wax form concentrate is produced through a specialized extraction process that results in a softer, more workable consistency compared to shatter or other brittle concentrates.
-  
-  The product maintains high cannabinoid content (typically 65-85%) while preserving the plant's terpene profile. The creamy texture makes it easy to handle and dose, while the opaque appearance indicates a different extraction process than clear concentrates.
-  
-  Characteristics:
-  
-  • Creamy, malleable texture
-  • Opaque appearance
-  • High terpene preservation
-  • Easy to handle and dose
-  
-  Usage:
-  
-  • Dabbing (recommended method)
-  • Vaporization
-  • Can be added to flower for enhanced effects
-  
-  Store in a cool, dark place in an airtight, non-stick silicone or glass container. Refrigeration can help maintain consistency and preserve terpene profiles, but is generally less critical for wax textures than clearer concentrates.
-      `,
-    },
-    {
       id: 503,
       name: "1g Wax",
-      img: "/wax.jpeg",
       slug: "1g-wax-concentrate",
       category: "Concentrates",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833210/What-Is-Marijuana-Wax-FTR_d2nrqz.jpg",
       price: 24,
       quantity: 1,
       details: {
@@ -2358,9 +1950,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 504,
       name: "1g Butane Wax",
-      img: "/butane-wax.jpeg",
       slug: "1g-butane-wax-concentrate",
       category: "Concentrates", 
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833551/shutterstock_628310576-3_w1kyw5.jpg",
       price: 15,
       quantity: 1,
       details: {
@@ -2394,9 +1986,10 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 505,
       name: "1g CO2 Wax",
-      img: "/co2-wax.jpeg",
+      
       slug: "1g-co2-wax-concentrate",
       category: "Concentrates",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833632/unnamed_ltnruf.png",
       price: 18,
       quantity: 1,
       details: {
@@ -2432,9 +2025,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 601,
       name: "Absolute Extracts OG Kush",
-      img: "/absolute-extracts-og-kush.jpeg",
       slug: "absolute-extracts-og-kush-vape",
       category: "vapes",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833552/9be70557-9c52-4ee2-a668-8021689f3b7f_oa2egl.webp",
       price: 35,
       quantity: 1,
       details: {
@@ -2465,48 +2058,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
       `,
     },
-    {
-      id: 602,
-      name: "Pure Cure",
-      img: "/pure-cure.jpeg",
-      slug: "pure-cure-vape",
-      category: "vapes",
-      price: 35,
-      quantity: 1,
-      details: {
-        1: 'THC content: 71.72%',
-        2: 'High potency extract',
-        3: 'Premium cannabis oil',
-        4: 'Brand: Pure Cure'
-      },
-      des: `
-  About Pure Cure
   
-  Pure Cure delivers a premium cannabis extract with exceptional potency, testing at 71.72% THC. This high-quality oil cartridge provides potent effects and a clean, refined experience in a convenient form factor.
-  
-  Product Highlights:
-  • Superior potency cannabis oil (71.72% THC)
-  • Clean, refined extraction process
-  • Full-spectrum oil preserving natural cannabis compounds
-  • Compatible with standard 510-thread batteries
-  • Consistent dosing and reliable effects
-  
-  Brand Information:
-  Pure Cure focuses on creating clean, high-potency cannabis extracts with meticulous attention to quality. Their extraction process aims to preserve the full spectrum of cannabinoids and terpenes while removing unwanted plant materials and impurities, resulting in a refined product that delivers pure effects.
-  
-  Consumption Guidance:
-  This cartridge requires a compatible battery (sold separately). Due to its high potency, start with a very small inhalation, especially if sensitive to THC or new to concentrated products. Wait 5-10 minutes between inhalations to gauge effects. This high-THC product is intended for consumers with established tolerance.
-  
-  Storage:
-  Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
-      `,
-    },
     {
       id: 603,
       name: "Eureka Blue Dream Sativa",
-      img: "/eureka-blue-dream.jpeg",
       slug: "eureka-blue-dream-sativa-vape",
       category: "vapes",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833555/CBD_ClearTip_2-min_xccbea.webp",
       price: 28,
       quantity: 1,
       details: {
@@ -2541,9 +2099,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
     {
       id: 605,
       name: "Tetra Gold Classic",
-      img: "/tetra-gold-classic.jpeg",
       slug: "tetra-gold-classic-vape",
       category: "vapes",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744837412/529_E43Q_large_Home_product_Gold_Cart_uknwtb.jpg",
       price: 20,
       quantity: 1,
       details: {
@@ -2575,83 +2133,11 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       `,
     },
     {
-      id: 606,
-      name: "Zen Pen OG Kush",
-      img: "/zen-pen-og-kush.jpeg",
-      slug: "zen-pen-og-kush-vape",
-      category: "vapes",
-      price: 18,
-      quantity: 1,
-      details: {
-        1: 'THC content: 24.36%',
-        2: 'Strain: OG Kush',
-        3: 'Lower potency, entry-level option',
-        4: 'Brand: Zen Pen'
-      },
-      des: `
-  About Zen Pen OG Kush
-  
-  Zen Pen offers an accessible entry point to cannabis vaping with this OG Kush cartridge. At 24.36% THC, this product provides milder effects suitable for beginners, microdosing, or those who prefer a gentler experience.
-  
-  Product Highlights:
-  • Lower potency cannabis oil (24.36% THC)
-  • OG Kush strain-specific formulation
-  • Budget-friendly price point
-  • Compatible with standard 510-thread batteries
-  • Good option for new users or sensitive consumers
-  
-  Strain Information:
-  OG Kush is a legendary strain known for its distinctive aroma combining notes of fuel, skunk, and spice. While the original strain is potent, this lower-concentration formulation provides a more gentle introduction to its characteristic effects, which typically include mood elevation and relaxation.
-  
-  Consumption Guidance:
-  This cartridge requires a compatible battery (sold separately). The lower THC content makes this product suitable for cannabis newcomers, those with lower tolerance, or for situations where milder effects are desired. For experienced users, this can be a good option for microdosing or maintaining a subtle effect throughout the day.
-  
-  Storage:
-  Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. Avoid leaving in extremely hot environments to preserve potency and prevent leakage.
-      `,
-    },
-    {
-      id: 607,
-      name: "Humboldt Farms THC Cartridges 710 Kingpen King Louis OG",
-      slug: "humboldt-farms-king-louis-og-vape",
-      category: "vapes",
-      img: "/humboldt-farms-king-louis-og.jpeg",
-      price: 35,
-      quantity: 1,
-      details: {
-        1: 'Premium brand collaboration',
-        2: 'Strain: King Louis OG',
-        3: 'High-end cannabis oil',
-        4: 'Brands: Humboldt Farms and Kingpen'
-      },
-      des: `
-  About Humboldt Farms THC Cartridges 710 Kingpen King Louis OG
-  
-  This premium cartridge represents a collaboration between Humboldt Farms and the acclaimed 710 Kingpen brand, featuring the royal King Louis OG strain. This high-end product delivers exceptional quality and potent effects in a reliable cartridge format.
-  
-  Product Highlights:
-  • Premium cannabis oil from established California producers
-  • King Louis OG strain-specific formulation
-  • Full-spectrum extraction preserving natural cannabis compounds
-  • Compatible with standard 510-thread batteries
-  • Collaboration between trusted cannabis brands
-  
-  Strain Information:
-  King Louis OG (also known as King Louis XIII) is an indica-dominant strain with royal heritage, known for its powerful relaxing effects and distinctive OG aroma profile with notes of pine, earth, and skunk. The strain is often sought for its deeply calming properties and is popular for evening use.
-  
-  Consumption Guidance:
-  This cartridge requires a compatible battery (sold separately). As a premium product, the potency is likely substantial. Start with a small inhalation, especially if sensitive to THC or new to concentrated products. Wait 5-10 minutes between inhalations to gauge effects. Best suited for experienced consumers looking for potent effects.
-  
-  Storage:
-  Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of the premium oil's potency and flavor profile, avoid leaving in extremely hot environments such as cars during summer.
-      `,
-    },
-    {
       id: 608,
       name: "Honey Vape GG4",
       slug: "honey-vape-gg4-vape",
       category: "vapes",
-      img: "/honey-vape-gg4.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833664/large_ign8sf.jpg",
       price: 20,
       quantity: 1,
       details: {
@@ -2683,6 +2169,42 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       `,
     },
     {
+      id: 602,
+      name: "Pure Cure",
+      slug: "pure-cure-vape",
+      category: "vapes",
+       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833555/CBD_ClearTip_2-min_xccbea.webp",
+      price: 35,
+      quantity: 1,
+      details: {
+        1: 'THC content: 71.72%',
+        2: 'High potency extract',
+        3: 'Premium cannabis oil',
+        4: 'Brand: Pure Cure'
+      },
+      des: `
+  About Pure Cure
+  
+  Pure Cure delivers a premium cannabis extract with exceptional potency, testing at 71.72% THC. This high-quality oil cartridge provides potent effects and a clean, refined experience in a convenient form factor.
+  
+  Product Highlights:
+  • Superior potency cannabis oil (71.72% THC)
+  • Clean, refined extraction process
+  • Full-spectrum oil preserving natural cannabis compounds
+  • Compatible with standard 510-thread batteries
+  • Consistent dosing and reliable effects
+  
+  Brand Information:
+  Pure Cure focuses on creating clean, high-potency cannabis extracts with meticulous attention to quality. Their extraction process aims to preserve the full spectrum of cannabinoids and terpenes while removing unwanted plant materials and impurities, resulting in a refined product that delivers pure effects.
+  
+  Consumption Guidance:
+  This cartridge requires a compatible battery (sold separately). Due to its high potency, start with a very small inhalation, especially if sensitive to THC or new to concentrated products. Wait 5-10 minutes between inhalations to gauge effects. This high-THC product is intended for consumers with established tolerance.
+  
+  Storage:
+  Store upright in a cool, dark place away from direct sunlight and heat sources. Keep the mouthpiece clean and covered when not in use. For maximum preservation of potency and flavor, avoid leaving in extremely hot environments such as cars during summer.
+      `,
+    },
+   {
       id: 609,
       name: "Stiiizy Granddaddy Purp",
       slug: "stiiizy-granddaddy-purp-vape",
@@ -2723,7 +2245,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Gold Drop Gold Standard",
       slug: "gold-drop-gold-standard-vape",
       category: "vapes",
-      img: "/gold-drop-gold-standard.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833669/images_4_viobqg.jpg",
       price: 25,
       quantity: 1,
       details: {
@@ -2759,7 +2281,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Brass Knuckles THC Oil Cartridges",
       slug: "brass-knuckles-thc-oil-cartridges-vape",
       category: "vapes",
-      img: "/brass-knuckles-cartridge.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833677/51rRkECB4XL_wsgoep.jpg",
       price: 35,
       quantity: 1,
       details: {
@@ -2795,7 +2317,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "KandyPens Special K Vaporizer",
       slug: "kandypens-special-k-vaporizer",
       category: "vapes",
-      img: "/kandypens-special-k.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833686/kandypens_special_k_black_vaporizer_apart_1024x1024_zwxcvr.webp",
       price: 60,
       quantity: 1,
       details: {
@@ -2836,7 +2358,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "Canna Blast Vape Pen Kit",
       slug: "canna-blast-vape-pen-kit",
       category: "vapes",
-      img: "/canna-blast-kit.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833691/images_5_thgbuk.jpg",
       price: 60,
       quantity: 1,
       details: {
@@ -2873,53 +2395,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   • Comprehensive instruction manual
       `,
     },
-    {
-      id: 703,
-      name: "Innokin Endura T20S",
-      slug: "innokin-endura-t20s-vaporizer",
-      category: "vapes",
-      img: "/innokin-endura-t20s.jpeg",
-      price: 50,
-      quantity: 1,
-      details: {
-        1: 'Versatile vaping device',
-        2: 'Easy-to-use system',
-        3: 'Quality manufacturing',
-        4: 'Brand: Innokin'
-      },
-      des: `
-  About Innokin Endura T20S
-  
-  The Innokin Endura T20S is a reliable, user-friendly vaporizer designed for consistent performance and ease of use. While originally designed for e-liquids, this versatile device has been adopted for compatible cannabis oils due to its consistent performance and quality construction.
-  
-  Product Highlights:
-  • Straightforward operation ideal for beginners
-  • Consistent vapor production
-  • 1500mAh battery capacity
-  • Quick charging via micro-USB
-  • Durable construction from established manufacturer
-  
-  Technical Specifications:
-  The Endura T20S features a substantial 1500mAh internal battery that provides extended use between charges. The device uses a top-fill tank system for easy refilling when used with compatible oils. The mouthpiece is designed for comfortable use, and the entire unit is engineered for reliability and consistent performance.
-  
-  Usage Guidance:
-  This device works best with thinner cannabis oils and may not be compatible with all cartridges or concentrates. For refillable applications, fill only with compatible products designed for this type of device. The single-button operation makes it straightforward to use—five clicks to turn on/off, and hold the button while inhaling.
-  
-  What's Included:
-  • Endura T20S device
-  • Tank/atomizer
-  • Replacement coil
-  • Micro-USB charging cable
-  • User manual
-  • Warranty information
-      `,
-    },
+
     {
       id: 704,
       name: "V2 Pro Series 3 Vaporizer",
       slug: "v2-pro-series-3-vaporizer",
       category: "vapes",
-      img: "/v2-pro-series-3.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833699/v2-pro-series-3-vaporizer-review-vape-pen-wax-herbal-oil-vaporplants-vapor-box-charger_urjure.jpg",
       price: 55,
       quantity: 1,
       details: {
@@ -2955,53 +2437,13 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
   • Warranty card
       `,
     },
-    {
-      id: 705,
-      name: "Apollo Ohm Go Vaping Kit",
-      slug: "apollo-ohm-go-vaping-kit",
-      category: "vapes",
-      img: "/apollo-ohm-go.jpeg",
-      price: 45,
-      quantity: 1,
-      details: {
-        1: 'Mid-range complete kit',
-        2: 'Sub-ohm capabilities',
-        3: 'Versatile system',
-        4: 'Brand: Apollo'
-      },
-      des: `
-  About Apollo Ohm Go Vaping Kit
-  
-  The Apollo Ohm Go provides a balanced combination of performance and simplicity in a complete kit format. This mid-range device delivers reliable vapor production with enough features to satisfy experienced users while remaining accessible to newcomers.
-  
-  Product Highlights:
-  • Complete kit with all necessary components
-  • Sub-ohm capability for enhanced vapor production
-  • 1900mAh battery capacity for extended use
-  • Top-fill tank design for easy refilling
-  • Quality construction from established brand Apollo
-  
-  Technical Specifications:
-  The Ohm Go features a substantial 1900mAh battery that balances power with reasonable charging times. The included tank utilizes sub-ohm technology for efficient vaporization of compatible oils. Temperature protection and short-circuit protection are built in for safety. The device offers a more substantial feel than pen-style vaporizers while maintaining portability.
-  
-  Usage Guidance:
-  This device works best with thinner cannabis oils designed for sub-ohm systems. The top-fill tank design makes refilling straightforward—simply unscrew the top cap and carefully add compatible oil to the tank, avoiding the center airflow tube. Five clicks of the button turns the device on/off, and the button is held during inhalation.
-  
-  What's Included:
-  • Apollo Ohm Go battery
-  • Sub-ohm tank
-  • USB charging cable
-  • Replacement coil
-  • User manual
-  • Warranty information
-      `,
-    },
+
     {
       id: 706,
       name: "XEO Void",
       slug: "xeo-void-vaporizer",
       category: "vapes",
-      img: "/xeo-void.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833705/black__01030_phtci9.jpg",
       price: 40,
       quantity: 1,
       details: {
@@ -3041,7 +2483,7 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "AirVape OM Mini Vaporizer",
       slug: "airvape-om-mini-vaporizer",
       category: "vapes",
-      img: "/airvape-om-mini.jpeg",
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833717/av-om-full_ykl7kj.webp",
       price: 35,
       quantity: 1,
       details: {

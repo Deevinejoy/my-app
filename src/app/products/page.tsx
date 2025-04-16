@@ -6,7 +6,7 @@ import products from '@/app/db/products';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const categories = ['All', 'Drugs', 'Vapes', 'opioids', 'Weed', 'Edibles', 'Shrooms'  ];
+const categories = ['All', 'Pills', 'Vapes', 'Opioids', 'Weed', 'Edibles', 'Shrooms', 'Concentrates', 'Drugs'];
 
 export default function Shop() {
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -73,10 +73,11 @@ export default function Shop() {
   };
   const [currentSlide, setCurrentSlide] = useState(0);
   const heroImages = [
-    "/gorilla_glue.jpg",
+   
     "/TESLA_HASH.webp",
     "/gummy.jpg",
     "/vape2.jpeg",
+    "/lemonsourdieselAA.jpg",
     "/catridge.jpeg",
     "/morphine.jpeg",
     "/molly.jpg",
@@ -165,7 +166,7 @@ export default function Shop() {
         {filteredProducts.length === 0 ? (
           <motion.div className="text-center py-12" variants={fadeIn}>
             <p className="text-xl text-gray-600">
-              No products found matching "{searchQuery}"
+              No products found matching &quot;{searchQuery}&quot;
             </p>
             <button
               onClick={() => setSearchQuery('')}

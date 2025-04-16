@@ -48,21 +48,47 @@ export default function Footer() {
 
         {/* Contact Info */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-semibold mb-2 text-black">Contact Us</h2>
+          <h2 className="text-xl font-semibold mb-2 text-black">Click to contact Us</h2>
           <ul className="space-y-1 text-black text-lg">
-            <li className="flex items-center gap-2">
-              <FaWhatsapp color="black"/> WhatsApp: +1 (352) 212 4176
-            </li>
-            <li className="flex items-center gap-2">
-              <FaPhone /> Phone: +1 (352) 212 4176
-            </li>
-            <li className="flex items-center gap-2">
-              <FaTelegram /> Telegram: +1 (352) 212 4176
-            </li>
-            <li className="flex items-center gap-2">
-              <FaLock /> Signal: findmegreen.01
-            </li>
-          </ul>
+  <li className="flex items-center gap-2">
+    <a
+      href="https://wa.me/+13522124176"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+    >
+      <FaWhatsapp /> WhatsApp: +1 (352) 212 4176
+    </a>
+  </li>
+  <li className="flex items-center gap-2">
+    <a
+      href="tel:+13522124176"
+      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+    >
+      <FaPhone /> Phone: +1 (352) 212 4176
+    </a>
+  </li>
+  <li className="flex items-center gap-2">
+    <a
+      href="https://t.me/+13522124176"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+    >
+      <FaTelegram /> Telegram: +1 (352) 212 4176
+    </a>
+  </li>
+  <li className="flex items-center gap-2">
+    <a
+      href="https://signal.me/#p/+13522124176"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+    >
+      <FaLock /> Signal: findmegreen.01
+    </a>
+  </li>
+</ul>
         </div>
       </div>
 
