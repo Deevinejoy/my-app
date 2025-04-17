@@ -134,7 +134,7 @@ export default function Blog() {
               key={blog.ID}
               className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow h-full"
             >
-              <Link href={`/blog/${blog.ID}`}>
+              <Link href={`/blog/${blog.slug}`}>
                 {blog.featured_image ? (
                   <Image
                     className="w-full h-48 object-cover rounded-md"
@@ -152,15 +152,15 @@ export default function Blog() {
                   className="text-xl font-bold my-3 text-center"
                   dangerouslySetInnerHTML={{ __html: blog.title }}
                 />
-                 <p className="text-gray-500 mb-2">{new Date(blog.date).toLocaleDateString()}</p>
+                 <p className="text-gray-500 mb-2 pr-3 pl-3">{new Date(blog.date).toLocaleDateString()}</p>
                 <p
-                  className="text-gray-700 mb-3"
+                  className="text-gray-700 mb-3 pr-3 pl-3"
                   dangerouslySetInnerHTML={{
                     __html: getExcerpt(blog.content),
                   }}
                 />
                 
-                <div className="mt-4 text-[#85A965] font-semibold">Read more →</div>
+                <div className="mt-4 text-[#85A965] font-semibold pr-3 pl-3">Read more →</div>
               </Link>
             </div>
           ))

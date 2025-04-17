@@ -5,21 +5,20 @@ import { useCart } from "@/app/context/cartContext";
 import products from "@/app/db/products";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { div } from "framer-motion/client";
 
-export default function Product({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function Product({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const { cart, dispatch } = useCart();
 
   const product =
-    cart.find((item: { id: number }) => item.id === Number(id)) ||
-    products.find((p) => p.id === Number(id));
+    cart.find((item: { slug: string }) => item.slug === slug) ||
+    products.find((p) => p.slug === slug);
 
   if (!product) {
     return <div className="text-center text-xl mt-10">Product not found</div>;
   }
 
-  const inCart = cart.find((item) => item.id === product.id);
+  const inCart = cart.find((item) => item.slug === product.slug);
 
   const handleAddToCart = () => {
     dispatch({ type: "ADD_TO_CART", payload: product });
@@ -29,12 +28,12 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
     if (!inCart) {
       dispatch({ type: "ADD_TO_CART", payload: { ...product, quantity: 1 } });
     } else {
-      dispatch({ type: "ADD_QUANTITY", payload: product.id });
+      dispatch({ type: "ADD_QUANTITY", payload: product.slug });
     }
   };
 
   const handleReduceQuantity = () => {
-    dispatch({ type: "REDUCE_QUANTITY", payload: product.id });
+    dispatch({ type: "REDUCE_QUANTITY", payload: product.slug });
   };
 
   // Animation Variants
@@ -68,32 +67,32 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
         <meta name="twitter:image" content={product.img} />
         <link
           rel="canonical"
-          href={`https://budsdelivery.org/products/${product.id}`}
+          href={`https://budsdelivery.org/products/${product.slug}`}
         />
-         <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": product.name,
-          "image": [product.img],
-          "description": product.des,
-          "sku": product.id,
-          "brand": {
-            "@type": "Brand",
-            "name": "Buds Delivery"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": `https://budsdelivery.org/products/${product.slug}`,
-            "priceCurrency": "USD",
-            "price": product.price,
-            "availability": "https://schema.org/InStock"
-          }
-        }),
-      }}
-    />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              name: product.name,
+              image: [product.img],
+              description: product.des,
+              sku: product.slug,
+              brand: {
+                "@type": "Brand",
+                name: "Buds Delivery",
+              },
+              offers: {
+                "@type": "Offer",
+                url: `https://budsdelivery.org/products/${product.slug}`,
+                priceCurrency: "USD",
+                price: product.price,
+                availability: "https://schema.org/InStock",
+              },
+            }),
+          }}
+        />
       </Head>
       <motion.div
         className="p-6 max-w-7xl mx-auto"
@@ -130,18 +129,18 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
               <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
               {Object.entries(product.details).map(([key, value]) => (
                 <div key={key}>
-                     <li className="text-lg text-gray-700 mb-4" key={key}>
-                  {value}
-                </li>
+                  <li className="text-lg text-gray-700 mb-4" key={key}>
+                    {value}
+                  </li>
                 </div>
-             
               ))}
-                  <li className="text-lg text-gray-700 mb-4">Contact our customer care for wholesale prize</li>
-
+              <li className="text-lg text-gray-700 mb-4">
+                Contact our customer care for wholesale price
+              </li>
 
               <p className="text-2xl font-semibold text-green-600">
-                ${product.price}   {product.id < 15? <span>/g</span>:  <></>}
-                {product.id == 202? <span>/ dose</span>: <></>}
+                ${product.price} {product.id < 15 ? <span>/g</span> : <></>}
+                {product.id == 202 ? <span>/ dose</span> : <></>}
               </p>
             </div>
 
@@ -196,12 +195,11 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
             Product Details
           </h2>
           <p
-                  className="text-gray-700 text-lg leading-relaxed px-4 md:px-20"
-                  dangerouslySetInnerHTML={{
-                    __html: product.des,
-                  }}
-                />
-         
+            className="text-gray-700 text-lg leading-relaxed px-4 md:px-20"
+            dangerouslySetInnerHTML={{
+              __html: product.des,
+            }}
+          />
         </motion.div>
       </motion.div>
     </>

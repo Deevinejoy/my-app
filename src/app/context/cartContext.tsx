@@ -18,9 +18,9 @@ export interface CartItem {
 
 type CartAction =
   | { type: "ADD_TO_CART"; payload: CartItem }
-  | { type: "ADD_QUANTITY"; payload: number } // payload is item id
-  | { type: "REDUCE_QUANTITY"; payload: number }
-  | { type: "REMOVE_FROM_CART"; payload: number }
+  | { type: "ADD_QUANTITY"; payload: string } // payload is item id
+  | { type: "REDUCE_QUANTITY"; payload: string}
+  | { type: "REMOVE_FROM_CART"; payload: string }
   | { type: "CLEAR_CART" };
 
 interface CartContextType {
@@ -41,10 +41,10 @@ const loadCart = (): CartItem[] => {
 function cartReducer(state: CartItem[], action: CartAction): CartItem[] {
   switch (action.type) {
     case "ADD_TO_CART": {
-      const existingItem = state.find(item => item.id === action.payload.id);
+      const existingItem = state.find(item => item.slug === action.payload.slug);
       if (existingItem) {
         return state.map(item =>
-          item.id === action.payload.id
+          item.slug === action.payload.slug
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
@@ -55,20 +55,20 @@ function cartReducer(state: CartItem[], action: CartAction): CartItem[] {
 
     case "ADD_QUANTITY":
       return state.map(item =>
-        item.id === action.payload
+        item.slug === action.payload
           ? { ...item, quantity: item.quantity + 1 }
           : item
       );
 
     case "REDUCE_QUANTITY":
       return state.map(item =>
-        item.id === action.payload && item.quantity > 1
+        item.slug === action.payload && item.quantity > 1
           ? { ...item, quantity: item.quantity - 1 }
           : item
       );
 
     case "REMOVE_FROM_CART":
-      return state.filter(item => item.id !== action.payload);
+      return state.filter(item => item.slug !== action.payload);
 
     case "CLEAR_CART":
       return [];

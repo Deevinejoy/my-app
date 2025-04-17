@@ -60,7 +60,7 @@ export default function CartPage() {
               <div className="flex flex-row items-center justify-between w-full sm:w-auto mt-3 sm:mt-0">
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => dispatch({ type: "REDUCE_QUANTITY", payload: item.id })}
+                    onClick={() => dispatch({ type: "REDUCE_QUANTITY", payload: item.slug })}
                     className="px-2 py-0.5 bg-gray-200 rounded-md hover:bg-[#85A965] hover:text-white transition-colors text-xs sm:text-sm"
                     aria-label="Reduce quantity"
                   >
@@ -68,7 +68,7 @@ export default function CartPage() {
                   </button>
                   <span className="text-sm sm:text-base font-medium text-gray-800 mx-1">{item.quantity}</span>
                   <button
-                    onClick={() => dispatch({ type: "ADD_QUANTITY", payload: item.id })}
+                    onClick={() => dispatch({ type: "ADD_QUANTITY", payload: item.slug })}
                     className="px-2 py-0.5 bg-gray-200 rounded-md hover:bg-[#85A965] hover:text-white transition-colors text-xs sm:text-sm"
                     aria-label="Add quantity"
                   >
@@ -81,7 +81,7 @@ export default function CartPage() {
                 </div>
                 
                 <button
-                  onClick={() => dispatch({ type: "REMOVE_FROM_CART", payload: item.id })}
+                  onClick={() => dispatch({ type: "REMOVE_FROM_CART", payload: item.slug })}
                   className="ml-4 sm:ml-6 focus:outline-none"
                   aria-label="Remove item"
                 >

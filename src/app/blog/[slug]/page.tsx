@@ -24,14 +24,14 @@ export default function BlogPost() {
   const [error, setError] = useState<string | null>(null);
 
   const params = useParams();
-  const ID = params?.id;
+  const slug = params?.slug;
 
   useEffect(() => {
-    if (!ID) return;
+    if (!slug) return;
 
     async function fetchPost() {
       try {
-        const res = await fetch(`/api/blogs/${ID}`);
+        const res = await fetch(`/api/blogs/${slug}`);
         if (!res.ok) {
           throw new Error("Failed to fetch post");
         }
@@ -45,7 +45,7 @@ export default function BlogPost() {
     }
 
     fetchPost();
-  }, [ID]);
+  }, [slug]);
 
   if (loading)
     return (

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/app/context/cartContext";
-import { useRouter } from "next/navigation"; // Import useRouter
 
 interface Product {
   id: number;
@@ -22,14 +21,14 @@ export default function Product({ product }: { product: Product }) {
  
 
   // Check if the product is already in the cart
-  const isInCart = cart.some((item) => item.id === product.id);
+  const isInCart = cart.some((item) => item.slug === product.slug);
 
   const handleAddToCart = () => {
     dispatch({ type: "ADD_TO_CART", payload: product });
   };
 
   const handleRemoveFromCart = () => {
-    dispatch({ type: "REMOVE_FROM_CART", payload: product.id });
+    dispatch({ type: "REMOVE_FROM_CART", payload: product.slug });
   };
 
   return (
@@ -38,7 +37,7 @@ export default function Product({ product }: { product: Product }) {
         key={product.id}
         className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition h-full flex flex-col"
       >
-        <Link href={`/products/${product.id}`}>
+        <Link href={`/products/${product.slug}`}>
           <div className="aspect-square relative overflow-hidden rounded-md mb-3">
             <Image
               className="object-cover"
