@@ -319,7 +319,7 @@ const products = [
     `,
   },
   {
-    id: 800,
+    id: 15,
     name: "Runtz",
     slug: "runtz",
     category: "weed",
@@ -1404,8 +1404,8 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "heroin-diacetylmorphine",
       category: "opioids",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744828893/download_2_cqs1yq.jpg",
-      price: 0,
-      quantity: 0,
+      price: 100,
+      quantity: 1,
       details: {
         1: 'Schedule I controlled substance (US)',
         2: 'No accepted medical use in the United States',
@@ -1442,9 +1442,9 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       name: "LSD (Lysergic Acid Diethylamide)",
       slug: "lsd-lysergic-acid-diethylamide",
       category: "drugs",
-      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744829872/images_2_gfpcyb.jpg", //use percocet img,
+      img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744890169/6d126286-8283-4bf1-80d4-9b9ab3adc37a_xwxkdf.jpg", //use percocet img,
    
-      price: 120,
+      price: 10,
       quantity: 1,
       details: {
         1: 'Schedule I controlled substance (US)',

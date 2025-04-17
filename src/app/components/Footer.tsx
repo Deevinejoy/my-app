@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaWhatsapp, FaTelegram, FaPhone, FaLock } from "react-icons/fa"; // Import Font Awesome icons
+import { FaWhatsapp, FaTelegram, FaEnvelope, FaLock } from "react-icons/fa"; // Import Font Awesome icons
 
 export default function Footer() {
   const pathname = usePathname();
@@ -61,12 +61,12 @@ export default function Footer() {
     </a>
   </li>
   <li className="flex items-center gap-2">
-    <a
-      href="tel:+13522124176"
-      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
-    >
-      <FaPhone /> Phone: +1 (352) 212 4176
-    </a>
+  <a
+  href="mailto:findmegreens@gmail.com"
+  className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+>
+  <FaEnvelope /> Email: findmegreens@gmail.com
+</a>
   </li>
   <li className="flex items-center gap-2">
     <a
@@ -79,14 +79,14 @@ export default function Footer() {
     </a>
   </li>
   <li className="flex items-center gap-2">
-    <a
-      href="https://signal.me/#p/+13522124176"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
-    >
-      <FaLock /> Signal: findmegreen.01
-    </a>
+  <a
+  href="https://signal.me/#u/findmegreen.01"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+>
+  <FaLock /> Signal: findmegreen.01
+</a>
   </li>
 </ul>
         </div>

@@ -70,6 +70,30 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
           rel="canonical"
           href={`https://budsdelivery.org/products/${product.id}`}
         />
+         <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "name": product.name,
+          "image": [product.img],
+          "description": product.des,
+          "sku": product.id,
+          "brand": {
+            "@type": "Brand",
+            "name": "Buds Delivery"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": `https://budsdelivery.org/products/${product.slug}`,
+            "priceCurrency": "USD",
+            "price": product.price,
+            "availability": "https://schema.org/InStock"
+          }
+        }),
+      }}
+    />
       </Head>
       <motion.div
         className="p-6 max-w-7xl mx-auto"
@@ -105,18 +129,19 @@ export default function Product({ params }: { params: Promise<{ id: string }> })
             <div>
               <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
               {Object.entries(product.details).map(([key, value]) => (
-                <div>
+                <div key={key}>
                      <li className="text-lg text-gray-700 mb-4" key={key}>
                   {value}
                 </li>
-               <li className="text-lg text-gray-700 mb-4">Contact our customer care for wholesale prize</li>
-
                 </div>
              
               ))}
+                  <li className="text-lg text-gray-700 mb-4">Contact our customer care for wholesale prize</li>
+
 
               <p className="text-2xl font-semibold text-green-600">
-                ${product.price} {product.id < 20? <span>/g</span> : <></>}
+                ${product.price}   {product.id < 15? <span>/g</span>:  <></>}
+                {product.id == 202? <span>/ dose</span>: <></>}
               </p>
             </div>
 

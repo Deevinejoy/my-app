@@ -3,10 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useCart } from "@/app/context/cartContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react"; // Optional: Use lucide icons for menu toggling
 
 export default function Header() {
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
   const pathname = usePathname();
   const { cart } = useCart();
   const totalItems = cart.length;
@@ -59,11 +64,11 @@ export default function Header() {
               height={50}
               priority
             />
-            {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-                {totalItems}
-              </span>
-            )}
+          {hasMounted && totalItems > 0 && (
+        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+          {totalItems}
+        </span>
+      )}
           </Link>
         </div>
 

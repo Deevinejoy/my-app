@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Head from 'next/head'
 
 interface BlogPost {
   ID: number;
@@ -27,7 +28,8 @@ export default function LandingPage() {
     "/gummy.jpg",
     "/vape2.jpeg",
     "/catridge.jpeg",
-    '/coc.jpg',
+ 
+    "/choco.webp",
     "/molly.jpg",
      
    
@@ -82,7 +84,94 @@ export default function LandingPage() {
   };
 
   return (
-    <motion.main
+    <>
+    <Head>
+        {/* Basic SEO */}
+        <title>Premium Cannabis Delivery | Buds Delivery - Weed, Edibles, Concentrates</title>
+        <meta name="description" content="Order premium cannabis, edibles, concentrates, and vape cartridges online. Discreet worldwide weed delivery. Trusted quality and fast shipping!" />
+        <meta name="keywords" content="weed delivery, buy cannabis online, discreet weed shipping, marijuana delivery, THC edibles, cannabis concentrates, vapes" />
+        <meta name="author" content="Buds Delivery" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content="Premium Cannabis & Weed Delivery | Buds Delivery" />
+        <meta property="og:description" content="Fast, discreet delivery of cannabis flowers, edibles, vapes, and concentrates to your door. Shop now!" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://budsdelivery.org/" />
+        <meta property="og:image" content="https://budsdelivery.org/your-social-image.jpg" />
+        <meta property="og:site_name" content="Buds Delivery" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Cannabis & Weed Delivery | Buds Delivery" />
+        <meta name="twitter:description" content="Get top-quality cannabis and narcotics delivered discreetly to your door. Fast, secure, reliable!" />
+        <meta name="twitter:image" content="https://budsdelivery.org/logo.jpg" />
+        <meta name="twitter:site" content="@budsdelivery" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://budsdelivery.org/" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/logo.jpg" />
+
+        {/* FAQ Structured Data */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does weed delivery take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our cannabis delivery typically takes 2-5 business days, depending on your location."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is shipping discreet?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we guarantee completely discreet shipping with no branding on the package."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where do you ship cannabis products?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We ship cannabis and narcotics worldwide where permitted by local laws."
+                }
+              }
+            ]
+          }
+        `}} />
+
+        {/* Breadcrumb Structured Data */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://budsdelivery.org/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Shop",
+                "item": "https://budsdelivery.org/products"
+              }
+            ]
+          }
+        `}} />
+
+      </Head>
+       <motion.main
       className="min-h-screen"
       initial="hidden"
       animate="visible"
@@ -147,7 +236,69 @@ export default function LandingPage() {
           </motion.div>
         </div>
       </motion.section>
+      <section className="px-6 py-16 md:px-20 md:py-28 bg-gradient-to-b from-white via-gray-50 to-white">
+  <div className="max-w-6xl mx-auto text-center">
+    <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-tight mb-6">
+      Premium Cannabis & Narcotics Delivery — Fast, Safe, Discreet
+    </h1>
+    <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
+      Welcome to <span className="text-[#85A965] font-semibold">Buds Delivery</span> — your trusted global source for premium cannabis and narcotics products. 
+      Shop flower strains, edibles, vapes, opioids, and concentrates with lightning-fast, fully discreet shipping. Whether you're searching for 
+      <span className="font-semibold"> "weed delivery near me"</span> or <span className="font-semibold">"discreet narcotics delivery"</span>, 
+      we ensure top-quality service and products, every time.
+    </p>
 
+    <div className="grid gap-10 md:grid-cols-2 text-left">
+      {/* Why Choose Section */}
+      <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+        <h2 className="text-2xl font-bold text-[#85A965] mb-4">🚚 Why Choose Buds Delivery?</h2>
+        <ul className="list-disc list-inside text-gray-600 space-y-3">
+          <li>Fast, secure, and discreet worldwide shipping</li>
+          <li>Wide selection of premium THC edibles, vape cartridges & concentrates</li>
+          <li>High-quality cannabis flower strains</li>
+          <li>Reliable service for both medical marijuana patients and recreational users</li>
+        </ul>
+      </div>
+
+      {/* Top Products Section */}
+      <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300">
+        <h2 className="text-2xl font-bold text-[#85A965] mb-4">🔥 Top Products Available:</h2>
+        <ul className="list-disc list-inside text-gray-600 space-y-3">
+          <li>Gourmet cannabis-infused edibles</li>
+          <li>High-potency concentrates and extracts</li>
+          <li>Fresh, hand-selected cannabis flowers</li>
+          <li>Top-shelf vape cartridges for clean highs</li>
+          <li>Opioids and pills </li>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<motion.section
+        className="py-16 px-4 bg-black"
+        variants={staggerContainer}
+      >
+
+  <div className="max-w-7xl mx-auto px-6 text-center">
+    <h2 className="text-4xl font-bold mb-10 text-white">What Our Customers Say</h2>
+    <div className="grid md:grid-cols-3 gap-8">
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <p className="text-gray-700 mb-4">"Super fast delivery! Great quality product, and super discreet. 10/10!"</p>
+        <h3 className="font-semibold text-lg">- Jordan M.</h3>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <p className="text-gray-700 mb-4">"Best edibles I’ve had in a long time. Highly recommend BudsDelivery!"</p>
+        <h3 className="font-semibold text-lg">- Sierra B.</h3>
+      </div>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <p className="text-gray-700 mb-4">"Amazing service, discreet and professional.  Will order again for sure."</p>
+        <h3 className="font-semibold text-lg">- Chris L.</h3>
+      </div>
+    </div>
+  </div>
+</motion.section>
       {/* Featured Products Section */}
       <motion.section
         className="py-16 px-4 bg-white"
@@ -243,6 +394,25 @@ export default function LandingPage() {
           </motion.div>
         </motion.div>
       </motion.section>
+      <section className="py-16 bg-[#85A965] text-white">
+  <div className="max-w-5xl mx-auto px-6">
+    <h2 className="text-4xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+    <div className="space-y-8">
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">How discreet is your delivery service?</h3>
+        <p className="text-white">We specialize in 100% discreet deliveries. Packages are unmarked with no references to cannabis or budsdelivery.org.</p>
+      </div>
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">What areas do you deliver to?</h3>
+        <p className="text-gray-white">We deliver to all major cities and surrounding areas.</p>
+      </div>
+      <div>
+        <h3 className="text-2xl font-semibold mb-2">What products do you offer?</h3>
+        <p className="text-white">We offer premium flowers, edibles, vapes, concentrates,piods, drugs  and more — all top shelf, lab tested, and carefully curated.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Latest Blog Posts Section */}
       <motion.section
@@ -334,5 +504,7 @@ export default function LandingPage() {
         </motion.div>
       </motion.section>
     </motion.main>
+    </>
+ 
   );
 }

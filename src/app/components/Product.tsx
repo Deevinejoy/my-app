@@ -51,7 +51,10 @@ export default function Product({ product }: { product: Product }) {
           <h2 className="text-[32px] mb-2 text-center">{product.name}</h2>
         </Link>
         <div className="flex flex-row gap-x-5 justify-center">
-          <p className="text-xl font-bold text-black mt-2">${product.price}</p>
+          <p className="text-xl font-bold text-black mt-2">${product.price} 
+            {product.id < 15? <span>/g</span>:  <></>}
+            {product.id == 202? <span>/ dose</span>:  <></>}
+          </p>
           {isInCart ? (
             <div
               className="flex bg-[#85A965] p-3 gap-x-3 rounded-md hover:bg-red-700 cursor-pointer"

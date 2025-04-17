@@ -7,7 +7,7 @@ export default function AboutUs() {
         <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-[#85A965]">About Buds Delivery</h1>
         <p className="text-lg leading-relaxed mb-8">
           At <span className="font-semibold">Buds Delivery</span>, we believe in the power of nature to heal, calm, and elevate. 
-          Our mission is simple: provide premium-grade cannabis and wellness products with the utmost privacy, speed, and integrity.
+          Our mission is simple: provide premium-grade cannabis and narcotics wellness products with the utmost privacy, speed, and integrity.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-16">
@@ -41,7 +41,7 @@ export default function AboutUs() {
             we go above and beyond to protect your data, deliver exceptional products, and provide a seamless shopping experience — every time.
           </p>
           <p className="text-base leading-relaxed mb-4">
-            Whether you’re looking for flower, edibles, concentrates, or wellness alternatives, Buds Delivery is your trusted partner in premium, private cannabis care.
+            Whether you’re looking for flower, edibles, concentrates, narcortics or wellness alternatives, Buds Delivery is your trusted partner in premium, private cannabis care.
           </p>
           <p className="text-base leading-relaxed">
             Our team is dedicated to ensuring that every product you receive meets the highest standards of quality and safety. We work with trusted growers, manufacturers, and suppliers to bring you the best that the cannabis industry has to offer.
@@ -52,7 +52,7 @@ export default function AboutUs() {
           <div>
             <h2 className="text-2xl font-semibold mb-4">Our Vision</h2>
             <p className="text-base leading-relaxed mb-4">
-              At Buds Delivery, we envision a world where cannabis is embraced as a natural solution for wellness and recreation. 
+              At Buds Delivery, we envision a world where cannabis and narcotics is embraced as a natural solution for wellness and recreation. 
               We aim to break the stigma surrounding cannabis use by providing education, transparency, and access to high-quality products.
             </p>
             <p className="text-base leading-relaxed">
