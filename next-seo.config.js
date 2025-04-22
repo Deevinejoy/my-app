@@ -1,6 +1,6 @@
 // next-seo.config.js
 const config = {
-  title: "Buy Cannabis, Vapes, Edibles & Narcotics Online | Fast Discreet Delivery",
+  title: "Buy Cannabis, Vapes, Edibles & Narcotics Online, Fast Discreet Delivery",
   description:
     "Order premium cannabis, narcotics, edibles, concentrates, and vape products online with fast, secure, and discreet delivery. Trusted service at BudsDelivery.org.",
   openGraph: {
@@ -13,7 +13,7 @@ const config = {
       "Shop top-quality cannabis, vapes, edibles, and narcotics with safe, discreet online delivery. BudsDelivery.org offers fast shipping and secure checkout.",
     images: [
       {
-        url: "https://budsdelivery.org/logo.jpg",
+        url: "https://budsdelivery.org/logo.png",
         width: 1200,
         height: 630,
         alt: "Buds Delivery - Cannabis and Narcotics Online Shop",
@@ -21,8 +21,8 @@ const config = {
     ],
   },
   twitter: {
-    handle: "@budsdelivery",
-    site: "@budsdelivery",
+    handle: "@charlie_dplug",
+    site: "@charlie_dplug",
     cardType: "summary_large_image",
   },
 };

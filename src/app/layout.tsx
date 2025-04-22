@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     ...SEO.openGraph,
   },
   icons: {
-    icon: "/logo.jpg", // <-- favicon / logo
+    icon: "/logo.png", // 
   },
 };
 

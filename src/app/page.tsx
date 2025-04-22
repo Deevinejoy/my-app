@@ -105,14 +105,14 @@ export default function LandingPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Premium Cannabis & Weed Delivery | Buds Delivery" />
         <meta name="twitter:description" content="Get top-quality cannabis and narcotics delivered discreetly to your door. Fast, secure, reliable!" />
-        <meta name="twitter:image" content="https://budsdelivery.org/logo.jpg" />
-        <meta name="twitter:site" content="@budsdelivery" />
+        <meta name="twitter:image" content="https://budsdelivery.org/logo.png" />
+        <meta name="twitter:site" content="@charlie_dplug" />
 
         {/* Canonical */}
         <link rel="canonical" href="https://budsdelivery.org/" />
 
         {/* Favicon */}
-        <link rel="icon" href="/logo.jpg" />
+        <link rel="icon" href="/logo.png" type="image/png"/>
 
         {/* FAQ Structured Data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
@@ -238,9 +238,9 @@ export default function LandingPage() {
       </motion.section>
       <section className="px-6 py-16 md:px-20 md:py-28 bg-gradient-to-b from-white via-gray-50 to-white">
   <div className="max-w-6xl mx-auto text-center">
-    <h1 className="text-4xl md:text-6xl font-extrabold text-black leading-tight mb-6">
+    <h2 className="text-4xl md:text-6xl font-extrabold text-black leading-tight mb-6">
       Premium Cannabis & Narcotics Delivery — Fast, Safe, Discreet
-    </h1>
+    </h2>
     <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
       Welcome to <span className="text-[#85A965] font-semibold">Buds Delivery</span> — your trusted global source for premium cannabis and narcotics products. 
       Shop flower strains, edibles, vapes, opioids, and concentrates with lightning-fast, fully discreet shipping. Whether you're searching for 
