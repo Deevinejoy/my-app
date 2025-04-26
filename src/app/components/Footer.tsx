@@ -47,49 +47,49 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="text-center md:text-left">
-          <h2 className="text-xl font-semibold mb-2 text-black">Click to contact Us</h2>
-          <ul className="space-y-1 text-black text-lg">
-  <li className="flex items-center gap-2">
-    <a
-      href="https://wa.me/+13522124176"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
-    >
-      <FaWhatsapp /> WhatsApp: +1 (352) 212 4176
-    </a>
-  </li>
-  <li className="flex items-center gap-2">
-  <a
-  href="mailto:findmegreens@gmail.com"
-  className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
->
-  <FaEnvelope /> Email: findmegreens@gmail.com
-</a>
-  </li>
-  <li className="flex items-center gap-2">
-    <a
-      href="https://t.me/+13522124176"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
-    >
-      <FaTelegram /> Telegram: +1 (352) 212 4176
-    </a>
-  </li>
-  <li className="flex items-center gap-2">
-  <a
-  href="https://signal.me/#u/findmegreen.01"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
->
-  <FaLock /> Signal: findmegreen.01
-</a>
-  </li>
-</ul>
-        </div>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+  <h2 className="text-xl font-semibold mb-2 text-black">Click to contact Us</h2>
+  <ul className="space-y-1 text-black text-lg">
+    <li className="flex items-center gap-2">
+      <a
+        href="https://wa.me/+12792573346"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+      >
+        <FaWhatsapp /> WhatsApp: +1 (279) 257 3346
+      </a>
+    </li>
+    <li className="flex items-center gap-2">
+      <a
+        href="mailto:findmegreens@gmail.com"
+        className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+      >
+        <FaEnvelope /> Email: findmegreens@gmail.com
+      </a>
+    </li>
+    <li className="flex items-center gap-2">
+      <a
+        href="https://t.me/+13522124176"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+      >
+        <FaTelegram /> Telegram: +1 (352) 212 4176
+      </a>
+    </li>
+    <li className="flex items-center gap-2">
+      <a
+        href="https://signal.me/#u/findmegreen.01"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 text-black hover:text-white transition-colors duration-200"
+      >
+        <FaLock /> Signal: findmegreen.01
+      </a>
+    </li>
+  </ul>
+</div>
       </div>
 
       {/* Bottom bar */}

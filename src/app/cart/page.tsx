@@ -21,7 +21,7 @@ export default function CartPage() {
     return message;
   };
 
-  const whatsappNumber = "+13522124176"; // Replace with your WhatsApp number
+  const whatsappNumber = "+12792573346"; // Replace with your WhatsApp number
   const whatsappMessage = encodeURIComponent(generateWhatsAppMessage());
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
