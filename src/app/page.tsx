@@ -459,7 +459,7 @@ export default function LandingPage() {
                         __html: post.excerpt || "",
                       }}
                     />
-                    <Link href="/products/post.ID">
+                    <Link href={`/blog/${post.slug}`}>
                     <div className="mt-4 text-[#85A965] font-semibold">
                       Read more →
                     </div>

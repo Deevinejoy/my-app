@@ -23,6 +23,7 @@ export default function Header() {
     { href: "/products", label: "Shop" },
     { href: "/about", label: "About Us" },
     { href: "/privacy", label: "Privacy Policy" },
+    { href: "travel-guide-list", label: "Travel guide list" },
   ];
 
   return (

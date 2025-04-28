@@ -20,7 +20,6 @@ export default function CartPage() {
     message += `\nTotal Price: $${totalPrice.toFixed(2)}`;
     return message;
   };
-
   const whatsappNumber = "+12792573346"; // Replace with your WhatsApp number
   const whatsappMessage = encodeURIComponent(generateWhatsAppMessage());
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
