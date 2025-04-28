@@ -91,7 +91,7 @@ export default function BlogPage() {
           className="text-center text-5xl font-extrabold mb-10"
           variants={fadeIn}
         >
-          Travel Guide List
+          Blog posts
         </motion.h1>
         <motion.div variants={fadeIn}>
           <Blog />
