@@ -100,7 +100,7 @@ const countryToContinentMap: Record<string, string> = {
   'mexico': 'North America', 'nicaragua': 'North America', 'panama': 'North America', 
   'saint kitts and nevis': 'North America', 'saint lucia': 'North America', 
   'saint vincent and the grenadines': 'North America', 'trinidad and tobago': 'North America', 
-  'united states': 'North America', 'usa': 'North America',
+  'united states': 'North America', 'usa': 'North America', 'caribbean': 'North America',
   
   // South America
   'argentina': 'South America', 'bolivia': 'South America', 'brazil': 'South America', 
