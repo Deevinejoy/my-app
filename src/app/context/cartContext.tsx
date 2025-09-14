@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useReducer, useEffect, Dispatch } from "react";
+import { createContext, useContext, useReducer, useEffect, useState, Dispatch } from "react";
 
 export interface CartItem {
   id: number;
@@ -8,7 +8,6 @@ export interface CartItem {
   slug: string;
   category: string;
   img: string;
-  price: number;
   quantity: number;
   details: {
     [key: number]: string | undefined; 
@@ -79,13 +78,27 @@ function cartReducer(state: CartItem[], action: CartAction): CartItem[] {
 }
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
-  const [cart, dispatch] = useReducer(cartReducer, [], loadCart);
+  const [cart, dispatch] = useReducer(cartReducer, []);
+  const [isClient, setIsClient] = useState(false);
+
+  // Initialize cart from localStorage only on client side
+  useEffect(() => {
+    setIsClient(true);
+    const storedCart = localStorage.getItem("cart");
+    if (storedCart) {
+      const parsedCart = JSON.parse(storedCart);
+      // Initialize cart with stored data
+      parsedCart.forEach((item: CartItem) => {
+        dispatch({ type: "ADD_TO_CART", payload: item });
+      });
+    }
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (isClient) {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
-  }, [cart]);
+  }, [cart, isClient]);
 
   return (
     <CartContext.Provider value={{ cart, dispatch }}>

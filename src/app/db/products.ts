@@ -5,7 +5,6 @@ const products = [
     slug: "black-widow",
     category: "weed",
     img: "/black-widow.webp",
-    price: 15,
     quantity: 1,
     details: {
       1: "THC 23%",
@@ -23,7 +22,6 @@ const products = [
     slug: "purple-haze",
     category: "weed",
     img: "/PurpleHaze_3A.png",
-    price: 20,
     quantity: 1,
     details: {
       1: "Tri-coloured buds consisting with dark green, orange and purple hues",
@@ -42,7 +40,6 @@ const products = [
     slug: "og-kush",
     category: "weed",
     img: "/ogkush.jpg",
-    price: 18,
     quantity: 1,
     details: {
       1: "Dark lush green nugs with orange and purple notes",
@@ -61,7 +58,6 @@ const products = [
     slug: "white-guava",
     category: "weed",
     img: "/popeyes-white-guava.webp",
-    price: 20,
     quantity: 1,
     details: {
       1: "Tri-coloured buds consisting with dark green, orange and purple hues",
@@ -81,7 +77,6 @@ const products = [
       slug: "wedding-cake",
       category: "weed",
       img: "/WeddingCake.jpg",
-      price: 20,
       quantity: 1,
       details: {
         1: 'Beautiful bright green buds, with undertones of purple and orange',
@@ -114,7 +109,6 @@ const products = [
       slug: "gorilla-zkittlez",
       category: "weed",
       img: "/Gorilla-Skittle.jpg",
-      price: 18,
       quantity: 1,
       details: {
         1: 'Beautiful bright green buds, with undertones of purple and orange',
@@ -139,7 +133,6 @@ const products = [
       slug: "super-lemon-haze",
       category: "weed",
       img: "/super_lemon_haze.jpg",
-      price: 20,
       quantity: 1,
       details: {
         1: 'Vibrant buds with dark green, orange, and purple hues',
@@ -162,7 +155,6 @@ const products = [
       slug: "lemon-sour-diesel",
       category: "weed",
       img: "/lemonsourdieselAA.jpg",
-      price: 20,
       quantity: 1,
       details: {
         1: 'Bright green nugs in a blanket of snowy trichomes',
@@ -201,7 +193,6 @@ const products = [
       slug: "sour-diesel",
       category: "weed",
       img: "/sour-diesel.jpg",
-      price: 18,
       quantity: 1,
       details: {
           1: 'Deep forest green nugs with lots of thin orange hairs',
@@ -220,7 +211,6 @@ const products = [
       slug: "gorilla-glue",
       category: "weed",
       img: "/gorilla_glue.jpg",
-      price: 20,
       quantity: 1,
       details: {
           1: 'Colourful green nugs with orange hues',
@@ -242,7 +232,6 @@ const products = [
       slug: "blackberry-zkittlez",
       category: "weed",
       img: "/BBZ.jpg",
-      price: 18,
       quantity: 1,
       details: {
           1: 'Shimmering nugs with bright purple and orange hues',
@@ -696,7 +685,6 @@ Separation is normal, shake well before use.
     slug: "cherry-sativa-jelly-bombs-edible",
     category: "edibles",
     img:"/Twisted-Extract-cbd.jpg",
-    price: 15,
     quantity: 1,
     details: {
       1: 'Great way to get a mood lift during the day, spark up some creativity, and enhance your focus',
@@ -1606,7 +1594,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "200mg-brownie",
       category: "edibles",  
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832272/download_5_rz1rgj.jpg",
-      price: 15,
       quantity: 1,
       details: {
         1: '200mg total cannabinoid content',
@@ -1640,7 +1627,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "200mg-cereal-treat",
       category: "edibles",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832737/download_6_tl3erd.jpg",
-      price: 15,
       quantity: 1,
       details: {
         1: '200mg total cannabinoid content',
@@ -1675,7 +1661,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "lollipop",
       category: "edibles",
    img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832925/download_7_b731h5.jpg",  
-      price: 15,
       quantity: 1,
       details: {
         1: 'Hard candy confection',
@@ -1711,7 +1696,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "200mg-pie",
       category: "edibles",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832963/download_8_shdn3p.jpg",
-      price: 15,
       quantity: 1,
       details: {
         1: '200mg total cannabinoid content',
@@ -1745,7 +1729,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "200mg-pop-corn-caramel-corn",
       category: "edibles",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744832968/download_9_lzq2gq.jpg",
-      price: 15,
       quantity: 1,
       details: {
         1: '200mg total cannabinoid content',
@@ -1953,7 +1936,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "1g-butane-wax-concentrate",
       category: "Concentrates", 
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833551/shutterstock_628310576-3_w1kyw5.jpg",
-      price: 15,
       quantity: 1,
       details: {
         1: 'BHO (Butane Hash Oil) concentrate',
@@ -1990,7 +1972,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "1g-co2-wax-concentrate",
       category: "Concentrates",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833632/unnamed_ltnruf.png",
-      price: 18,
       quantity: 1,
       details: {
         1: 'CO2 extraction method',
@@ -2102,7 +2083,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "tetra-gold-classic-vape",
       category: "vapes",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744837412/529_E43Q_large_Home_product_Gold_Cart_uknwtb.jpg",
-      price: 20,
       quantity: 1,
       details: {
         1: 'THC content: 46.58%',
@@ -2138,7 +2118,6 @@ Chaga (inonotus obliquus) is often called the king of Magic mushrooms. Found on 
       slug: "honey-vape-gg4-vape",
       category: "vapes",
       img: "https://res.cloudinary.com/dajo3lcto/image/upload/v1744833664/large_ign8sf.jpg",
-      price: 20,
       quantity: 1,
       details: {
         1: 'Strain: GG4 (Gorilla Glue #4)',

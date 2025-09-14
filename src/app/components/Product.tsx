@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useCart } from "@/app/context/cartContext";
+import { useEffect, useState } from "react";
 
 interface Product {
   id: number;
@@ -8,7 +9,6 @@ interface Product {
   slug: string;
   category: string;
   img: string;
-  price: number;
   quantity: number;
   details: {
     [key: number]: string | undefined;
@@ -18,10 +18,14 @@ interface Product {
 
 export default function Product({ product }: { product: Product }) {
   const { cart, dispatch } = useCart(); // Access cart and dispatch
- 
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   // Check if the product is already in the cart
-  const isInCart = cart.some((item) => item.slug === product.slug);
+  const isInCart = isClient && cart.some((item) => item.slug === product.slug);
 
   const handleAddToCart = () => {
     dispatch({ type: "ADD_TO_CART", payload: product });
@@ -50,11 +54,21 @@ export default function Product({ product }: { product: Product }) {
           <h2 className="text-[32px] mb-2 text-center">{product.name}</h2>
         </Link>
         <div className="flex flex-row gap-x-5 justify-center">
-          <p className="text-xl font-bold text-black mt-2">${product.price} 
-            {product.id < 15? <span>/g</span>:  <></>}
-            {product.id == 202? <span>/ dose</span>:  <></>}
-          </p>
-          {isInCart ? (
+          {!isClient ? (
+            // Show consistent state during SSR
+            <div
+              className="flex bg-[#85A965] p-3 gap-x-3 rounded-md hover:bg-black cursor-pointer"
+              onClick={handleAddToCart}
+            >
+              <Image
+                src="/cart2.svg"
+                alt="Add to cart"
+                width={24}
+                height={24}
+              />
+              <p className="text-white cursor-pointer">Add to cart</p>
+            </div>
+          ) : isInCart ? (
             <div
               className="flex bg-[#85A965] p-3 gap-x-3 rounded-md hover:bg-red-700 cursor-pointer"
               onClick={handleRemoveFromCart}

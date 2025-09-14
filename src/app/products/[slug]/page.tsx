@@ -1,13 +1,15 @@
 "use client";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 import { use } from "react";
+
 import { useCart } from "@/app/context/cartContext";
 import products from "@/app/db/products";
 import Head from "next/head";
 import { motion } from "framer-motion";
 
-export default function Product({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default function Product({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
   const { cart, dispatch } = useCart();
 
   const product =
@@ -15,7 +17,8 @@ export default function Product({ params }: { params: { slug: string } }) {
     products.find((p) => p.slug === slug);
 
   if (!product) {
-    return <div className="text-center text-xl mt-10">Product not found</div>;
+    // Redirect to products listing page for invalid product slugs
+    redirect('/products');
   }
 
   const inCart = cart.find((item) => item.slug === product.slug);
@@ -86,8 +89,6 @@ export default function Product({ params }: { params: { slug: string } }) {
               offers: {
                 "@type": "Offer",
                 url: `https://budsdelivery.org/products/${product.slug}`,
-                priceCurrency: "USD",
-                price: product.price,
                 availability: "https://schema.org/InStock",
               },
             }),
@@ -138,10 +139,6 @@ export default function Product({ params }: { params: { slug: string } }) {
                 Contact our customer care for wholesale price
               </li>
 
-              <p className="text-2xl font-semibold text-green-600">
-                ${product.price} {product.id < 15 ? <span>/g</span> : <></>}
-                {product.id == 202 ? <span>/ dose</span> : <></>}
-              </p>
             </div>
 
             <div className="mt-6 space-y-4">
@@ -162,12 +159,6 @@ export default function Product({ params }: { params: { slug: string } }) {
               </div>
 
               <div className="flex items-center justify-between">
-                <p className="text-xl font-bold">
-                  Total: $
-                  {(Number(product.price) * Number(product.quantity)).toFixed(
-                    2
-                  )}
-                </p>
                 <button
                   onClick={handleAddToCart}
                   className="flex items-center gap-2 px-5 py-3 bg-[#85A965] hover:bg-black transition-colors text-white font-semibold rounded-md"

@@ -91,7 +91,7 @@ export default function BlogPage() {
           className="text-center text-5xl font-extrabold mb-10"
           variants={fadeIn}
         >
-          Blog posts
+          Where to find the best deals on cannabis?
         </motion.h1>
         <motion.div variants={fadeIn}>
           <Blog />

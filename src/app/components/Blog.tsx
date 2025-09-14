@@ -23,7 +23,7 @@ export default function Blog() {
   // Pagination states
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
-  const [postsPerPage] = useState<number>(6);
+  const [postsPerPage] = useState<number>(9);
   
   // Ref for the blog component
   const blogComponentRef = useRef<HTMLDivElement>(null);

@@ -6,18 +6,14 @@ import Link from "next/link";
 
 export default function CartPage() {
   const { cart, dispatch } = useCart();
-  const totalPrice = cart.reduce(
-    (acc: number, item: { price: number; quantity: number; }) => acc + Number(item.price) * Number(item.quantity),
-    0
-  );
   
   const generateWhatsAppMessage = () => {
     let message = "Hello, I would like to order the following products:\n\n";
     cart.forEach((item) => {
-      message += `- ${item.name} (x${item.quantity}): $${item.price * item.quantity}\n`;
+      message += `- ${item.name} (x${item.quantity})\n`;
     });
     
-    message += `\nTotal Price: $${totalPrice.toFixed(2)}`;
+    message += `\nTotal Items: ${cart.reduce((total, item) => total + item.quantity, 0)}`;
     return message;
   };
   const whatsappNumber = "+12792573346"; // Replace with your WhatsApp number
@@ -52,7 +48,6 @@ export default function CartPage() {
                 
                 <div className="flex-1">
                   <h2 className="text-sm sm:text-base md:text-lg font-semibold text-gray-800">{item.name}</h2>
-                  <p className="text-xs sm:text-sm text-gray-600">${item.price}</p>
                 </div>
               </div>
               
@@ -75,9 +70,6 @@ export default function CartPage() {
                   </button>
                 </div>
                 
-                <div className="text-sm sm:text-base font-medium text-gray-800 ml-4 sm:ml-6">
-                  ${(Number(item.price) * Number(item.quantity)).toFixed(2)}
-                </div>
                 
                 <button
                   onClick={() => dispatch({ type: "REMOVE_FROM_CART", payload: item.slug })}
@@ -104,10 +96,6 @@ export default function CartPage() {
               <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700">{cart.reduce((total, item) => total + item.quantity, 0)}</p>
             </div>
             
-            <div className="flex justify-between mb-4">
-              <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700">Total:</p>
-              <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700">${totalPrice.toFixed(2)}</p>
-            </div>
             
             <a  
               href={whatsappUrl}
